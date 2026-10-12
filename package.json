@@ -1,0 +1,12 @@
+{
+  "name": "super-league-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/game.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
