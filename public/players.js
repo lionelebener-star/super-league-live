@@ -13,8 +13,8 @@
   function navigate(){if(location.hash.startsWith('#joueurs'))window.renderPlayers(teams,crest);}
   window.renderPlayers=async(t,c)=>{
     teams=t;crest=c;const root=document.querySelector('#players-content'),route=location.hash;
-    root.innerHTML=`<p role="status">${tr('Chargement des joueurs…','Spieler werden geladen…')}</p>`;
-    try{await load();}catch{root.innerHTML=`<p role="alert">${tr('Les fiches sont indisponibles pour le moment.','Die Profile sind derzeit nicht verfügbar.')}</p><button data-retry-players>${tr('Réessayer','Erneut versuchen')}</button>`;return;}
+    if(!data)root.innerHTML=`<p role="status">${tr('Chargement des joueurs…','Spieler werden geladen…')}</p>`;
+    try{if(!data)await load();}catch{root.innerHTML=`<p role="alert">${tr('Les fiches sont indisponibles pour le moment.','Die Profile sind derzeit nicht verfügbar.')}</p><button data-retry-players>${tr('Réessayer','Erneut versuchen')}</button>`;return;}
     if(location.hash!==route)return;
     const [,kind,id]=route.slice(1).split('/');
     const player=kind==='joueur'?data.players.find(p=>p.slug===id):null;

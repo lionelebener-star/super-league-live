@@ -9,7 +9,7 @@ const venues={0:'AIL Arena',1:'Stadion Wankdorf · Berne',2:'Stade de Tourbillon
 const fixtures=[[5,9,'Sam. 24 octobre','18:00','2026-10-24T18:00:00+02:00','sfl-100126'],[4,7,'Sam. 24 octobre','18:00','2026-10-24T18:00:00+02:00','sfl-100131'],[1,3,'Sam. 24 octobre','20:30','2026-10-24T20:30:00+02:00','sfl-100130'],[8,0,'Dim. 25 octobre','14:00','2026-10-25T14:00:00+01:00','sfl-100129'],[2,11,'Dim. 25 octobre','16:30','2026-10-25T16:30:00+01:00','sfl-100128'],[6,10,'Dim. 25 octobre','16:30','2026-10-25T16:30:00+01:00','sfl-100127']];
 const results=[[0,7,4,0,'10 octobre 2026'],[5,2,3,0,'10 octobre 2026'],[4,8,4,2,'10 octobre 2026'],[10,1,0,2,'11 octobre 2026'],[3,11,1,0,'11 octobre 2026'],[9,6,3,0,'11 octobre 2026']];
 function fixture([a,b,d,t]){return `<article class="fixture"><div class="team ${a===favorite?'favorite-team':''}">${crest(a)}<span>${teams[a][0]}</span></div><div class="fixture-mid"><small>${d}</small><strong>${t}</strong><small class="venue">${venues[a]}</small></div><div class="team ${b===favorite?'favorite-team':''}">${crest(b)}<span>${teams[b][0]}</span></div></article>`;}
-function table(limit){return `<table><caption class="sr-only">Classement Super League 2026/27 au 12 octobre 2026</caption><thead><tr><th scope="col">#</th><th scope="col">Club</th><th scope="col">MJ</th><th scope="col" class="detail-col">V</th><th scope="col" class="detail-col">N</th><th scope="col" class="detail-col">D</th><th scope="col">Diff.</th><th scope="col">Pts</th></tr></thead><tbody>${teams.slice(0,limit).map((t,i)=>`<tr class="${i===favorite?'favorite':''}"><td>${i+1}</td><td><span>${crest(i)}${t[0]}</span></td><td>${t[3]+t[4]+t[5]}</td><td class="detail-col">${t[3]}</td><td class="detail-col">${t[4]}</td><td class="detail-col">${t[5]}</td><td>${t[6]-t[7]>0?'+':''}${t[6]-t[7]}</td><td>${t[2]}</td></tr>`).join('')}</tbody></table>`;}
+function table(limit){return `<table><caption class="sr-only">Classement Super League 2026/27 au 12 octobre 2026</caption><thead><tr><th scope="col">#</th><th scope="col">Club</th><th scope="col">MJ</th><th scope="col" class="detail-col">V</th><th scope="col" class="detail-col">N</th><th scope="col" class="detail-col">D</th><th scope="col">Diff.</th><th scope="col">Pts</th></tr></thead><tbody>${teams.slice(0,limit).map((t,i)=>`<tr class="${i===favorite?'favorite':''}"><td>${i+1}</td><td><a class="standings-club-link" href="#joueurs/equipe/${i}">${crest(i)}${t[0]}<span class="club-link-arrow" aria-hidden="true">↗</span></a></td><td>${t[3]+t[4]+t[5]}</td><td class="detail-col">${t[3]}</td><td class="detail-col">${t[4]}</td><td class="detail-col">${t[5]}</td><td>${t[6]-t[7]>0?'+':''}${t[6]-t[7]}</td><td>${t[2]}</td></tr>`).join('')}</tbody></table>`;}
 function renderResults(limit){return results.slice(0,limit).map(([a,b,x,y])=>`<div class="result"><span class="${a===favorite?'favorite-text':''}">${teams[a][0]}</span><strong class="score">${x} – ${y}</strong><span class="${b===favorite?'favorite-text':''}">${teams[b][0]}</span></div>`).join('');}
 function renderMatches(){ $('#match-list').innerHTML=matchFilter==='next'?fixtures.map(f=>`<div class="panel">${fixture(f)}</div>`).join(''):results.map(([a,b,x,y,date])=>`<div class="panel"><div class="fixture"><div class="team ${a===favorite?'favorite-team':''}">${crest(a)}<span>${teams[a][0]}</span></div><div class="fixture-mid"><small>${date}</small><strong>${x} – ${y}</strong><small>Terminé</small></div><div class="team ${b===favorite?'favorite-team':''}">${crest(b)}<span>${teams[b][0]}</span></div></div></div>`).join('');}
 function renderFavorite(){
@@ -19,7 +19,33 @@ function renderFavorite(){
 function render(){renderFavorite();window.renderSeasonDetails(teams,favorite,crest); $('#stats').innerHTML=[['⚽','Buts inscrits',String(teams.reduce((sum,t)=>sum+t[6],0)),'3,80 par match'],['▥','Matchs joués',String(teams.reduce((sum,t)=>sum+t[3]+t[4]+t[5],0)/2),'Après la 10ᵉ journée'],['★','Leader',teams[0][0],teams[0][2]+' points · 6 points d’avance']].map(([icon,label,value,caption])=>`<article class="stat"><div class="stat-icon" aria-hidden="true">${icon}</div><div><small>${label}</small><strong>${value}</strong><small class="caption">${caption}</small></div></article>`).join('');$('#preview-fixtures').innerHTML=fixtures.slice(0,3).map(fixture).join('');$('#preview-table').innerHTML=table(5);$('#full-table').innerHTML=table(12);$('#full-table').classList.toggle('show-details',detailed);$('#preview-results').innerHTML=renderResults(3);$('#club-title').textContent=teams[favorite][0]+' · votre club';renderMatches();}
 $('#club-select').innerHTML=teams.map((t,i)=>`<option value="${i}">${t[0]}</option>`).join('');$('#club-select').value=favorite;
 $('#club-select').addEventListener('change',e=>{favorite=Number(e.target.value);try{localStorage.setItem('sl-club',favorite);}catch{}render();});
-function route(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);window.scrollTo(0,0);if(id==='joueurs')window.renderPlayers(teams,crest);}
+function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);window.scrollTo(0,0);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
+let navigationSerial=0,previousNavigation='',navigationAnimation=null;
+async function route(){
+ const serial=++navigationSerial,next=location.hash||'#actu',from=previousNavigation;
+ previousNavigation=next;
+ navigationAnimation?.cancel();
+ const motion=!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&typeof Element!=='undefined'&&Element.prototype.animate;
+ const current=document.querySelector('.view:not([hidden])');
+ if(motion&&from&&from!==next&&current){
+  navigationAnimation=current.animate([{opacity:1},{opacity:0}],{duration:75,easing:'ease-out'});
+  await navigationAnimation.finished.catch(()=>{});
+  if(serial!==navigationSerial)return;
+ }
+ document.querySelectorAll('.view').forEach(v=>v.style.opacity='');
+ const pending=applyRoute(),visible=document.querySelector('.view:not([hidden])');
+ if(pending&&motion&&visible)visible.style.opacity='0';
+ await pending;
+ if(serial!==navigationSerial)return;
+ if(visible)visible.style.opacity='';
+ window.SLI18n.apply();
+ if(motion&&from&&from!==next&&visible){
+  const entering=next.startsWith('#joueurs/equipe/')&&!from.startsWith('#joueurs/equipe/');
+  const closing=next==='#joueurs'&&from.startsWith('#joueurs/');
+  const frames=entering?[{opacity:0,transform:'scale(.982)'},{opacity:1,transform:'scale(1)'}]:closing?[{opacity:0,transform:'scale(1.008)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0,transform:'translateY(3px)'},{opacity:1,transform:'translateY(0)'}];
+  navigationAnimation=visible.animate(frames,{duration:entering?205:155,easing:'cubic-bezier(.2,.65,.3,1)'});
+ }
+}
 window.addEventListener('hashchange',route);
 $('#details').addEventListener('click',()=>{detailed=!detailed;$('#full-table').classList.toggle('show-details',detailed);$('#details').setAttribute('aria-pressed',detailed);$('#details').textContent=detailed?'Vue simplifiée':'Statistiques détaillées';});
 document.querySelectorAll('[data-match-filter]').forEach(b=>b.addEventListener('click',()=>{matchFilter=b.dataset.matchFilter;document.querySelectorAll('[data-match-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b);});renderMatches();}));
