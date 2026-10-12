@@ -1,6 +1,5 @@
 (() => {
   const translations = {
-    'Équipes & joueurs':'Teams & Spieler','Joueurs':'Spieler',
     'Aller au contenu':'Zum Inhalt springen',
     'Le football suisse, en un coup d’œil':'Schweizer Fussball auf einen Blick',
     'Actu et stats':'News & Statistiken','Classement':'Tabelle','Matchs':'Spiele','Pronos':'Tipps',
@@ -82,9 +81,9 @@
       const active=button.dataset.language===language;
       button.setAttribute('aria-pressed',String(active));button.classList.toggle('active',active);
     });
-    const tab=location.hash.slice(1).split('/')[0]||'actu';
-    const titles=language==='de'?{actu:'News & Statistiken',classement:'Tabelle',matchs:'Spiele',pronos:'Tippspiel',joueurs:'Teams & Spieler'}:{actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'};
-    if(tab!=='joueurs')document.title='Super League — '+(titles[tab]||titles.actu);
+    const tab=location.hash.slice(1)||'actu';
+    const titles=language==='de'?{actu:'News & Statistiken',classement:'Tabelle',matchs:'Spiele',pronos:'Tippspiel'}:{actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis'};
+    document.title='Super League — '+(titles[tab]||titles.actu);
   }
   document.addEventListener('click',event=>{
     const button=event.target.closest('[data-language]');if(!button)return;
