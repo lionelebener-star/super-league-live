@@ -41,7 +41,7 @@
     'Les pronostics arrivent bientôt.':'Das Tippspiel kommt bald.',
     'Cette section est en préparation. Vous pourrez bientôt pronostiquer les scores entre amis.':'Dieser Bereich ist in Vorbereitung. Bald könnt ihr unter Freunden Spielergebnisse tippen.',
     'Voir les prochains matchs →':'Nächste Spiele ansehen →',
-    'Données vérifiées au 12 octobre 2026 · actualisation automatique à connecter.':'Daten geprüft am 12. Oktober 2026 · automatische Aktualisierung noch einzurichten.',
+    'Dernière actualisation : 12 octobre 2026 · actualisation automatique à connecter.':'Letzte Aktualisierung: 12. Oktober 2026 · automatische Aktualisierung noch einzurichten.',
     'Calendrier officiel SFL ↗':'Offizieller SFL-Spielplan ↗','Classement ↗':'Tabelle ↗','Résultats ↗':'Ergebnisse ↗',
     'Saint-Gall':'St. Gallen','Zurich':'Zürich','Bâle':'Basel','Lucerne':'Luzern','Thoune':'Thun',
     'Stadion Wankdorf · Berne':'Stadion Wankdorf · Bern','Stade de Tourbillon · Sion':'Stade de Tourbillon · Sion',
