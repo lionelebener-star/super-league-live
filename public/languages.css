@@ -1,0 +1,5 @@
+.language-switch{display:flex;gap:3px;flex-shrink:0;border:1px solid var(--line);border-radius:10px;padding:3px;background:white}
+.language-switch button{border:0;border-radius:7px;padding:7px 9px;font-size:12px;font-weight:700;color:var(--muted);min-height:32px}
+.language-switch button.active{background:var(--green);color:white}
+@media(max-width:1050px){header{flex-wrap:wrap}.desktop-nav{gap:12px}.desktop-nav a{font-size:12px}.language-switch{margin-left:auto}.club-choice{margin-left:0}}
+@media(max-width:700px){header{gap:10px}.brand{font-size:18px}.brand small{font-size:10px}.language-switch{margin-left:auto}.club-choice{margin-left:0;flex-basis:100%}.club-choice select{width:100%;max-width:none}.language-switch button{min-height:36px;padding:8px 11px}.fixture-mid small{overflow-wrap:anywhere}}
