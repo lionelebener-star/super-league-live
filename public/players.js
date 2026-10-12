@@ -1,0 +1,46 @@
+(() => {
+  let data,loading,teams,crest,query='',filter='all';
+  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const tr=(fr,de)=>window.SLI18n.language==='de'?de:fr;
+  const positions={Goalkeeper:['Gardien','Torwart'],Defender:['Défenseur','Verteidiger'],Midfielder:['Milieu','Mittelfeld'],Forward:['Attaquant','Stürmer']};
+  const pos=p=>(positions[p.position]||[p.position,p.position])[window.SLI18n.language==='de'?1:0];
+  const href=p=>'#joueurs/joueur/'+p.slug;
+  const picture=p=>`<div class="portrait-wrap">${p.photo?`<img class="player-portrait" src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" referrerpolicy="no-referrer">`:''}<span class="portrait-fallback" ${p.photo?'hidden':''}>${esc(p.name.split(' ').map(x=>x[0]).slice(0,2).join(''))}<small>${tr('Photo indisponible','Foto nicht verfügbar')}</small></span></div>`;
+  const card=p=>`<a class="player-card" href="${href(p)}">${picture(p)}<div><small>${p.number!=null?'#'+p.number+' · ':''}${esc(pos(p))}</small><h3>${esc(p.name)}</h3><span>${esc(teams[p.club][0])}</span></div><span class="player-card-arrow" aria-hidden="true">↗</span></a>`;
+  const source=()=>`<p class="table-note">${tr('Effectifs et fiches SFL vérifiés au 12 octobre 2026. Photos : SFL / clubs. Les données manquantes sont indiquées.','SFL-Kader und Profile geprüft am 12. Oktober 2026. Fotos: SFL / Vereine. Fehlende Angaben sind gekennzeichnet.')} <a href="https://sfl.ch/player-list/joueurs-super-league" target="_blank" rel="noopener">SFL ↗</a></p>`;
+  async function load(){if(data)return data;if(!loading)loading=fetch('/players-data.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>data=d).catch(e=>{loading=null;throw e;});return loading;}
+  function roster(club,exclude){return data.players.filter(p=>p.club===club&&p.slug!==exclude).sort((a,b)=>(a.number??999)-(b.number??999));}
+  function navigate(){if(location.hash.startsWith('#joueurs'))window.renderPlayers(teams,crest);}
+  window.renderPlayers=async(t,c)=>{
+    teams=t;crest=c;const root=document.querySelector('#players-content'),route=location.hash;
+    root.innerHTML=`<p role="status">${tr('Chargement des joueurs…','Spieler werden geladen…')}</p>`;
+    try{await load();}catch{root.innerHTML=`<p role="alert">${tr('Les fiches sont indisponibles pour le moment.','Die Profile sind derzeit nicht verfügbar.')}</p><button data-retry-players>${tr('Réessayer','Erneut versuchen')}</button>`;return;}
+    if(location.hash!==route)return;
+    const [,kind,id]=route.slice(1).split('/');
+    const player=kind==='joueur'?data.players.find(p=>p.slug===id):null;
+    const club=player?player.club:kind==='equipe'?Number(id):null;
+    const validClub=club!==null&&Number.isInteger(club)&&club>=0&&club<teams.length;
+    const clubLink=i=>`<a href="#joueurs/equipe/${i}">${crest(i)}${esc(teams[i][0])}</a>`;
+    const crumbs=`<nav class="player-breadcrumb" aria-label="${tr('Fil d’Ariane','Brotkrumennavigation')}"><a href="#joueurs">${tr('Équipes & joueurs','Teams & Spieler')}</a>${validClub?`<span aria-hidden="true">/</span>${clubLink(club)}`:''}${player?`<span aria-hidden="true">/</span><span aria-current="page">${esc(player.name)}</span>`:''}</nav>`;
+    if((kind==='joueur'&&!player)||(kind==='equipe'&&!validClub)){root.innerHTML=crumbs+`<p>${tr('Cette fiche est introuvable.','Dieses Profil wurde nicht gefunden.')}</p><a href="#joueurs">${tr('Toutes les équipes','Alle Teams')}</a>`;return;}
+    if(player){
+      const locale=window.SLI18n.language==='de'?'de-CH':'fr-CH',date=player.birth?new Date(player.birth).toLocaleDateString(locale,{timeZone:'UTC',day:'numeric',month:'long',year:'numeric'}):tr('Non renseignée','Nicht angegeben');
+      const nat=window.SLI18n.language==='de'?player.nationalityDE:player.nationality;
+      const missing=tr('Non renseigné','Nicht angegeben');
+      root.innerHTML=crumbs+`<div class="player-actions"><a href="#joueurs/equipe/${club}">← ${tr('Retour à l’effectif','Zurück zum Kader')}</a><a href="#joueurs">${tr('Fermer l’équipe · toutes les équipes','Team schliessen · alle Teams')} ×</a></div><article class="panel player-profile">${picture(player)}<div><span class="eyebrow">${esc(pos(player))}${player.number!=null?' · #'+player.number:''}</span><h1 tabindex="-1">${esc(player.name)}</h1><div class="profile-club">${clubLink(club)}</div><dl class="player-facts"><div><dt>${tr('Naissance','Geburtsdatum')}</dt><dd>${date}</dd></div><div><dt>${tr('Nationalité','Nationalität')}</dt><dd>${esc(nat||missing)}</dd></div><div><dt>${tr('Taille','Grösse')}</dt><dd>${player.height?player.height+' cm':missing}</dd></div><div><dt>${tr('Pied préféré','Bevorzugter Fuss')}</dt><dd>${esc(({right:tr('Droit','Rechts'),left:tr('Gauche','Links'),both:tr('Les deux','Beide')})[player.foot]||missing)}</dd></div></dl><h2>${tr('En quelques mots','Kurz vorgestellt')}</h2><p>${esc(tr(`${player.name} évolue au poste de ${pos(player).toLowerCase()} au ${teams[club][0]}.`,`${player.name} spielt als ${pos(player)} bei ${teams[club][0]}.`))} ${player.birth?tr(`Né le ${date}.`,`Geboren am ${date}.`):''} ${player.height?tr(`Il mesure ${player.height} cm.`,`Er ist ${player.height} cm gross.`):''}</p><a href="https://sfl.ch/players/${esc(player.slug)}" target="_blank" rel="noopener">${tr('Fiche officielle SFL ↗','Offizielles SFL-Profil ↗')}</a></div></article><section class="teammates"><div class="section-head"><h2>${tr('Les autres joueurs de','Weitere Spieler von')} ${esc(teams[club][0])}</h2><a href="#joueurs/equipe/${club}">${tr('Tout l’effectif →','Ganzer Kader →')}</a></div><div class="player-grid">${roster(club,player.slug).map(card).join('')}</div></section>`+source();
+      document.title=player.name+' · '+teams[club][0]+' — Super League';
+    }else if(validClub){
+      root.innerHTML=crumbs+`<div class="player-actions"><a href="#joueurs">← ${tr('Fermer l’équipe · toutes les équipes','Team schliessen · alle Teams')}</a><label>${tr('Changer d’équipe','Team wechseln')}<select id="browse-team">${teams.map((x,i)=>`<option value="${i}" ${i===club?'selected':''}>${esc(x[0])}</option>`).join('')}</select></label></div><div class="panel roster-heading">${crest(club)}<div><span class="eyebrow">SUPER LEAGUE · 2026/27</span><h1 tabindex="-1">${esc(teams[club][0])}</h1><p>${roster(club).length} ${tr('joueurs dans l’effectif SFL','Spieler im SFL-Kader')}</p></div></div><div class="player-grid">${roster(club).map(card).join('')}</div>`+source();
+      document.title=teams[club][0]+' — '+tr('Effectif','Kader')+' · Super League';
+    }else{
+      root.innerHTML=crumbs+`<div class="page-heading"><span class="eyebrow">SUPER LEAGUE · 2026/27</span><h1>${tr('Équipes & joueurs','Teams & Spieler')}</h1><p>${tr('Choisis une équipe ou cherche directement un joueur.','Wähle ein Team oder suche direkt einen Spieler.')}</p></div><div class="club-grid">${teams.map((x,i)=>`<a class="club-browser-card" href="#joueurs/equipe/${i}">${crest(i)}<strong>${esc(x[0])}</strong><small>${roster(i).length} ${tr('joueurs','Spieler')} →</small></a>`).join('')}</div><section class="panel player-search-panel"><h2>${tr('Trouver un joueur','Spieler finden')}</h2><div class="player-search"><label>${tr('Nom du joueur','Spielername')}<input id="player-search" type="search" value="${esc(query)}" placeholder="${tr('Ex. Essende, Boteli…','Z. B. Essende, Boteli…')}"></label><label>${tr('Équipe','Team')}<select id="player-team-filter"><option value="all">${tr('Toutes les équipes','Alle Teams')}</option>${teams.map((x,i)=>`<option value="${i}" ${filter===String(i)?'selected':''}>${esc(x[0])}</option>`).join('')}</select></label></div><p id="player-search-count" role="status"></p><div id="search-player-results" class="player-grid"></div></section>`+source();results();
+    }
+    window.SLI18n.apply();
+    root.querySelector?.('h1[tabindex]')?.focus({preventScroll:true});
+  };
+  function results(){const list=data.players.filter(p=>(filter==='all'||p.club===Number(filter))&&p.name.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase().includes(query.normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase()));document.querySelector('#player-search-count').textContent=list.length+' '+tr('joueurs trouvés','Spieler gefunden');document.querySelector('#search-player-results').innerHTML=list.length?list.map(card).join(''):`<p>${tr('Aucun joueur trouvé.','Kein Spieler gefunden.')}</p>`;window.SLI18n.apply();}
+  document.addEventListener('input',e=>{if(e.target.id==='player-search'){query=e.target.value;results();}});
+  document.addEventListener('change',e=>{if(e.target.id==='browse-team')location.hash='#joueurs/equipe/'+e.target.value;if(e.target.id==='player-team-filter'){filter=e.target.value;results();}});
+  document.addEventListener('click',e=>{if(e.target.closest('[data-retry-players]'))navigate();});
+  document.addEventListener('error',e=>{if(!e.target.matches?.('.player-portrait'))return;e.target.hidden=true;e.target.nextElementSibling.hidden=false;},true);
+})();
