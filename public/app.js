@@ -2,7 +2,7 @@ const teams=[['Lugano','LUG',28,9,1,0,31,7,'fc-lugano'],['Young Boys','YB',22,6,
 const $=s=>document.querySelector(s);
 let favorite=2, detailed=false, matchFilter='next';
 try {const saved=Number(localStorage.getItem('sl-club'));if(localStorage.getItem('sl-club')!==null && Number.isInteger(saved)&&saved>=0&&saved<teams.length)favorite=saved;} catch {}
-const crest=i=>`<img class="crest" src="assets/${teams[i][8]}-logo-footylogos-320.webp" alt="" loading="lazy">`;
+const crest=i=>`<img class="crest" data-club="${i}" src="assets/${teams[i][8]}-logo-footylogos-320.webp" alt="" loading="lazy">`;
 // Snapshot verified against the SFL calendar, completed results and Blick standings on 12 October 2026.
 // Explicit UTC offsets handle the Swiss daylight-saving change on 25 October.
 const venues={0:'AIL Arena',1:'Stadion Wankdorf · Berne',2:'Stade de Tourbillon · Sion',3:'Berit Sitterstadion · Saint-Gall',4:'Letzigrund · Zurich',5:'Stade de Genève · Lancy',6:'St. Jakob-Park · Bâle',7:'Swissporarena · Lucerne',8:'Stockhorn Arena · Thoune',9:'Rheinpark Stadion · Vaduz',10:'Letzigrund · Zurich',11:'Stade de la Tuilière · Lausanne'};
@@ -93,3 +93,26 @@ $('#refresh-pronos')?.addEventListener('click',loadPronos);
 
 window.addEventListener("sl-language-change",()=>{render();route();window.SLI18n.apply();});
 window.SLI18n.apply();
+
+function activateClubLogos(){
+ document.querySelectorAll('img.crest[data-club]').forEach(img=>{
+  const club=Number(img.dataset.club),target='#joueurs/equipe/'+club;
+  img.style.cursor='pointer';
+  if(img.closest('a')?.getAttribute('href')===target)return;
+  img.setAttribute('role','link');img.tabIndex=0;
+  img.setAttribute('aria-label',(window.SLI18n.language==='de'?'Verein öffnen: ':'Voir le club : ')+window.SLI18n.translate(teams[club][0]));
+ });
+}
+function openClubLogo(event){
+ const img=event.target.closest?.('img.crest[data-club]');
+ if(!img)return;
+ if(event.type==='keydown'&&event.key!=='Enter')return;
+ if(event.type==='click'&&(event.button!==0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey))return;
+ if(img.closest('a')?.getAttribute('href')==='#joueurs/equipe/'+img.dataset.club)return;
+ event.preventDefault();event.stopImmediatePropagation();saveScrollPosition();
+ location.hash='#joueurs/equipe/'+img.dataset.club;
+}
+document.addEventListener('click',openClubLogo,true);
+document.addEventListener('keydown',openClubLogo,true);
+new MutationObserver(activateClubLogos).observe(document.body,{childList:true,subtree:true});
+activateClubLogos();
