@@ -19,10 +19,26 @@ function renderFavorite(){
 function render(){renderFavorite();window.renderSeasonDetails(teams,favorite,crest); $('#stats').innerHTML=[['⚽','Buts inscrits',String(teams.reduce((sum,t)=>sum+t[6],0)),'3,80 par match'],['▥','Matchs joués',String(teams.reduce((sum,t)=>sum+t[3]+t[4]+t[5],0)/2),'Après la 10ᵉ journée'],['★','Leader',teams[0][0],teams[0][2]+' points · 6 points d’avance']].map(([icon,label,value,caption])=>`<article class="stat"><div class="stat-icon" aria-hidden="true">${icon}</div><div><small>${label}</small><strong>${value}</strong><small class="caption">${caption}</small></div></article>`).join('');$('#preview-fixtures').innerHTML=fixtures.slice(0,3).map(fixture).join('');$('#preview-table').innerHTML=table(5);$('#full-table').innerHTML=table(12);$('#full-table').classList.toggle('show-details',detailed);$('#preview-results').innerHTML=renderResults(3);$('#club-title').textContent=teams[favorite][0]+' · votre club';renderMatches();}
 $('#club-select').innerHTML=teams.map((t,i)=>`<option value="${i}">${t[0]}</option>`).join('');$('#club-select').value=favorite;
 $('#club-select').addEventListener('change',e=>{favorite=Number(e.target.value);try{localStorage.setItem('sl-club',favorite);}catch{}render();});
-function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);window.scrollTo(0,0);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
-let navigationSerial=0,previousNavigation='',navigationAnimation=null;
+function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
+let navigationSerial=0,previousNavigation='',navigationAnimation=null,routeRendering=false;
+if('scrollRestoration' in history)history.scrollRestoration='manual';
+const routeKey=()=>location.hash||'#actu';
+function saveScrollPosition(){
+ if(routeRendering||previousNavigation!==routeKey())return;
+ history.replaceState({...history.state,slRoute:routeKey(),slScrollX:window.scrollX,slScrollY:window.scrollY},'');
+}
+window.addEventListener('scroll',saveScrollPosition,{passive:true});
+window.addEventListener('pagehide',saveScrollPosition);
+document.addEventListener('click',event=>{
+ const link=event.target.closest?.('a[href]');
+ if(link&&link.getAttribute('href').startsWith('#'))saveScrollPosition();
+},true);
 async function route(){
  const serial=++navigationSerial,next=location.hash||'#actu',from=previousNavigation;
+ const saved=history.state;
+ const scrollPosition=saved?.slRoute===next?[saved.slScrollX||0,saved.slScrollY||0]:[0,0];
+ routeRendering=true;
+ history.replaceState({...saved,slRoute:next,slScrollX:scrollPosition[0],slScrollY:scrollPosition[1]},'');
  previousNavigation=next;
  navigationAnimation?.cancel();
  const motion=!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&typeof Element!=='undefined'&&Element.prototype.animate;
@@ -39,6 +55,8 @@ async function route(){
  if(serial!==navigationSerial)return;
  if(visible)visible.style.opacity='';
  window.SLI18n.apply();
+ window.scrollTo({left:scrollPosition[0],top:scrollPosition[1],behavior:'instant'});
+ routeRendering=false;
  if(motion&&from&&from!==next&&visible){
   const entering=next.startsWith('#joueurs/equipe/')&&!from.startsWith('#joueurs/equipe/');
   const closing=next==='#joueurs'&&from.startsWith('#joueurs/');
