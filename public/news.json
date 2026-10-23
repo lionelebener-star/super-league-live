@@ -1,0 +1,274 @@
+{
+  "checkedAt": "2026-10-23T07:39:37.526950+00:00",
+  "updatedAt": "2026-10-23T07:39:37.526950+00:00",
+  "status": "ok",
+  "sources": [
+    {
+      "name": "Blick",
+      "language": "fr",
+      "url": "https://www.blick.ch/fr/sport/football/rss.xml",
+      "ok": true,
+      "count": 5
+    },
+    {
+      "name": "Blick",
+      "language": "de",
+      "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
+      "ok": true,
+      "count": 9
+    },
+    {
+      "name": "20 minutes",
+      "language": "fr",
+      "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/super-league",
+      "ok": true,
+      "count": 2
+    },
+    {
+      "name": "20 minutes",
+      "language": "fr",
+      "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
+      "ok": true,
+      "count": 4
+    },
+    {
+      "name": "20 Minuten",
+      "language": "de",
+      "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
+      "ok": true,
+      "count": 3
+    }
+  ],
+  "articles": [
+    {
+      "id": "5e05bf08abeec97ad6d6",
+      "title": "«Bringt nichts, auf Leute draufzutreten, die schon am Boden sind»",
+      "excerpt": "Noah Christoffersson wechselte im Sommer für viel Geld zum FC Thun und ist beim…",
+      "url": "https://www.20min.ch/story/millionen-mann-im-pech-bringt-nichts-auf-leute-draufzutreten-die-schon-am-boden-sind-103654312",
+      "image": "https://image.20min.ch/2026/10/22/cf60b6af-6388-4180-9ffe-10bbfaf7837a.jpg?s=28be37335870b0fe1112af3e903048e2",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-10-23T02:35:18+00:00"
+    },
+    {
+      "id": "370e8779a43b462539db",
+      "title": "Victoire historique pour Lugano en Espagne",
+      "excerpt": "Lugano a décroché un succès de prestige jeudi en Espagne. Le leader de la Super League est allé…",
+      "url": "https://www.blick.ch/fr/sport/football/conference-league/victoire-historique-pour-lugano-en-espagne/5ksgsdh",
+      "image": "https://ocdn.eu/pulscms-transforms/1/gWsktkuTURBXy82YzE1Mjc1My0yYmJhLTQxZWQtYWFmNy01MjIxNmNiYjc0MzQuanBlZ5KTBc0CWM0BO5MJpmFlMjBmOAY/p9yu6f0g5rj.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-22T20:02:15+00:00"
+    },
+    {
+      "id": "6fc9fbd3eb85a1eda3e2",
+      "title": "Lugano frappe un grand coup en Espagne",
+      "excerpt": "Toujours invaincus cette saison, les Tesssinois se sont imposés 5-2 sur la pelouse de Getafe. Ils ont…",
+      "url": "https://www.20min.ch/fr/story/conference-league-lugano-frappe-un-grand-coup-en-espagne-103654246",
+      "image": "https://image.20min.ch/2026/10/22/c76e5fe6-3f59-49c7-a663-5c345e03bf21.jpg?s=5a49b0f9e635c489b8135bf9d97f2bc0",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-22T19:02:42+00:00"
+    },
+    {
+      "id": "aa21de17da7f97d9b4e4",
+      "title": "Bei diesem Satz unterbricht der FCZ-Trainer seinen Goalie",
+      "excerpt": "Wegen ihm musste sich sein Bruder nach dem Aus im Cup blöde Sprüche anhören. Sein Ziel…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/bei-diesem-satz-unterbricht-der-fcz-trainer-seinen-goalie/syf42dp",
+      "image": "https://ocdn.eu/pulscms-transforms/1/gIDktkuTURBXy9mZjgwMjRhYy1iMjAyLTQ1ZDItOGNjNC1hNzBhMDZkNWFkMzAuanBlZ5KTBc0CWM0BO5MJpjUyYmNhYQY/5uz3opzth6r.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-22T17:58:38+00:00"
+    },
+    {
+      "id": "8293f4cc20aa350a07db",
+      "title": "Dalibor Stevanovic, l’ascension maîtrisée",
+      "excerpt": "Dalibor Stevanovic va fêter son 250e match sous les couleurs du FC Stade-Lausanne-Ouchy ce vendredi face à Xamax. Son directeur…",
+      "url": "https://www.blick.ch/fr/sport/football/challenge-league/dalibor-stevanovic-lascension-maitrisee/fctltr7",
+      "image": "https://ocdn.eu/pulscms-transforms/1/wo7ktkuTURBXy9mMmYzNTg1MC04N2RkLTRmOGQtOGQ5MC0wZjJmNDcwOWRkMDguanBlZ5KTBc0CWM0BO5MJpmYxN2M4ZQY/ibmj764e6wa.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-22T17:03:42+00:00"
+    },
+    {
+      "id": "7a3dccbf486aca4bb799",
+      "title": "YB muss länger ohne Captain Benito auskommen",
+      "excerpt": "Nächste Hiobsbotschaft in der YB-Abwehr: Loris Benito fällt wegen Problemen an der Leiste für rund einen Monat…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/leistenverletzung-loris-benito-fehlt-yb-fuer-einen-monat/fqy5w5y",
+      "image": "https://ocdn.eu/pulscms-transforms/1/BbZktkuTURBXy9jZDFjZTRiZC02ODAzLTQwNjEtYjhmYi0yYWJmMjc0MGUyN2EuanBlZ5KTBc0CWM0BO5MJpmQ1ZjBjMgY/wn8o72yxfkg.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-22T12:17:38+00:00"
+    },
+    {
+      "id": "b7593e42b0a76a553607",
+      "title": "Servette verleiht Talent innerhalb von Genf",
+      "excerpt": "Sylvain Djoho wird bis zum 30. November an den FC Grand-Saconnex ausgeliehen. Er erhofft sich mehr Spielzeit.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/servette-verleiht-sylvain-djoho-an-grand-saconnex/tx09fq5",
+      "image": "https://ocdn.eu/pulscms-transforms/1/WjyktkuTURBXy84YTM1NmQwNy04ODFkLTQ1NWQtODY5OS1lZGIxYzRiOThjYjUuanBlZ5KTBc0CWM0BO5MJpmRlMmY4ZQY/t17idm2yd3q.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-22T11:40:56+00:00"
+    },
+    {
+      "id": "49b5b5ff11666faf569c",
+      "title": "Das sind die grossen Sorgenkinder in Basel",
+      "excerpt": "Der FC Basel kommt in dieser Saison noch nicht auf Touren. Vor allem fünf Namen sind eng…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fc-basel-diese-fcb-spieler-sind-im-formtief/j4ytf0x",
+      "image": "https://ocdn.eu/pulscms-transforms/1/PXQktkuTURBXy82MTY0MmI3NS1iNDdiLTRhOTctOTQ3Mi1lMjY2N2FjODRiZmMuanBlZ5KTBc0CWM0BO5MJpjkxYzE4ZgY/dcbju5kgyd.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-22T10:01:33+00:00"
+    },
+    {
+      "id": "48735a32c510211e23cc",
+      "title": "Geht er jetzt doch? Frankfurt baggert weiter an YB-Spycher",
+      "excerpt": "Eintracht Frankfurt baggert weiter an Christoph Spycher herum, dem Chief Sports von YB. Nun stellt…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/frankfurt-baggert-weiter-an-yb-chief-sports-christoph-spycher/6z3t2r2",
+      "image": "https://ocdn.eu/pulscms-transforms/1/ZWtktkuTURBXy80ZmRiMDliMy00YjgyLTRjMmUtYjA4Zi1hOTRlNjViMjA1ZDcuanBlZ5KTBc0CWM0BO5MJpjE5NzBjZgY/nzek3oxa7xb.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-21T18:15:20+00:00"
+    },
+    {
+      "id": "4bfad1cd6923edd669a2",
+      "title": "Ludovic Magnin se confie sur son avenir d’entraîneur",
+      "excerpt": "Ludovic Magnin s'exprime avec beaucoup de recul sur son avenir immédiat en tant qu'entraîneur. Son licenciement…",
+      "url": "https://www.blick.ch/fr/sport/football/football-ludovic-magnin-veut-rapidement-retrouver-un-banc/gd4xnne",
+      "image": "https://ocdn.eu/pulscms-transforms/1/jQvktkuTURBXy81Njk1NWU5Ni0xNzM4LTQwNzktOTUzNy1iZDM4MWYxZGRjZGYuanBlZ5KTBc0CWM0BO5MJpjQ3NzExYgY/kk3ocfuoyho.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-21T18:10:30+00:00"
+    },
+    {
+      "id": "370d484dc305ccfd6677",
+      "title": "Warum Cimignani bei Lugano plötzlich unverzichtbar ist",
+      "excerpt": "Yanis Cimignani gehört zu Luganos Dauerbrennern. Er überzeugt nicht nur mit seinen Skorerpunkten, sondern auch mit seiner…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/mattia-croci-torti-warum-lugano-nicht-auf-cimignani-verzichtet/r65t4l4",
+      "image": "https://ocdn.eu/pulscms-transforms/1/0G5ktkuTURBXy8zM2ZhNDY3Zi1mYmUwLTRmNzMtYjFhMC05ZTM2MWI1YzI5NmEuanBlZ5KTBc0CWM0BO5MJpjhjN2Q5NQY/90yoybnk0vv.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-21T15:31:54+00:00"
+    },
+    {
+      "id": "513afdc91e0fdd8c93e6",
+      "title": "Thomas Castella répond toujours présent",
+      "excerpt": "Désormais âgé de 33 ans, Thomas Castella est arrivé à Lausanne en 2012. Il y a tout vécu et…",
+      "url": "https://www.blick.ch/fr/sport/football/coupe-suisse/thomas-castella-repond-toujours-present/m56rwtc",
+      "image": "https://ocdn.eu/pulscms-transforms/1/Ya4ktkuTURBXy83MjhmNzgwMy1hZTQ3LTQ2MTctYjc2Yy1jY2U3YTU3NGU2MzAuanBlZ5KTBc0CWM0BO5MJpjgzMTFhMQY/k9lsnvhdegg.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-21T15:31:42+00:00"
+    },
+    {
+      "id": "33ff9ee0f336af7c08fe",
+      "title": "Servette-Urgestein Stevanovic fällt lange aus",
+      "excerpt": "Servettes Miroslav Stevanovic musste am Meniskus operiert werden und fehlt den Genfern monatelang.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/servettes-stevanovic-faellt-wegen-meniskusverletzung-6-monate-aus/529mx2n",
+      "image": "https://ocdn.eu/pulscms-transforms/1/HVTktkuTURBXy84NzNjZTJjYS05NWY5LTQxY2UtOGU4Zi0yMzlhMjY5ZTAxMDAuanBlZ5KTBc0CWM0BO5MJpjAxMTQ4MAY/cxran338d1d.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-21T12:18:06+00:00"
+    },
+    {
+      "id": "237998953f6973a7e6f5",
+      "title": "Lockruf aus Frankfurt: Kann YB-Boss Spycher dem Reiz widerstehen?",
+      "excerpt": "Eintracht Frankfurt sucht einen neuen Sportchef: Zwei Schweizer stehen auf der Kandidatenliste: Christoph Spycher gilt…",
+      "url": "https://www.20min.ch/story/christoph-spycher-eintracht-frankfurt-haette-den-yb-boss-gerne-als-sportchef-103653214",
+      "image": "https://image.20min.ch/2026/10/21/63c1fec9-45d0-4f80-8268-2099d6f1bf36.jpg?s=09e2b84ebec7644d839ae3310a64849b",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-10-21T12:11:03+00:00"
+    },
+    {
+      "id": "1e1913a002272e31bb7b",
+      "title": "Gros coup dur pour Servette, privé de son joyau plusieurs mois",
+      "excerpt": "Opéré du ménisque, Miroslav Stevanovic sera écarté des terrains au cours des six…",
+      "url": "https://www.20min.ch/fr/story/football-gros-coup-dur-pour-servette-prive-de-son-joyau-plusieurs-mois-103653344",
+      "image": "https://image.20min.ch/2026/10/21/733949e1-2a8d-4222-88c3-9f9b72bc0b18.jpg?s=3b9e42c228a83931ae8774f02462c48c",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-21T11:30:42+00:00"
+    },
+    {
+      "id": "08d4689712db08b89f0b",
+      "title": "Miroslav Stevanovic absent plus longtemps que prévu",
+      "excerpt": "Le joueur offensif des Grenat sera éloigné des terrains pour une durée estimée à six mois. Depuis…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/servette-fc-six-mois-dabsence-pour-miroslav-stevanovic/ekbh7by",
+      "image": "https://ocdn.eu/pulscms-transforms/1/6j0ktkuTURBXy8wZTQ0ZjEzMi0xZmJjLTQ4NzAtOGY1NS1lNTc4Y2M1NmQ1ZmEuanBlZ5KTBc0CWM0BO5MJpmZjNmE0MAY/15vn4xsuu1a.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-21T11:28:48+00:00"
+    },
+    {
+      "id": "afabc7d28866a4436884",
+      "title": "Magnin über sein FCB-Aus, den FCZ und seine Zukunft",
+      "excerpt": "Er steht nicht nur für Vollgas. Ludovic Magnin (47) beherrscht auch die leisen Töne und…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/ex-basel-coach-ludovic-magnin-spricht-ueber-seine-zukunft/mmbzzdf",
+      "image": "https://ocdn.eu/pulscms-transforms/1/0JOktkuTURBXy81Njk1NWU5Ni0xNzM4LTQwNzktOTUzNy1iZDM4MWYxZGRjZGYuanBlZ5KTBc0CWM0BO5MJpjA0YmU2YwY/19e1nsdcd5g.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-21T10:01:22+00:00"
+    },
+    {
+      "id": "32ff01d96d5183ae36c1",
+      "title": "Basler Youngster fällt länger aus",
+      "excerpt": "FCB-Spieler Aaron Malouda hat sich im Training verletzt und wird länger ausfallen.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-fcb-youngster-aaron-malouda-faellt-verletzt-aus/cgk1xhf",
+      "image": "https://ocdn.eu/pulscms-transforms/1/5tqktkuTURBXy9iYjAzOWU4YS0wYzZlLTQ2NjctOTA2Yy1mZjc3ZjIxYzRjOWQuanBlZ5KTBc0CWM0BO5MJpjNhYjA0MgY/rv558s3t3yi.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-21T09:38:10+00:00"
+    },
+    {
+      "id": "8314fd588d64d8b629cc",
+      "title": "Kroaten schocken mit Hitler-Rufen: Thun-Duell wird zu Risikospiel",
+      "excerpt": "Der FC Thun empfängt am Donnerstag Hajduk Split. Fans des kroatischen Traditionsclubs sorgten zuletzt mit Nazi-Parolen…",
+      "url": "https://www.20min.ch/story/conference-league-kroaten-schocken-mit-hitler-rufen-thun-duell-wird-zu-risikospiel-103652176",
+      "image": "https://image.20min.ch/2026/10/19/ad889d66-a38c-4722-8612-5499f4293690.webp?s=1843c11d7d76228e3acddb1373f553dc",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-10-20T13:46:30+00:00"
+    },
+    {
+      "id": "30156b55e33aa6725acc",
+      "title": "Le directeur sportif revient à Thoune après son congé sabbatique",
+      "excerpt": "Après quelques mois de pause, Dominik Albrecht reprend son poste de directeur sportif du…",
+      "url": "https://www.20min.ch/fr/story/football-le-directeur-sportif-revient-a-thoune-apres-son-conge-sabbatique-103652571",
+      "image": "https://image.20min.ch/2026/10/20/103bdd96-542c-4a4c-98d9-f838b22c4176.jpg?s=21c52d0398f2896a8207c68de4ebdbdc",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-20T10:27:15+00:00"
+    },
+    {
+      "id": "8311cc076ca3ab941a38",
+      "title": "Le photographe du Servette FC déclenche un gigantesque buzz",
+      "excerpt": "Le Servette FC a décroché sa qualification sans problème, vendredi dernier, en Coupe de Suisse…",
+      "url": "https://www.20min.ch/fr/video/football-le-photographe-du-servette-fc-declenche-un-gigantesque-buzz-103652465",
+      "image": "https://image.20min.ch/2026/10/20/9dca7908-2364-451b-aca4-d5ae03176077.png?s=cbb44396fa28bf59b1b53aa122e3fd3e",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-20T08:13:59+00:00"
+    },
+    {
+      "id": "700717bc57670805d30d",
+      "title": "Un 9e succès en 10 matches pour Lugano",
+      "excerpt": "Les Tessinois ont balayé Lucerne 4-0 pour signer leur neuvième victoire en 10 matches et conforter…",
+      "url": "https://www.20min.ch/fr/story/super-league-un-9e-succes-en-10-matches-pour-lugano-103647654",
+      "image": "https://image.20min.ch/2026/10/10/107ccb39-6417-4cac-a638-a9035fd24ded.jpg?s=ae17925c8f8343a7ba4097c69b6dc173",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-10T18:13:21+00:00"
+    },
+    {
+      "id": "5b704942331cf22669a0",
+      "title": "Stéphane Henchoz: «Nous sommes en bas de la chaîne»",
+      "excerpt": "Le mercato est fermé en Super League depuis mardi. Le directeur sportif du Lausanne-Sport a…",
+      "url": "https://www.20min.ch/fr/story/football-stephane-henchoz-nous-sommes-en-bas-de-la-chaine-103630385",
+      "image": "https://image.20min.ch/2026/09/09/c1ac8ece-c9ff-403b-a4c8-d20a3739a597.jpg?s=b4fdeefdfe513e6c5b75eab35cc7e6f7",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-09-09T17:23:45+00:00"
+    }
+  ]
+}

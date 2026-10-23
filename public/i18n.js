@@ -14,7 +14,7 @@
     'TON CLUB FAVORI':'DEIN LIEBLINGSVEREIN','Ton club favori':'Dein Lieblingsverein','12 octobre 2026':'12. Oktober 2026',
     'Position':'Platz','Points':'Punkte','Prochain match':'Nächstes Spiel','Dernier résultat':'Letztes Ergebnis',
     'Voir les rencontres →':'Spiele ansehen →','Pas de rencontre disponible.':'Keine Partie verfügbar.','Pas de résultat disponible.':'Kein Ergebnis verfügbar.',
-    'À la une':'Aktuell','LE BILAN DU WEEK-END':'DAS WOCHENENDE IM RÜCKBLICK',
+    'Statistiques et calendrier : données vérifiées le 12 octobre 2026. Les actualités sont actualisées séparément, chaque jour.':'Statistiken und Spielplan: Stand vom 12. Oktober 2026. Nachrichten werden separat täglich aktualisiert.','À la une':'Aktuell','LE BILAN DU WEEK-END':'DAS WOCHENENDE IM RÜCKBLICK',
     'Lugano garde six points d’avance.':'Lugano behält sechs Punkte Vorsprung.',
     'Vainqueur 4–0 de Lucerne, Lugano totalise 28 points. Young Boys s’impose 2–0 chez Grasshoppers et reste deuxième avec 22 points.':'Nach dem 4:0 gegen Luzern hat Lugano 28 Punkte. Young Boys gewinnt bei den Grasshoppers 2:0 und bleibt mit 22 Punkten Zweiter.',
     'Voir les six résultats →':'Alle sechs Ergebnisse →','SAINT-GALL · 11 OCTOBRE':'ST. GALLEN · 11. OKTOBER',
@@ -65,7 +65,7 @@
     const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
     while(walker.nextNode()) {
       const node=walker.currentNode;
-      if(node.parentElement?.closest('script,style'))continue;
+      if(node.parentElement?.closest('script,style,[data-no-i18n]'))continue;
       if(!originals.has(node))originals.set(node,node.nodeValue);
       const next=translate(originals.get(node));
       if(node.nodeValue!==next)node.nodeValue=next;
