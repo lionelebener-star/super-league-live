@@ -1,4 +1,4 @@
-"""Collect publisher RSS summaries; no scraping, API key, or paid service."""
+"""Collect publisher RSS and official SFL public article metadata, without API keys."""
 import concurrent.futures
 import datetime as dt
 import email.utils
@@ -14,6 +14,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'public/news.json'
 SOURCES = [
+    ('Swiss Football League', 'fr', 'https://sfl.ch/', True),
+    ('Swiss Football League', 'de', 'https://sfl.ch/de', True),
     ('Blick', 'fr', 'https://www.blick.ch/fr/sport/football/rss.xml', False),
     ('Blick', 'de', 'https://www.blick.ch/sport/fussball/superleague/rss.xml', True),
     ('20 minutes', 'fr', 'https://partner-feeds.20min.ch/rss/20minutes/sports/super-league', True),
@@ -74,10 +76,42 @@ def collect(source):
     try:
         request = urllib.request.Request(url, headers={'User-Agent': 'SuperLeagueLive/1.0 RSS reader', 'Accept': 'application/rss+xml, application/xml, text/xml'})
         with urllib.request.urlopen(request, timeout=25) as response:
-            articles = parse_feed(response.read(4_000_000), name, language, dedicated)
+            raw = response.read(4_000_000)
+        articles = parse_sfl(raw, language) if name == 'Swiss Football League' else parse_feed(raw, name, language, dedicated)
         return articles, dict(name=name, language=language, url=url, ok=True, count=len(articles))
     except Exception as error:
         return [], dict(name=name, language=language, url=url, ok=False, error=type(error).__name__)
+
+def parse_sfl(raw, language):
+    match = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', raw.decode(), re.S)
+    if not match:
+        raise ValueError('Official SFL article metadata missing')
+    page = json.loads(match[1])['props']['pageProps']['page']
+    found = {}
+    now = dt.datetime.now(dt.timezone.utc)
+    def walk(value):
+        if isinstance(value, dict):
+            if value.get('type') == 'edito___article' and value.get('slug'):
+                title = clean(value.get('title'))
+                published = dt.datetime.fromisoformat(value['publication_date'].replace('Z', '+00:00'))
+                if now-dt.timedelta(days=45) < published <= now+dt.timedelta(minutes=10):
+                    url = 'https://sfl.ch/' + ('de/' if language=='de' else '') + 'articles/' + value['slug']
+                    identity = hashlib.sha256(url.encode()).hexdigest()[:20]
+                    excerpt = ' '.join(clean(value.get('summary')).split()[:max(0,24-len(title.split()))])
+                    image = safe_url(value.get('images',{}).get('main',{}).get('url'))
+                    found[identity] = dict(id=identity, title=title, excerpt=excerpt+'…' if excerpt else '',
+                        url=url, image=image, source='Swiss Football League', official=True,
+                        language=language, publishedAt=published.isoformat())
+            for key, child in value.items():
+                if key not in ('body', 'webConfig', '__ni18n_server__'):
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+    walk(page)
+    if not found:
+        raise ValueError('No current official SFL articles')
+    return list(found.values())
 
 def main():
     old = json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}

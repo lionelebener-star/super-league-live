@@ -1,8 +1,22 @@
 {
-  "checkedAt": "2026-10-23T07:39:37.526950+00:00",
-  "updatedAt": "2026-10-23T07:39:37.526950+00:00",
+  "checkedAt": "2026-10-23T07:43:30.325302+00:00",
+  "updatedAt": "2026-10-23T07:43:30.325302+00:00",
   "status": "ok",
   "sources": [
+    {
+      "name": "Swiss Football League",
+      "language": "fr",
+      "url": "https://sfl.ch/",
+      "ok": true,
+      "count": 12
+    },
+    {
+      "name": "Swiss Football League",
+      "language": "de",
+      "url": "https://sfl.ch/de",
+      "ok": true,
+      "count": 12
+    },
     {
       "name": "Blick",
       "language": "fr",
@@ -111,6 +125,28 @@
       "publishedAt": "2026-10-22T11:40:56+00:00"
     },
     {
+      "id": "d48f8901e43686dc423d",
+      "title": "La SFL récompense les projets durables des clubs pour la saison 2025/26",
+      "excerpt": "À l'occasion du Forum de la durabilité de la SFL, qui s'est…",
+      "url": "https://sfl.ch/articles/la-sfl-recompense-les-projets-durables-des-clubs-pour-la-saison-202526",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Bild-2.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-22T10:30:00+00:00"
+    },
+    {
+      "id": "06b5500aa8118b42e33f",
+      "title": "SFL zeichnet nachhaltige Klubprojekte der Saison 2025/26 aus",
+      "excerpt": "Im Rahmen des SFL Nachhaltigkeitsforums vom 21. Oktober 2026 in Bern wurden drei Klubprojekte für ihr…",
+      "url": "https://sfl.ch/de/articles/sfl-zeichnet-nachhaltige-klubprojekte-der-saison-202526-aus",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Bild-2.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T10:30:00+00:00"
+    },
+    {
       "id": "49b5b5ff11666faf569c",
       "title": "Das sind die grossen Sorgenkinder in Basel",
       "excerpt": "Der FC Basel kommt in dieser Saison noch nicht auf Touren. Vor allem fünf Namen sind eng…",
@@ -119,6 +155,50 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-10-22T10:01:33+00:00"
+    },
+    {
+      "id": "00c4e7d489878f611eda",
+      "title": "StreamSafe lance une campagne nationale de sensibilisation",
+      "excerpt": "Une large alliance d’acteurs du sport, des médias et du divertissement lance StreamSafe, une campagne nationale de…",
+      "url": "https://sfl.ch/articles/streamsafe-lance-une-campagne-nationale-de-sensibilisation",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/StreamSafe_Keyvisual_Digital__300x300_Sport_FR-1.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-22T07:00:00+00:00"
+    },
+    {
+      "id": "91152fbc05e906968a33",
+      "title": "StreamSafe lanciert nationale Aufklärungskampagne",
+      "excerpt": "Eine breite Allianz aus Sport, Medien und Unterhaltung lanciert mit StreamSafe eine schweizweite Aufklärungskampagne zu den Risiken illegaler Streaming-Angebote. Laut…",
+      "url": "https://sfl.ch/de/articles/streamsafe-lanciert-nationale-aufklarungskampagne",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/StreamSafe_Keyvisual_Digital__980x300_Sport_DE.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T07:00:00+00:00"
+    },
+    {
+      "id": "6b7e152929342df71ec9",
+      "title": "Benito absent un mois - Tickers BSL",
+      "excerpt": "Vous retrouvez ici au fil des jours et des semaines toute l’actualité des transferts (et générale) en…",
+      "url": "https://sfl.ch/articles/benito-absent-un-mois-tickers-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1597594-1.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-22T06:00:00+00:00"
+    },
+    {
+      "id": "7a3233ce022e4f4ab798",
+      "title": "Benito fällt einen Monat aus - Aktuelle News aus der BSL",
+      "excerpt": "Hier findest du eine Übersicht über alle News aus der Super League.…",
+      "url": "https://sfl.ch/de/articles/benito-fallt-einen-monat-aus-aktuelle-news-aus-der-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1597594-1.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T05:30:00+00:00"
     },
     {
       "id": "48735a32c510211e23cc",
@@ -211,6 +291,28 @@
       "publishedAt": "2026-10-21T10:01:22+00:00"
     },
     {
+      "id": "669f362aacd55ab3bed9",
+      "title": "Buess et Sessolo aux portes du club des 100",
+      "excerpt": "Roman Buess et Helios Sessolo sont tout proches d'atteindre la barre des 100 contributions à…",
+      "url": "https://sfl.ch/articles/buess-et-sessolo-aux-portes-du-club-des-100",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1585829.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-21T10:00:00+00:00"
+    },
+    {
+      "id": "58f0a05a361e4df4be0b",
+      "title": "Buess und Sessolo vor der 100er-Marke",
+      "excerpt": "Roman Buess und Helios Sessolo stehen kurz davor, die Marke von 100 Torbeteiligungen in der Challenge League zu…",
+      "url": "https://sfl.ch/de/articles/buess-und-sessolo-vor-der-100er-marke",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1585829.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-21T10:00:00+00:00"
+    },
+    {
       "id": "32ff01d96d5183ae36c1",
       "title": "Basler Youngster fällt länger aus",
       "excerpt": "FCB-Spieler Aaron Malouda hat sich im Training verletzt und wird länger ausfallen.",
@@ -251,6 +353,138 @@
       "publishedAt": "2026-10-20T08:13:59+00:00"
     },
     {
+      "id": "f795316e8ce31dda6fb5",
+      "title": "La surprise Aarau – Ça va chauffer en huitièmes!",
+      "excerpt": "Les 16es de finale de la Coupe de Suisse ont quasiment tous souri aux favoris.…",
+      "url": "https://sfl.ch/articles/la-surprise-aarau-ca-va-chauffer-en-huitiemes",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1613595.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-18T18:30:00+00:00"
+    },
+    {
+      "id": "96f8b238b1ae60d89fa1",
+      "title": "Aarau sorgt für die Überraschung – Heisse Achtelfinals in Sicht",
+      "excerpt": "Die Sechzehntelfinals des Schweizer Cups verliefen nahezu ausnahmslos zugunsten der Favoriten. Von den elf…",
+      "url": "https://sfl.ch/de/articles/aarau-sorgt-fur-die-uberraschung-heisse-achtelfinals-in-sicht",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1613595.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-18T18:30:00+00:00"
+    },
+    {
+      "id": "be6f13f072b3ed071c5b",
+      "title": "Velickovic verletzt - Aktuelle News aus der DCL",
+      "excerpt": "Hier findest du eine Übersicht über alle Neuigkeiten aus der dieci Challenge League.…",
+      "url": "https://sfl.ch/de/articles/velickovic-verletzt-aktuelle-news-aus-der-dcl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1594914.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-18T10:30:00+00:00"
+    },
+    {
+      "id": "d161168fe08244361d9a",
+      "title": "Velickovic à l’infirmerie - Tickers DCL",
+      "excerpt": "Vous retrouverez ici au fil des jours et des semaines toute l’actualité des transferts (et générale) en bref…",
+      "url": "https://sfl.ch/articles/velickovic-a-linfirmerie-tickers-dcl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1594914.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-18T09:00:00+00:00"
+    },
+    {
+      "id": "f1ee679fabeb1c966f4a",
+      "title": "«Week of the Referee 2026»: Ensemble pour plus de respect envers les arbitres",
+      "excerpt": "Du 17 au 25 octobre 2026 se déroule la «Week of…",
+      "url": "https://sfl.ch/articles/week-of-the-referee-2026-ensemble-pour-plus-de-respect-envers-les-arbitres",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Week_of_the_Referee_(1).jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-16T14:00:00+00:00"
+    },
+    {
+      "id": "03f6a223b442c3fbfc90",
+      "title": "«Week of the Referee 2026»: Gemeinsam ein Zeichen für mehr Respekt setzen",
+      "excerpt": "Vom 17. bis 25. Oktober 2026 findet die «Week of the Referee»…",
+      "url": "https://sfl.ch/de/articles/week-of-the-referee-2026-gemeinsam-ein-zeichen-fur-mehr-respekt-setzen",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Week_of_the_Referee_(1).jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-16T14:00:00+00:00"
+    },
+    {
+      "id": "10fbe5e257fd29002fd1",
+      "title": "Début de saison historique pour le FC Lugano",
+      "excerpt": "Le FC Lugano réalise un début de saison historique en Brack Super League. Avec 28 points…",
+      "url": "https://sfl.ch/articles/debut-de-saison-historique-pour-le-fc-lugano",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1603769.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-15T10:00:00+00:00"
+    },
+    {
+      "id": "c3db62a4b9261eec1e2f",
+      "title": "FC Lugano mit historischem Saisonstart",
+      "excerpt": "Der FC Lugano sorgt in der Brack Super League für einen historischen Saisonstart. Mit 28 Punkten aus den ersten…",
+      "url": "https://sfl.ch/de/articles/fc-lugano-mit-historischem-saisonstart",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1603769.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-15T10:00:00+00:00"
+    },
+    {
+      "id": "4aa19e708718ba1758bf",
+      "title": "Networking Day de la SFL: recherche, prévention et collaboration au cœur des échanges",
+      "excerpt": "Le 9 octobre 2026, la dixième édition du Networking Day de…",
+      "url": "https://sfl.ch/articles/networking-day-de-la-sfl-recherche-prevention-et-collaboration-au-cur-des-echanges",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/20261009101954-0017.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-13T22:00:00+00:00"
+    },
+    {
+      "id": "a5ab7f3468bd9251c9c6",
+      "title": "Networking Day der SFL: Forschung, Prävention und Zusammenarbeit im Fokus",
+      "excerpt": "Am 9. Oktober 2026 fand in Emmenbrücke (LU) der zehnte Networking Day der Swiss…",
+      "url": "https://sfl.ch/de/articles/networking-day-der-sfl-forschung-pravention-und-zusammenarbeit-im-fokus",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/20261009101954-0017.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-13T22:00:00+00:00"
+    },
+    {
+      "id": "3ee561131cbb676d2852",
+      "title": "Ensemble au match",
+      "excerpt": "Un jour de match ne commence pas seulement au coup d’envoi, mais dès le trajet vers le stade. Voyager ensemble, partager…",
+      "url": "https://sfl.ch/articles/ensemble-au-match",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Screenshot%202026-10-13%20141336_restored.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-13T12:00:00+00:00"
+    },
+    {
+      "id": "376dff05a8085e710ebe",
+      "title": "Gemeinsam ans Spiel",
+      "excerpt": "Der Matchday beginnt nicht erst mit dem Anpfiff, sondern bereits auf dem Weg ins Stadion. Gemeinsam reisen, die Vorfreude teilen und…",
+      "url": "https://sfl.ch/de/articles/gemeinsam-ans-spiel",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Screenshot%202026-10-13%20141336_restored.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-13T12:00:00+00:00"
+    },
+    {
       "id": "700717bc57670805d30d",
       "title": "Un 9e succès en 10 matches pour Lugano",
       "excerpt": "Les Tessinois ont balayé Lucerne 4-0 pour signer leur neuvième victoire en 10 matches et conforter…",
@@ -259,6 +493,50 @@
       "source": "20 minutes",
       "language": "fr",
       "publishedAt": "2026-10-10T18:13:21+00:00"
+    },
+    {
+      "id": "d7817ebcde12e49643b1",
+      "title": "Athletes Network : le sport rencontre l’entreprise",
+      "excerpt": "Que se passe-t-il après une carrière dans le sport de haut niveau ? Et comment les entreprises…",
+      "url": "https://sfl.ch/articles/athletes-network-le-sport-rencontre-lentreprise",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/12thAthletesDay-235.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-07T19:00:00+00:00"
+    },
+    {
+      "id": "7c3ee7d224a24d7d74de",
+      "title": "Athletes Network: Sport trifft Wirtschaft",
+      "excerpt": "Was kommt nach dem Spitzensport? Und wie können Unternehmen von den Erfahrungen, Fähigkeiten und Persönlichkeiten profitieren, die der Leistungssport…",
+      "url": "https://sfl.ch/de/articles/athletes-network-sport-trifft-wirtschaft",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/12thAthletesDay-235.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-07T19:00:00+00:00"
+    },
+    {
+      "id": "2ca0d2c3b03002ff0613",
+      "title": "La Swiss Inclusion League accueillie par le FC Winterthour",
+      "excerpt": "Le samedi 26 septembre, la Swiss Inclusion League a fait étape pour la première fois…",
+      "url": "https://sfl.ch/articles/la-swiss-inclusion-league-accueillie-par-le-fc-winterthour",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/2-5.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-09-29T08:30:00+00:00"
+    },
+    {
+      "id": "4180eeb5cf0b004d4df1",
+      "title": "Swiss Inclusion League zu Gast beim FC Winterthur",
+      "excerpt": "Am Samstag, 26. September, machte die Swiss Inclusion League erstmals Halt beim FC Winterthur. Auf der…",
+      "url": "https://sfl.ch/de/articles/swiss-inclusion-league-zu-gast-beim-fc-winterthur",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/2-5.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-09-29T08:30:00+00:00"
     },
     {
       "id": "5b704942331cf22669a0",
