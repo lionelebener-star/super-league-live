@@ -1,0 +1,127 @@
+{
+  "season": "2026/27",
+  "verifiedAt": "2026-10-12",
+  "throughWeek": 10,
+  "teams": [
+    {
+      "club": 0,
+      "played": 10,
+      "won": 9,
+      "draw": 1,
+      "lost": 0,
+      "gf": 31,
+      "ga": 7,
+      "points": 28
+    },
+    {
+      "club": 1,
+      "played": 10,
+      "won": 6,
+      "draw": 4,
+      "lost": 0,
+      "gf": 33,
+      "ga": 18,
+      "points": 22
+    },
+    {
+      "club": 2,
+      "played": 10,
+      "won": 6,
+      "draw": 1,
+      "lost": 3,
+      "gf": 23,
+      "ga": 17,
+      "points": 19
+    },
+    {
+      "club": 3,
+      "played": 10,
+      "won": 5,
+      "draw": 1,
+      "lost": 4,
+      "gf": 17,
+      "ga": 19,
+      "points": 16
+    },
+    {
+      "club": 4,
+      "played": 10,
+      "won": 4,
+      "draw": 2,
+      "lost": 4,
+      "gf": 18,
+      "ga": 22,
+      "points": 14
+    },
+    {
+      "club": 5,
+      "played": 10,
+      "won": 4,
+      "draw": 1,
+      "lost": 5,
+      "gf": 14,
+      "ga": 13,
+      "points": 13
+    },
+    {
+      "club": 6,
+      "played": 10,
+      "won": 4,
+      "draw": 1,
+      "lost": 5,
+      "gf": 17,
+      "ga": 20,
+      "points": 13
+    },
+    {
+      "club": 7,
+      "played": 10,
+      "won": 3,
+      "draw": 3,
+      "lost": 4,
+      "gf": 17,
+      "ga": 22,
+      "points": 12
+    },
+    {
+      "club": 8,
+      "played": 10,
+      "won": 3,
+      "draw": 1,
+      "lost": 6,
+      "gf": 17,
+      "ga": 27,
+      "points": 10
+    },
+    {
+      "club": 9,
+      "played": 10,
+      "won": 3,
+      "draw": 0,
+      "lost": 7,
+      "gf": 21,
+      "ga": 21,
+      "points": 9
+    },
+    {
+      "club": 10,
+      "played": 10,
+      "won": 2,
+      "draw": 2,
+      "lost": 6,
+      "gf": 13,
+      "ga": 26,
+      "points": 8
+    },
+    {
+      "club": 11,
+      "played": 10,
+      "won": 1,
+      "draw": 3,
+      "lost": 6,
+      "gf": 7,
+      "ga": 16,
+      "points": 6
+    }
+  ]
+}
