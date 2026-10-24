@@ -1,3 +1,13 @@
 header .brand .swiss.crystal-logo{position:relative;display:block;flex-shrink:0;width:48px;height:48px;background:none;border-radius:0;overflow:visible}.crystal-logo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 2px #13251f18)}.crystal-logo img:last-child{opacity:0;transition:opacity .8s ease-in-out}.crystal-logo.is-changing img:last-child{opacity:1}.nav-shot-ball{position:fixed;width:44px;height:44px;object-fit:contain;z-index:1000;pointer-events:none;will-change:transform,opacity;filter:drop-shadow(0 3px 3px #13251f25)}@media(max-width:700px){header .brand .swiss.crystal-logo{width:40px;height:40px}}@media(prefers-reduced-motion:reduce){.crystal-logo img:last-child{transition:none}.nav-shot-ball{display:none}}
 
 .floating-nav [data-tab="actu"] span{white-space:nowrap;font-size:9px;letter-spacing:-.15px}@media(max-width:360px){.floating-nav [data-tab="actu"] span{font-size:8px}}
+
+/* Compact touch navigation; keep an explicit keyboard focus indicator. */
+@media(max-width:700px){
+ .floating-nav{padding:5px 6px;border-radius:28px}
+ .floating-nav a{justify-content:center;gap:1px;min-height:43px;padding:3px 1px;line-height:1.15;border-radius:18px;-webkit-tap-highlight-color:transparent}
+ .floating-nav svg{display:block;flex:0 0 27px;width:27px;height:27px;margin:0;padding:5px}
+ .floating-nav a span{display:block;white-space:nowrap;line-height:1.15}
+ .floating-nav a:focus:not(:focus-visible){outline:none}
+ .floating-nav a:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+}
