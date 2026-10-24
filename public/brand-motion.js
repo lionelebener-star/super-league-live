@@ -1,6 +1,6 @@
 (()=>{
  const names=['suisse','berne','valais','zurich','geneve'];
- const asset=(name,small=false)=>'/assets/brand/'+name+(small?'-32':'')+'.png';
+ const asset=(name,small=false)=>'/assets/brand/aligned-'+name+(small?'-32':'')+'.png';
  const logo=document.querySelector('.crystal-logo'),favicon=document.querySelector('#site-favicon'),nav=document.querySelector('.floating-nav');
  if(!logo)return;
  const layers=logo.querySelectorAll('img'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
