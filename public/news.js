@@ -15,7 +15,7 @@
     return `<article class="news-story${unseen.has(item.id)?' news-unread':''}" style="--story-index:${index}">
       <a class="news-story-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(item.title)}">
         <div class="news-image${image?'':' news-image-empty'}">${image?`<img src="${esc(image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">`:'<span aria-hidden="true">⚽</span>'}</div>
-        <div class="news-story-copy"><div class="news-meta"><span class="news-source">${esc(item.source)}</span>${item.official?`<span class="news-official">✓ ${words[language()].official}</span>`:''}<span>${esc(item.language.toUpperCase())}</span><time datetime="${esc(item.publishedAt)}">${date(item.publishedAt,true)}</time>${unseen.has(item.id)?'<i class="news-dot" aria-hidden="true"></i>':''}</div>
+        <div class="news-story-copy"><div class="news-meta"><span class="news-source">${esc(item.source)}</span>${item.official?`<span class="news-official">✓ ${words[language()].official}</span>`:''}<span>${esc(item.language.toUpperCase())}</span><time datetime="${esc(item.publishedAt)}">${date(item.publishedAt,!item.dateOnly)}</time>${unseen.has(item.id)?'<i class="news-dot" aria-hidden="true"></i>':''}</div>
           <h3>${esc(item.title)}</h3>${item.excerpt?`<p>${esc(item.excerpt)}</p>`:''}<span class="news-read">${words[language()].read} <span aria-hidden="true">↗</span></span></div>
       </a></article>`;
   }

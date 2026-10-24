@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-24T09:36:19.352219+00:00",
-  "updatedAt": "2026-10-24T09:36:19.352219+00:00",
+  "checkedAt": "2026-10-24T14:57:33.889168+00:00",
+  "updatedAt": "2026-10-24T14:57:33.889168+00:00",
   "status": "ok",
   "sources": [
     {
@@ -51,6 +51,13 @@
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
       "count": 2
+    },
+    {
+      "name": "BSC Young Boys",
+      "language": "de",
+      "url": "https://www.bscyb.ch/news",
+      "ok": true,
+      "count": 12
     }
   ],
   "articles": [
@@ -289,6 +296,42 @@
       "publishedAt": "2026-10-23T02:35:18+00:00"
     },
     {
+      "id": "661d3928dc53b10c343f",
+      "title": "BSC Young Boys - FC St. Gallen",
+      "excerpt": "Matchcenter",
+      "url": "https://www.bscyb.ch/news?nid=17662",
+      "image": "https://bscyb.ch/cgi-bin/news/17662-news-3-20261022142341.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "1e3706c87780fd9ec1af",
+      "title": "Der Ticketverkauf startet",
+      "excerpt": "Schweizer Frauen-Nati",
+      "url": "https://www.bscyb.ch/news?nid=17661",
+      "image": "https://bscyb.ch/cgi-bin/news/17661-news-3-20261022133931.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "3dba4e8610933c252813",
+      "title": "Topspiel zwischen Zürich und YB",
+      "excerpt": "AXA Women's Cup",
+      "url": "https://www.bscyb.ch/news?nid=17658",
+      "image": "https://bscyb.ch/cgi-bin/news/17658-news-3-20261022102653.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-22T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
       "id": "370e8779a43b462539db",
       "title": "Victoire historique pour Lugano en Espagne",
       "excerpt": "Lugano a décroché un succès de prestige jeudi en Espagne. Le leader de la Super League est allé…",
@@ -425,6 +468,54 @@
       "publishedAt": "2026-10-22T05:30:00+00:00"
     },
     {
+      "id": "6f8f2e3be78cf9b35cd5",
+      "title": "Loris Benito muss pausieren",
+      "excerpt": "Medical Report",
+      "url": "https://www.bscyb.ch/news?nid=17660",
+      "image": "https://bscyb.ch/cgi-bin/news/17660-news-3-20261022120112.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-21T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "06132e9c2b9254f525a1",
+      "title": "Sieg und Niederlage gegen Alkmaar",
+      "excerpt": "Youth Base",
+      "url": "https://www.bscyb.ch/news?nid=17659",
+      "image": "https://bscyb.ch/cgi-bin/news/17659-news-3-20261022105448.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-21T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "bb10358187e8e54da34c",
+      "title": "Gedächtnistest mit Frey und Bonsu",
+      "excerpt": "AMAG amüsant",
+      "url": "https://www.bscyb.ch/news?nid=17656",
+      "image": "https://bscyb.ch/cgi-bin/news/17656-news-3-20261022082127.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-21T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "53335e26e903e1237c59",
+      "title": "Nationale Aufklärungskampagne",
+      "excerpt": "StreamSafe",
+      "url": "https://www.bscyb.ch/news?nid=17657",
+      "image": "https://bscyb.ch/cgi-bin/news/17657-news-3-20261022101220.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-21T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
       "id": "48735a32c510211e23cc",
       "title": "Geht er jetzt doch? Frankfurt baggert weiter an YB-Spycher",
       "excerpt": "Eintracht Frankfurt baggert weiter an Christoph Spycher herum, dem Chief Sports von YB. Nun stellt…",
@@ -547,6 +638,30 @@
       "publishedAt": "2026-10-21T09:38:10+00:00"
     },
     {
+      "id": "427d5765f507ae53d8f7",
+      "title": "Trainingsimpressionen",
+      "excerpt": "1. Mannschaft",
+      "url": "https://www.bscyb.ch/news?nid=17655",
+      "image": "https://bscyb.ch/cgi-bin/news/17655-news-3-20261021165410.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-20T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "8cdfbc4d21c5e1bcec4a",
+      "title": "Eine Trainingsjacke mit Geschichte",
+      "excerpt": "YB × OKBE",
+      "url": "https://www.bscyb.ch/news?nid=17654",
+      "image": "https://bscyb.ch/cgi-bin/news/17654-news-3-20261021113905.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-20T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
       "id": "8314fd588d64d8b629cc",
       "title": "Kroaten schocken mit Hitler-Rufen: Thun-Duell wird zu Risikospiel",
       "excerpt": "Der FC Thun empfängt am Donnerstag Hajduk Split. Fans des kroatischen Traditionsclubs sorgten zuletzt mit Nazi-Parolen…",
@@ -575,6 +690,42 @@
       "source": "20 minutes",
       "language": "fr",
       "publishedAt": "2026-10-20T08:13:59+00:00"
+    },
+    {
+      "id": "dec0c860e62e76c75f3b",
+      "title": "Facinet Contes Premiere",
+      "excerpt": "Nach langer Verletzungspause",
+      "url": "https://www.bscyb.ch/news?nid=17653",
+      "image": "https://bscyb.ch/cgi-bin/news/17653-news-3-20261020150048.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-19T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "25ab4d94b45350c68f6a",
+      "title": "U18-Frauen drehen das Spiel",
+      "excerpt": "Nachwuchs",
+      "url": "https://www.bscyb.ch/news?nid=17652",
+      "image": "https://bscyb.ch/cgi-bin/news/17652-news-3-20261019143315.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-18T22:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "7369118e3ba7823d5cf2",
+      "title": "Internationale Standortbestimmung",
+      "excerpt": "U17 und U19",
+      "url": "https://www.bscyb.ch/news?nid=17651",
+      "image": "https://bscyb.ch/cgi-bin/news/17651-news-3-20261019124251.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-18T22:00:00+00:00",
+      "dateOnly": true
     },
     {
       "id": "f795316e8ce31dda6fb5",

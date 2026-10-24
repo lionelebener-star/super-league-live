@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'public/news.json'
 SOURCES = [
+    ('BSC Young Boys', 'de', 'https://www.bscyb.ch/news', True),
     ('Swiss Football League', 'fr', 'https://sfl.ch/', True),
     ('Swiss Football League', 'de', 'https://sfl.ch/de', True),
     ('Blick', 'fr', 'https://www.blick.ch/fr/sport/football/rss.xml', False),
@@ -71,13 +72,38 @@ def parse_feed(raw, source, language, dedicated=False, now=None):
                              publishedAt=published.isoformat()))
     return articles
 
+def parse_yb(raw, now=None):
+    """Read official listing metadata; the listing supplies dates, not times."""
+    from zoneinfo import ZoneInfo
+    now = now or dt.datetime.now(dt.timezone.utc)
+    found = {}
+    for block in re.split(r"<div\s+class=['\"]news-item[^'\"]*['\"]>", raw.decode('utf-8'))[1:]:
+        date = re.search(r'class="news-date">(\d{2}\.\d{2}\.\d{2})</div>', block)
+        link = re.search(r'class="news-title">.*?<a href="(news\?nid=\d+)">(.*?)</a>', block, re.S)
+        if not date or not link:
+            continue
+        published = dt.datetime.strptime(date[1], '%d.%m.%y').replace(tzinfo=ZoneInfo('Europe/Zurich')).astimezone(dt.timezone.utc)
+        if not now-dt.timedelta(days=45) < published <= now+dt.timedelta(minutes=10):
+            continue
+        url = 'https://www.bscyb.ch/' + html.unescape(link[1])
+        title = clean(link[2])
+        image = re.search(r'<img[^>]+(?:data-src|src)="([^"<>]+)"', block)
+        category = re.search(r'class="news-head">(.*?)</div>', block, re.S)
+        identity = hashlib.sha256(url.encode()).hexdigest()[:20]
+        found[identity] = dict(id=identity, title=title, excerpt=clean(category[1]) if category else '',
+            url=url, image=safe_url(html.unescape(image[1])) if image else '', source='BSC Young Boys',
+            official=True, language='de', publishedAt=published.isoformat(), dateOnly=True)
+    if not found:
+        raise ValueError('No current official Young Boys articles')
+    return list(found.values())
+
 def collect(source):
     name, language, url, dedicated = source
     try:
         request = urllib.request.Request(url, headers={'User-Agent': 'SuperLeagueLive/1.0 RSS reader', 'Accept': 'application/rss+xml, application/xml, text/xml'})
         with urllib.request.urlopen(request, timeout=25) as response:
             raw = response.read(4_000_000)
-        articles = parse_sfl(raw, language) if name == 'Swiss Football League' else parse_feed(raw, name, language, dedicated)
+        articles = parse_yb(raw) if name == 'BSC Young Boys' else parse_sfl(raw, language) if name == 'Swiss Football League' else parse_feed(raw, name, language, dedicated)
         return articles, dict(name=name, language=language, url=url, ok=True, count=len(articles))
     except Exception as error:
         return [], dict(name=name, language=language, url=url, ok=False, error=type(error).__name__)
