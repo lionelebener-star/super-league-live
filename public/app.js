@@ -77,20 +77,6 @@ if(!reduceMotion){
  mobileNav.addEventListener('animationend',event=>{if(event.animationName==='navTap')event.target.closest('a')?.classList.remove('tap-feedback');});
 }
 function escapeText(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function playerKey(){let key=localStorage.getItem('sl-player-key');if(!key){key=Array.from(crypto.getRandomValues(new Uint8Array(32)),v=>v.toString(16).padStart(2,'0')).join('');localStorage.setItem('sl-player-key',key);}return key;}
-async function gameRequest(payload){const response=await fetch('/api/pronos',payload?{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+playerKey()},body:JSON.stringify(payload)}:{cache:'no-store',headers:{'Authorization':'Bearer '+playerKey()}});const data=await response.json();if(!response.ok)throw Error(data.error||'Service indisponible.');return data;}
-async function loadPronos(){
- const status=$('#pronos-status');status.textContent='Chargement des pronostics…';
- try{const data=await gameRequest();if(data.player)$('#player-name').value=data.player;
- $('#pronos-fixtures').innerHTML=data.fixtures.map(f=>`<article class="panel"><div class="section-head"><h2>${escapeText(f.home)} – ${escapeText(f.away)}</h2></div><p class="table-note">${new Date(f.kickoff).toLocaleString('fr-CH',{timeZone:'Europe/Zurich',dateStyle:'medium',timeStyle:'short'})} · ${f.id.startsWith('sfl-')?'Super League':'Rencontre de démonstration'}</p><form class="prediction-form" data-fixture="${escapeText(f.id)}"><label>${escapeText(f.home)}<input type="number" name="home" min="0" max="30" step="1" required value="${f.mine?.home??''}" ${f.locked?'disabled':''}></label><span>–</span><label>${escapeText(f.away)}<input type="number" name="away" min="0" max="30" step="1" required value="${f.mine?.away??''}" ${f.locked?'disabled':''}></label><button ${f.locked||!data.player?'disabled':''}>${f.locked?'Verrouillé':f.mine?'Modifier':'Enregistrer'}</button></form><p class="table-note">${f.locked?'Match commencé · modification fermée':f.mine?'Ton score est enregistré. Modifiable avant le coup d’envoi.':'Les pronostics des autres seront révélés au coup d’envoi.'}</p>${f.locked?f.others.map(p=>`<p class="friend-prediction">${escapeText(p.name)} <strong>${p.home} – ${p.away}</strong></p>`).join(''):''}</article>`).join('');
- $('#friends-table').innerHTML=data.leaderboard.length?`<table><thead><tr><th>#</th><th>Joueur</th><th>Points</th></tr></thead><tbody>${data.leaderboard.map((p,i)=>`<tr><td>${i+1}</td><td>${escapeText(p.name)}</td><td>${p.points}</td></tr>`).join('')}</tbody></table>`:'<p>Aucun participant pour le moment. Enregistre ton prénom pour commencer.</p>';
- status.textContent=data.player?'Connecté comme '+data.player+'.':'Enregistre ton prénom pour participer.';
- }catch(e){status.textContent=e.message+' Les rencontres réelles sont affichées ci-dessous ; l’enregistrement attend la connexion du stockage.';$('#pronos-fixtures').innerHTML=fixtures.map(f=>'<article class="panel">'+fixture(f)+'</article>').join('');}
-}
-$('#player-form')?.addEventListener('submit',async e=>{e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;try{await gameRequest({action:'profile',name:$('#player-name').value});await loadPronos();}catch(e){$('#pronos-status').textContent=e.message;}finally{button.disabled=false;}});
-$('#pronos-fixtures')?.addEventListener('submit',async e=>{e.preventDefault();const form=e.target,button=form.querySelector('button');button.disabled=true;try{await gameRequest({action:'predict',fixtureId:form.dataset.fixture,home:Number(form.elements.home.value),away:Number(form.elements.away.value)});await loadPronos();}catch(e){$('#pronos-status').textContent=e.message;button.disabled=false;}});
-$('#refresh-pronos')?.addEventListener('click',loadPronos);
-
 window.addEventListener("sl-language-change",()=>{render();route();window.SLI18n.apply();});
 window.SLI18n.apply();
 

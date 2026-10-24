@@ -1,4 +1,12 @@
 {
   "version": 2,
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "functions": {
+    "api/game-sync.js": {
+      "maxDuration": 60
+    },
+    "api/push-send.js": {
+      "maxDuration": 60
+    }
+  }
 }
