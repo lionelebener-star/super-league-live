@@ -4,7 +4,7 @@ module.exports=async(req,res)=>{
  if(!['GET','POST'].includes(req.method))return send(405,{error:'method'});
  const token=(req.headers.authorization||'').replace(/^Bearer /,'');
  try{
- if(req.method==='GET')return send(200,await call('game.snapshot',{},token));
+ if(req.method==='GET')return send(200,{...await call('game.snapshot',{},token),serverTime:new Date().toISOString()});
  if(new URL(req.headers.origin).host!==req.headers.host)return send(403,{error:'origin'});
  const d=typeof req.body==='string'?JSON.parse(req.body):req.body;
  if(d?.action==='authenticate')return send(200,await call('game.authenticate',{name:d.name,pin:d.pin,register:d.register===true,ip:(req.headers['x-forwarded-for']||req.socket?.remoteAddress||'unknown').split(',')[0].trim()}));
