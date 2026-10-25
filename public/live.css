@@ -1,3 +1,13 @@
 .live-overview{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid var(--soft);border-radius:12px;background:var(--soft);padding:15px 18px;margin:0 0 18px;color:var(--ink)}.live-overview strong{font-size:13px}.live-overview p{margin:5px 0 0;font-size:10px;color:#728171}.live-checked{font-size:10px;white-space:nowrap}.live-warning{background:#fff7df;border-color:#ead8a8;color:#776129}.live-table-note{font-size:12px;line-height:1.5;padding:8px 0;color:var(--muted)}.live-match-state{font-size:10px}.live-active{color:#bb5c48;font-weight:700}.live-score{color:#b25845}.live-team-dot{height:6px;width:6px;border-radius:50%;background:#d78765;display:inline-block;flex-shrink:0}.live-checked:empty{display:none}@media(max-width:600px){.live-overview{align-items:flex-start;flex-direction:column;gap:8px}.live-overview p{line-height:1.6}.live-table-note{font-size:11px}}
 
 .match-day-banner{grid-column:1 / -1;flex-basis:100%;width:100%;padding:9px 12px;margin-bottom:10px;background:#fff0d4;border:1px solid #e5c98f;color:#795216;border-radius:9px;text-align:center;font-size:13px;font-weight:750}
+
+/* A coloured strip forms the top edge of the match tile. */
+.match-grid>.panel:has(.has-day-banner){padding-top:0;overflow:hidden}
+.fixture.has-day-banner{padding-top:0;row-gap:8px}
+.fixture>.match-day-banner{width:calc(100% + 16px);margin:-1px -8px 8px;padding:8px 14px;border:0;border-radius:0;background:#fce9d2;color:#87521e;text-align:left;font-size:12px;font-weight:700;letter-spacing:.15px}
+.fixture>.match-day-banner.day-today{background:#e3effb;color:#355d80}
+@media(max-width:700px){.fixture>.match-day-banner{width:100%;margin:0 0 8px}}
+.match-grid>.panel:has(.has-day-banner){position:relative;padding-top:43px}
+.match-grid>.panel .fixture.has-day-banner{position:static}
+.match-grid>.panel .match-day-banner{position:absolute;top:0;left:0;width:100%;margin:0;padding:9px 16px}
