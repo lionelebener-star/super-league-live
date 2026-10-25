@@ -18,3 +18,11 @@
 #match-list .match-day-banner.day-live{background:#e3effb;color:#355d80}
 @keyframes match-live-ball-spin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.match-live-ball{animation:none}.match-hint-arrow{transition:none}}
+
+/* A flush, full-width seam between the live summary and its expanded goals. */
+#match-list.match-grid>.panel{align-items:stretch}
+#match-list .match-detail{width:100%;border-top:0;margin-top:10px;padding-top:1px}
+#match-list .match-goal-row:first-child{border-top:0}
+#match-list .match-open>.fixture .team>span{min-height:2.5em;display:flex;align-items:center;justify-content:center;text-align:center}
+#match-list .match-open>.fixture .venue{min-height:2.5em}
+#match-list .is-live-card .match-open-hint:before{bottom:-10px}
