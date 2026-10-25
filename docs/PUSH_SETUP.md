@@ -11,3 +11,7 @@ Dans « Détails », cocher les équipes à suivre. Le même appareil conserve u
 
 ### Centre de notifications
 La clochette à gauche de FR/DE ouvre le volet de gestion. Chaque équipe possède deux interrupteurs indépendants (24 h et 2 h). Les modifications sont enregistrées ensemble via le bouton de validation ; fermer le volet annule les modifications non enregistrées. Les inscriptions existantes conservent les deux rappels. Migration : `database/club_reminder_preferences.sql`.
+
+
+### Rappels groupés
+Les matchs ayant le même coup d’envoi sont regroupés en une notification par appareil et par rappel (24 h ou 2 h). Tous les matchs du groupe sont marqués comme traités. La collecte réserve des groupes complets pour éviter de les couper à la limite du lot. Migration : `database/grouped_push_claims.sql`.
