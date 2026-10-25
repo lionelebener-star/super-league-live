@@ -6,3 +6,10 @@
 .club-ticket .ticket-stub:before,.club-ticket .ticket-stub:after{display:none}
 .club-ticket .ticket-symbol{width:40px;height:40px;stroke-width:1.5;transform:rotate(-9deg);fill:color-mix(in srgb,var(--club-accent) 7%,white);filter:drop-shadow(0 2px 2px #13251f0a)}
 @media(max-width:700px){.club-ticket .ticket-symbol{width:42px;height:42px}}
+
+/* Dock only the club ticket while preserving its place in the header. */
+.club-choice.ticket-is-pinned .club-ticket{position:fixed;z-index:80;top:max(10px,env(safe-area-inset-top,0px));left:var(--ticket-dock-left,12px);width:var(--ticket-dock-width,calc(100% - 24px));min-width:0;box-shadow:0 6px 24px #13251f24;background:linear-gradient(120deg,var(--soft),white);animation:ticket-dock-in .3s cubic-bezier(.2,.8,.2,1)}
+.club-choice.ticket-is-pinned .ticket-copy{padding-top:6px;padding-bottom:6px}
+.club-choice.ticket-is-pinned .ticket-symbol{width:36px;height:36px}
+@keyframes ticket-dock-in{from{opacity:.5;transform:translateY(-9px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.club-choice.ticket-is-pinned .club-ticket{animation:none}}

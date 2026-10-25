@@ -14,5 +14,14 @@
  button.addEventListener('click',()=>{render();dialog.showModal();button.setAttribute('aria-expanded','true');dialog.querySelector('[aria-pressed=true]')?.focus();});
  dialog.addEventListener('click',event=>{if(event.target.closest('.wardrobe-close'))return close();const option=event.target.closest('[data-choose-club]');if(option){select.value=option.dataset.chooseClub;select.dispatchEvent(new Event('change',{bubbles:true}));render();return close();}if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close();}});
  dialog.addEventListener('close',()=>{button.setAttribute('aria-expanded','false');button.focus({preventScroll:true});});
- select.addEventListener('change',render);window.addEventListener('sl-language-change',render);render();
+ // Keep the original ticket interactive when it docks at the top of the screen.
+ let pinned=false,scrollFrame=0;
+ function dockTicket(){scrollFrame=0;const rect=host.getBoundingClientRect();const shouldPin=rect.top<=12;
+  if(shouldPin&&!pinned){host.style.height=rect.height+'px';host.style.width=rect.width+'px';pinned=true;host.classList.add('ticket-is-pinned');}
+  else if(!shouldPin&&pinned){pinned=false;host.classList.remove('ticket-is-pinned');host.style.removeProperty('height');host.style.removeProperty('width');}
+  if(pinned){const width=Math.min(rect.width,window.innerWidth-24);host.style.setProperty('--ticket-dock-width',width+'px');host.style.setProperty('--ticket-dock-left',Math.max(12,Math.min(rect.left,window.innerWidth-width-12))+'px');}
+ }
+ function scheduleDock(){if(!scrollFrame)scrollFrame=requestAnimationFrame(dockTicket);}
+ window.addEventListener('scroll',scheduleDock,{passive:true});window.addEventListener('resize',()=>{pinned=false;host.classList.remove('ticket-is-pinned');host.style.removeProperty('height');host.style.removeProperty('width');scheduleDock();});
+ select.addEventListener('change',()=>{render();scheduleDock();});window.addEventListener('sl-language-change',()=>{render();scheduleDock();});render();scheduleDock();
 })();
