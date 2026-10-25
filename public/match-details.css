@@ -26,3 +26,8 @@
 #match-list .match-open>.fixture .team>span{min-height:2.5em;display:flex;align-items:center;justify-content:center;text-align:center}
 #match-list .match-open>.fixture .venue{min-height:2.5em}
 #match-list .is-live-card .match-open-hint:before{bottom:-10px}
+
+/* Discreet current league position, including the live standings projection. */
+#match-list .team .match-club-rank{display:flex;align-items:center;justify-content:center;gap:4px;max-width:100%;margin-top:2px;padding-top:6px;border-top:1px solid var(--line);font-size:10px;line-height:1.3;font-weight:400;color:var(--muted)}
+#match-list .match-club-rank svg{display:block;flex:0 0 12px;width:12px;height:12px}
+#match-list .team .match-club-rank span{overflow-wrap:anywhere}
