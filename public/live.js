@@ -17,7 +17,9 @@
   if(!e)return baseFixture(f);
   const date=new Intl.DateTimeFormat(locale(),{timeZone:'Europe/Zurich',weekday:'short',day:'numeric',month:'short'}).format(new Date(e.kickoff));
   const score=e.homeScore!==null&&e.awayScore!==null&&e.status!=='pre-game';
-  return `<article class="fixture" data-no-i18n><div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:format(e.kickoff)}</strong><small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
+  const matchDay=day(e.kickoff),today=day(Date.now()),yesterday=day(Date.now()-86400000);
+  const banner=matchDay===today?text('Aujourd’hui','Heute'):matchDay===yesterday?text('Hier','Gestern'):'';
+  return `<article class="fixture" data-no-i18n>${banner?`<div class="match-day-banner">${banner}${['post-game','awarded'].includes(e.status)?' · '+text('Terminé','Beendet'):''}</div>`:''}<div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:format(e.kickoff)}</strong><small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
  };
  table=function(limit){
   if(!live)return baseTable(limit);
