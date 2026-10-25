@@ -7,3 +7,14 @@
 .prono-fixture>.prono-past-banner.day-today{background:#e3effb;color:#355d80}
 .prono-fixture:has(.prono-past-banner){position:relative;padding-top:48px}
 .prono-fixture>.prono-past-banner{position:absolute;top:0;left:0;right:0;margin:0;padding:9px 20px}
+
+.match-alerts{padding:18px 20px!important}
+.alerts-heading{display:flex;align-items:center;gap:11px}
+.alerts-bell{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:12px;background:var(--soft);color:var(--green)}
+.alerts-bell svg{width:22px;height:22px}
+.alerts-title{flex:1;min-width:0}.alerts-title h2{font-size:16px;line-height:1.25;margin:0}.alerts-title p{font-size:12px;color:var(--muted);margin:3px 0 0}
+.alerts-state{font-size:10px;font-weight:700;white-space:nowrap;border-radius:20px;padding:5px 9px;background:#f0f1ef;color:#69736d}.alerts-state.is-active{background:#e7f3ea;color:#346d49}
+.alerts-timing{display:flex;align-items:center;gap:6px;margin:13px 0}.alerts-timing>span{padding:4px 8px;border-radius:6px;background:var(--soft);color:var(--ink);font-size:11px;font-weight:700}.alerts-timing small{color:var(--muted);font-size:11px;margin-left:3px}
+.alerts-actions{display:flex;gap:9px}.match-alerts .alerts-actions button{flex:1;min-width:0;min-height:40px;border-radius:10px;padding:9px 12px;font-size:12px;font-weight:650;display:flex;justify-content:center;align-items:center;gap:6px;transition:background .15s,transform .15s}.match-alerts #toggle-match-alerts{background:var(--green);color:white;border-color:var(--green)}.match-alerts #toggle-match-alerts[aria-pressed=true]{background:var(--soft);color:var(--green);border-color:var(--soft)}.match-alerts #push-test{margin:0;background:white;color:var(--green);border-color:var(--line)}.match-alerts .alerts-actions button:disabled{opacity:.5;cursor:default}.match-alerts .alerts-actions button:active:not(:disabled){transform:scale(.98)}
+.match-alerts #match-alert-status{font-size:11px;line-height:1.4;color:var(--muted);margin:9px 0 0}
+@media(max-width:480px){.match-alerts{padding:15px 16px!important}.alerts-title h2{font-size:15px}}
