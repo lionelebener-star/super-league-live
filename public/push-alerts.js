@@ -1,5 +1,5 @@
 (()=>{
- const host=document.createElement('section');host.className='panel match-alerts';host.setAttribute('data-no-i18n','');host.setAttribute('aria-label','Alertes matchs');document.querySelector('#favorite-card').after(host);
+ const host=document.createElement('section');host.className='panel match-alerts';host.setAttribute('data-no-i18n','');host.setAttribute('aria-label','Alertes matchs');document.querySelector('#actu .hero').after(host);
  let config=null,busy=false,activeClub=null;
  const de=()=>window.SLI18n.language==='de',t=(fr,ger)=>de()?ger:fr;
  const token=()=>{let x=localStorage.getItem('sl-push-key');if(!x){x=Array.from(crypto.getRandomValues(new Uint8Array(32)),b=>b.toString(16).padStart(2,'0')).join('');localStorage.setItem('sl-push-key',x);}return x;};
