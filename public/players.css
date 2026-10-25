@@ -63,3 +63,5 @@ header{padding:12px 32px;gap:16px}
 @keyframes player-modal-in{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:600px){.player-profile-modal{padding:15px;border-radius:18px}.player-profile-modal .player-profile h1{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.player-profile-modal[open]{animation:none}}
+
+.player-season-stats.player-season-ranked{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:7px;gap:10px}.player-scorer-rank strong{font-size:25px}.player-scorer-rank small:last-child{display:block;margin-top:3px;font-size:10px}.player-scoring-source{font-size:10px;line-height:1.5;color:var(--muted);margin:0 0 22px}.player-scoring-source a{color:inherit;text-decoration:underline}@media(max-width:480px){.player-season-stats.player-season-ranked{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.player-scorer-rank strong{font-size:28px}}
