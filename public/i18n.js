@@ -34,7 +34,7 @@
     'Classement Super League 2026/27 au 12 octobre 2026':'Tabelle der Super League 2026/27 am 12. Oktober 2026',
     'CALENDRIER & RÉSULTATS':'SPIELPLAN & ERGEBNISSE','Les matchs':'Die Spiele',
     'Prochaine journée : 24–25 octobre 2026 · heures suisses':'Nächster Spieltag: 24.–25. Oktober 2026 · Schweizer Zeit',
-    'Choisir les rencontres':'Spiele auswählen','À venir':'Demnächst','Résultats':'Ergebnisse','Terminé':'Beendet',
+    'Choisir les rencontres':'Spiele auswählen','À venir':'Demnächst','Actuel':'Aktuell','Résultats':'Ergebnisse','Terminé':'Beendet',
     'Sam. 24 octobre':'Sa., 24. Oktober','Dim. 25 octobre':'So., 25. Oktober',
     '10 octobre 2026':'10. Oktober 2026','11 octobre 2026':'11. Oktober 2026',
     'LE JEU ENTRE AMIS':'DAS TIPPSPIEL UNTER FREUNDEN','Vos pronos':'Eure Tipps','En construction':'In Vorbereitung',
