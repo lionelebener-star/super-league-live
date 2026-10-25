@@ -9,6 +9,6 @@ module.exports=async(req,res)=>{
  if(new URL(req.headers.origin).host!==req.headers.host)return send(403,{error:'origin'});
  if(req.method==='DELETE')return send(200,await call('push.delete',{},token));
  const d=typeof req.body==='string'?JSON.parse(req.body):req.body;
- return send(200,await call('push.subscribe',{club:d?.club,clubs:d?.clubs,language:d?.language,subscription:d?.subscription},token));
+ return send(200,await call('push.subscribe',{club:d?.club,clubs:d?.clubs,reminders:d?.reminders,language:d?.language,subscription:d?.subscription},token));
  }catch(e){return send(e.status||503,{error:e.status?e.message:'service_unavailable'});}
 };

@@ -7,3 +7,7 @@ For a fresh deployment, use Supabase Free, apply the SQL schemas, deploy `supaba
 
 ### Plusieurs équipes
 Dans « Détails », cocher les équipes à suivre. Le même appareil conserve une seule inscription push avec une liste de clubs. Le rappel 24 h et celui à 2 h sont envoyés une seule fois par match, même si les deux équipes sont suivies. Décocher une équipe conserve les autres ; décocher la dernière désinscrit l’appareil. Les anciennes inscriptions sont conservées par `database/multiple_club_alerts.sql`.
+
+
+### Centre de notifications
+La clochette à gauche de FR/DE ouvre le volet de gestion. Chaque équipe possède deux interrupteurs indépendants (24 h et 2 h). Les modifications sont enregistrées ensemble via le bouton de validation ; fermer le volet annule les modifications non enregistrées. Les inscriptions existantes conservent les deux rappels. Migration : `database/club_reminder_preferences.sql`.
