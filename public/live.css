@@ -20,3 +20,7 @@
 #match-list.match-grid .fixture-mid .venue{margin-top:2px;line-height:1.25}
 #match-list.match-grid .team{gap:5px;line-height:1.25}
 @media(max-width:700px){#match-list.match-grid>.panel>.fixture{min-height:100px}}
+
+.standings-club-cell{display:flex;align-items:center;gap:8px}.standings-club-cell .standings-club-link{min-width:0}.standings-club-cell .standings-live-score{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:auto;min-width:42px;padding:4px 7px;border-radius:20px;font-size:11px;font-weight:750;line-height:1.2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.standings-live-score.winning{background:#e1f2e7;color:#246241}.standings-live-score.losing{background:#fbe6e6;color:#a54147}.standings-live-score.drawing{background:#e3effb;color:#305f8d}
+@media(max-width:480px){.standings-club-cell{gap:5px}.standings-club-cell .standings-live-score{min-width:36px;padding:4px 5px;font-size:10px}.standings-club-cell .club-link-arrow{display:none}}
