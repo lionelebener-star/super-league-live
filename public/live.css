@@ -11,3 +11,12 @@
 .match-grid>.panel:has(.has-day-banner){position:relative;padding-top:43px}
 .match-grid>.panel .fixture.has-day-banner{position:static}
 .match-grid>.panel .match-day-banner{position:absolute;top:0;left:0;width:100%;margin:0;padding:9px 16px}
+/* Compact, equal-height match tiles; keep the existing column widths. */
+#match-list.match-grid{grid-auto-rows:1fr}
+#match-list.match-grid>.panel{padding-top:10px;padding-bottom:10px;display:flex;align-items:center}
+#match-list.match-grid>.panel:has(.has-day-banner){padding-top:41px;padding-bottom:10px}
+#match-list.match-grid>.panel>.fixture{width:100%;min-height:104px;padding-top:4px;padding-bottom:4px;row-gap:4px}
+#match-list.match-grid .fixture-mid strong{margin:2px 0}
+#match-list.match-grid .fixture-mid .venue{margin-top:2px;line-height:1.25}
+#match-list.match-grid .team{gap:5px;line-height:1.25}
+@media(max-width:700px){#match-list.match-grid>.panel>.fixture{min-height:100px}}
