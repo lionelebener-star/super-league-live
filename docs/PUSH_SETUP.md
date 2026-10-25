@@ -15,3 +15,7 @@ La clochette à gauche de FR/DE ouvre le volet de gestion. Chaque équipe possè
 
 ### Rappels groupés
 Les matchs ayant le même coup d’envoi sont regroupés en une notification par appareil et par rappel (24 h ou 2 h). Tous les matchs du groupe sont marqués comme traités. La collecte réserve des groupes complets pour éviter de les couper à la limite du lot. Migration : `database/grouped_push_claims.sql`.
+
+
+### Rappel 5 minutes
+La troisième colonne active un rappel 5 minutes avant le coup d’envoi, indépendamment de 24 h et 2 h. Il reste décoché pour les abonnements existants. Les rappels simultanés restent groupés et les rappels 5 minutes expirent au coup d’envoi. Le stockage historique utilise le code horaire 0 pour ce rappel ; la colonne générée `reminder_minutes` fournit sa durée exacte (5), consommée par l’expéditeur. Migration : `database/five_minute_reminders.sql`.

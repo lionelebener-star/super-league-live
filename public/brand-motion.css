@@ -11,3 +11,16 @@ header .brand .swiss.crystal-logo{position:relative;display:block;flex-shrink:0;
  .floating-nav a:focus:not(:focus-visible){outline:none}
  .floating-nav a:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
 }
+/* One compact, centered floating navigation on phones, tablets and desktop. */
+header .desktop-nav{display:none!important}
+body .floating-nav{position:fixed;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));bottom:calc(12px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);width:min(440px,calc(100% - 16px));padding:6px;border:1px solid var(--line);border-radius:36px;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(15px);box-shadow:0 6px 30px color-mix(in srgb,var(--green) 15%,transparent);z-index:20}
+body .floating-nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;min-height:52px;padding:2px 1px;line-height:1.15;border-radius:18px;color:var(--muted);font-size:9px;-webkit-tap-highlight-color:transparent}
+body .floating-nav svg{display:block;flex:0 0 30px;width:30px;height:30px;margin:0;padding:5px;stroke:currentColor;fill:none;stroke-width:1.8;border-radius:50%}
+body .floating-nav a span{display:block;white-space:nowrap;line-height:1.15}
+body .floating-nav a.active{color:var(--green);font-weight:700}
+body .floating-nav a.active svg{background:var(--club-action);color:var(--club-action-text)}
+body .floating-nav a:focus:not(:focus-visible){outline:none}
+body .floating-nav a:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+body footer{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+body .feedback-launch{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+@media(min-width:701px){body .floating-nav{width:min(520px,clamp(440px,45vw,520px),calc(100% - 28px));padding:7px}body .floating-nav a{font-size:11px;min-height:54px;gap:4px}body .floating-nav [data-tab="actu"] span{font-size:10px;letter-spacing:0}body .floating-nav svg{width:32px;height:32px;flex-basis:32px}}
