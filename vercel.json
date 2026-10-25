@@ -7,6 +7,9 @@
     },
     "api/push-send.js": {
       "maxDuration": 60
+    },
+    "api/scorers.js": {
+      "maxDuration": 60
     }
   }
 }

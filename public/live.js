@@ -68,7 +68,7 @@
   const upcoming=data.fixtures.filter(e=>!['post-game','awarded','cancelled'].includes(e.status));
   fixtures.splice(0,fixtures.length,...upcoming.map(e=>[e.home,e.away,new Intl.DateTimeFormat(locale(),{timeZone:'Europe/Zurich',weekday:'short',day:'numeric',month:'short'}).format(new Date(e.kickoff)),format(e.kickoff),e.kickoff,e.id]));
   results.splice(0,results.length,...data.results.map(e=>[e.home,e.away,e.homeScore,e.awayScore,new Intl.DateTimeFormat(locale(),{timeZone:'Europe/Zurich',day:'numeric',month:'short'}).format(new Date(e.kickoff))]));
-  render();window.SLI18n.apply();
+  render();window.SLI18n.apply();window.dispatchEvent(new Event('sl-live-updated'));
  }
  function refreshDelay(){
   if(failed||!live)return 60000;
