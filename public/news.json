@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-28T11:24:16.840102+00:00",
-  "updatedAt": "2026-10-28T11:24:16.840102+00:00",
+  "checkedAt": "2026-10-29T11:34:44.684018+00:00",
+  "updatedAt": "2026-10-29T11:34:44.684018+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,28 +15,28 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 12
+      "count": 13
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 12
+      "count": 13
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 5
+      "count": 6
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 17
+      "count": 15
     },
     {
       "name": "20 minutes",
@@ -50,23 +50,239 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 4
+      "count": 3
     },
     {
       "name": "20 Minuten",
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 7
+      "count": 6
     }
   ],
   "articles": [
+    {
+      "id": "e97ea7dfb5adc623ccfc",
+      "title": "Christoph Spycher va quitter son poste de directeur sportif d'YB",
+      "excerpt": "Le dirigeant va quitter la direction sportive des Young Boys en septembre 2027, après…",
+      "url": "https://www.20min.ch/fr/story/football-christoph-spycher-va-quitter-son-poste-de-directeur-sportif-d-yb-103658383",
+      "image": "https://image.20min.ch/2026/10/29/56053065-741e-4101-abe5-57a904ce03fd.jpg?s=f2d986d3bf999f9f20c719d6e3f075b1",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-29T11:32:25+00:00"
+    },
+    {
+      "id": "0d13a38e09f4b336bcc1",
+      "title": "«Zeitpunkt, um loszulassen»: YB-Boss Spycher gibt Abgang bekannt",
+      "excerpt": "Christoph Spycher bleibt den Young Boys bis im September 2027 als Sportchef erhalten. Danach gibt er…",
+      "url": "https://www.20min.ch/story/september-2027-yb-boss-spycher-gibt-plan-fuer-seinen-abgang-bekannt-103658352",
+      "image": "https://image.20min.ch/2026/10/29/d632c527-ae42-4a3c-a5d7-4c3a73547c97.jpg?s=d1834e2f5a0e69e1317721919305009d",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-10-29T10:47:23+00:00"
+    },
+    {
+      "id": "70b8eaf46e7020d293b3",
+      "title": "YB-Boss Spycher gibt sportliche Leitung ab – noch nicht jetzt",
+      "excerpt": "Christoph Spycher tritt im September 2027 von seiner Position als Chief Sports zurück. Dem…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/klub-news-neuigkeiten-zu-yb/ewfnhvk",
+      "image": "https://ocdn.eu/pulscms-transforms/1/xhBktkuTURBXy85NGUxYzJkYS05NDhjLTRmMjUtODBjOS1jNDIwYjgyODliZGUuanBlZ5KTBc0CWM0BO5MJpjQ5NWEyMgY/jo1r89ehies.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-29T10:34:38+00:00"
+    },
+    {
+      "id": "6735f3da09aaa9dc2a49",
+      "title": "GC-Shootingstar Krasniqi träumt von der spanischen Liga",
+      "excerpt": "Er ist der Lichtblick in dieser GC-Saison: Samuel Krasniqi. Mit Blick spricht der Offensivspieler über seine spezielle…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/samuel-krasniqi-gc-profi-traeumt-von-der-spanischen-liga/p4nf2jx",
+      "image": "https://ocdn.eu/pulscms-transforms/1/RNQktkuTURBXy83ZWNkZWIwZi1hOGM0LTQ1YjItYWEyZC0zNDQ0MjQxMzFlOGIuanBlZ5KTBc0CWM0BO5MJpjQ5NmQ2MgY/8ph5z9nadr7.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-29T10:09:51+00:00"
+    },
+    {
+      "id": "1898ac7d3d6c7980f163",
+      "title": "Amina Muratovic: «Cette victoire, c’est vraiment incroyable»",
+      "excerpt": "Les Grenat ont décroché leur premier succès en Champions League avec la manière. Un match plein pour…",
+      "url": "https://www.blick.ch/fr/sport/football/champions-league-succes-historique-pour-servette-chenois/0z6k34x",
+      "image": "https://ocdn.eu/pulscms-transforms/1/jdbktkuTURBXy9hYzZjMjAxMy1kMmRhLTQyMTAtYmQ4ZC0wN2QyMGEwYmRlZTMuanBlZ5KTBc0CWM0BO5MJpmI4NDRmOAY/xe0b6cjfbgg.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-29T07:16:38+00:00"
+    },
+    {
+      "id": "a36219fa668e22f94ba4",
+      "title": "Bertone forfait 4 semaines - Tickers BSL",
+      "excerpt": "Vous retrouvez ici au fil des jours et des semaines toute l’actualité des transferts (et générale) en…",
+      "url": "https://sfl.ch/articles/bertone-forfait-4-semaines-tickers-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1610985.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-29T07:00:00+00:00"
+    },
+    {
+      "id": "ff93ee1144bbdd7413c1",
+      "title": "Bertone fällt vier Wochen aus - Aktuelle News aus der BSL",
+      "excerpt": "Hier findest du eine Übersicht über alle News aus der Super League.…",
+      "url": "https://sfl.ch/de/articles/bertone-fallt-vier-wochen-aus-aktuelle-news-aus-der-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1610985.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-29T06:30:00+00:00"
+    },
+    {
+      "id": "84eae57118d4eb31b33b",
+      "title": "Auch der FCB-Hauptsponsor ist in der Krise",
+      "excerpt": "Der österreichische Finanzdienstleister Bitpanda hat im vergangenen Jahr 14 Millionen Euro Verlust geschrieben. Beim FC Basel nimmt…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/bitpanda-fcb-hauptsponsor-mit-millionen-verlust/d09s50n",
+      "image": "https://ocdn.eu/pulscms-transforms/1/xYHktkuTURBXy83MTllMDhjMi05YmYxLTQ3YjktYTA4NC1mNDU2ODlhNWFiMWEuanBlZ5KTBc0CWM0BO5MJpmNjZGM0ZgY/whsu9vw7bv.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T23:01:53+00:00"
+    },
+    {
+      "id": "d67a53ca7bb49b943044",
+      "title": "Infos zur Zukunft von Christoph Spycher",
+      "excerpt": "Mitteilung und Video",
+      "url": "https://www.bscyb.ch/news?nid=17676",
+      "image": "https://bscyb.ch/cgi-bin/news/17676-news-3-20261029103456.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-28T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "5dba99b73315bfe4992e",
+      "title": "Première victoire en Ligue des champions pour les Servettiennes",
+      "excerpt": "Servette Chênois s'est imposé mercredi soir contre Louvain. Une première pour les Genevoises dans la…",
+      "url": "https://www.20min.ch/fr/story/football-premiere-victoire-en-ligue-des-champions-pour-les-servettiennes-103658123",
+      "image": "https://image.20min.ch/2026/10/28/29999ec1-0300-41cf-9b42-3b43a6b92928.jpg?s=1d98e1f90d81d9c2bc732dc146e30772",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-10-28T20:03:35+00:00"
+    },
+    {
+      "id": "817801558401a1ce001c",
+      "title": "Servette Chênois inflige une correction aux championnes belges",
+      "excerpt": "Pour leur troisième match de la phase de ligue de la Champions League, les Grenat ont…",
+      "url": "https://www.blick.ch/fr/sport/football/football-servette-chenois-inflige-une-correction-a-loh-louvain/k55yl31",
+      "image": "https://ocdn.eu/pulscms-transforms/1/W0iktkuTURBXy8xZTYxNTU0YS05ZGVlLTQ5N2ItODEzNS02YWU4YjRlMjdkNjUuanBlZ5KTBc0CWM0BO5MJpmRhZGI4YgY/k9dwcfkghs.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-28T19:36:35+00:00"
+    },
+    {
+      "id": "e0730879f932c586301f",
+      "title": "Jonathan Okita, impact immédiat",
+      "excerpt": "Jonathan Okita n'a pas eu besoin de temps d'adaptation à Yverdon: arrivé sur le tard au mercato, l'ailier a marqué…",
+      "url": "https://www.blick.ch/fr/sport/football/challenge-league/jonathan-okita-impact-immediat/dtl3pwg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/LDgktkuTURBXy9kZDUyMjFlYy01YzA0LTQ4NjEtYjE5YS05NWY3MzAxMjQ0MjQuanBlZ5KTBc0CWM0BO5MJpmY2YWZmMgY/x3wam607yc.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-28T18:00:08+00:00"
+    },
+    {
+      "id": "252ee1ff58117e921ee1",
+      "title": "Kingstone Mutandwa, le buteur qui change la vie du Servette FC",
+      "excerpt": "Il a marqué lors de chacun des cinq derniers matches de Super League…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/kingstone-mutandwa-le-buteur-qui-change-la-vie-du-servette-fc/lx5ydp1",
+      "image": "https://ocdn.eu/pulscms-transforms/1/mK9ktkuTURBXy9mMjQ0NTAwZS1jMDU1LTRlODMtYTA3Ny03NmQwMzEzNDg3MGUuanBlZ5KTBc0CWM0BO5MJpmUyNTVlOAY/7ezws665xbl.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-10-28T17:59:09+00:00"
+    },
+    {
+      "id": "ca005b1182f32d966ba2",
+      "title": "GC plante ohne ihn, jetzt ist Bettkober unverzichtbar",
+      "excerpt": "GC wollte Yannick Bettkober vor Kurzem noch aus dem Profikader aussortieren. Jetzt gehört er zu den…",
+      "url": "https://www.20min.ch/story/yannick-bettkober-gc-talent-gehoert-ploetzlich-zu-den-besten-zweikaempfern-103657212",
+      "image": "https://image.20min.ch/2026/10/27/18be86d1-7354-4adb-b168-e1e9bf158ef0.jpg?s=c8d2f60bffa039307aa46ea7ed322e8d",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-10-28T16:38:09+00:00"
+    },
+    {
+      "id": "f100594218edaf9bb604",
+      "title": "Die Antwort auf das Luzerner Di-Giusto-Rätsel überrascht",
+      "excerpt": "Matteo Di Giusto muss unter Udo Portmann auf dem linken Flügel spielen. Dort scheinen seine Qualitäten verschenkt…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/die-antwort-auf-das-luzerner-di-giusto-raetsel-ueberrascht/r8yx5lb",
+      "image": "https://ocdn.eu/pulscms-transforms/1/6iDktkuTURBXy8zMGEyNTYyNC00MTNmLTQ0NDQtODZhYy0yZDU2MDljYWNkMGMuanBlZ5KTBc0CWM0BO5MJpmY2YmEyYgY/ko3ko9u8qu.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T15:49:15+00:00"
+    },
+    {
+      "id": "79abd42a6d864b6a03f9",
+      "title": "«Das ist doch das Thema bei Matteo Di Giusto»",
+      "excerpt": "Tobias Wedermann und Florian Raz gehen extra beide in den Letzigrund, um Luzern zu sehen…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/forza-ueber-den-blamablen-auftritt-von-luzern/mrkqgjz",
+      "image": "https://ocdn.eu/pulscms-transforms/1/DaQktkuTURBXy8zNGQ3ODQ5Mi1kZmY5LTQ3NTUtYmU1Mi0yODViZjg2NjA2ZDMuanBlZ5KTBc0CWM0BO5MJpjEzODg4ZQY/jticpdx729.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T15:41:56+00:00"
+    },
+    {
+      "id": "9dba0485d426dc6191ee",
+      "title": "FCZ-Legende Brecher eröffnet eigene Agentur",
+      "excerpt": "Gut ein halbes Jahr nach seinem Karriereende gründet Yanick Brecher eine Social-Media-Agentur für Sportler. Gegenüber Blick erzählt die FCZ-Legende…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fcz-brecher-eroeffnet-eigene-agentur/qg5bmvh",
+      "image": "https://ocdn.eu/pulscms-transforms/1/TpqktkuTURBXy83MTRiMjg3ZS04MDk5LTQ2YmYtYWIzNC1kNDc1ZmMyNjE0MGYuanBlZ5KTBc0CWM0BO5MJpmQ2NTA3NgY/4j52ya44vug.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T14:59:05+00:00"
+    },
+    {
+      "id": "37825902f384b2bc3a47",
+      "title": "Fix! Christoph Spycher bleibt bei YB",
+      "excerpt": "Die lange Hängepartie ist zu Ende. Christoph Spycher, Chief Sports von YB, bleibt den Bernern erhalten. Vorderhand zumindest…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/langes-hin-und-her-vorbei-chief-sports-spycher-bleibt-bei-yb/1vtc24m",
+      "image": "https://ocdn.eu/pulscms-transforms/1/ibGktkuTURBXy8yNTEyZjI1Yy1hODI2LTQ2ZWItODQ3ZS1hOWQ2MDAwMGI1NWYuanBlZ5KTBc0CWM0BO5MJpmNhZjYzZgY/3337dbj9y51.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T14:32:11+00:00"
+    },
+    {
+      "id": "ef9bb894453655747536",
+      "title": "YB legt Einsprache gegen Fernandes-Sperre ein",
+      "excerpt": "Zwei Spiele soll Edimilson Fernandes nach der Roten Karte gegen St. Gallen zuschauen. Nun haben die Young Boys…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/yb-einsprache-gegen-sperre-gegen-edimilson-fernandes/d9s7985",
+      "image": "https://ocdn.eu/pulscms-transforms/1/QlVktkuTURBXy9lOTY5YmQ3ZS1kYThiLTQ0ZDEtYWUzMC1jMDEyNDNjNmY1ODAuanBlZ5KTBc0CWM0BO5MJpmFlZTEzNAY/ckpdvwwwrzb.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-10-28T12:00:52+00:00"
+    },
+    {
+      "id": "4e6aa9690c643b04eeec",
+      "title": "Opposition contre la suspension de Fernandes",
+      "excerpt": "Le BSC Young Boys fait opposition contre la suspension de 2 matches infligée à son milieu de terrain…",
+      "url": "https://sfl.ch/articles/opposition-contre-la-suspension-de-fernandes",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1615634.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-10-28T11:00:00+00:00"
+    },
+    {
+      "id": "eab836328f116edeb14f",
+      "title": "Einsprache gegen die Sperre von Fernandes",
+      "excerpt": "Der BSC Young Boys legt Einsprache gegen die zwei Spielsperren ein, die gegen seinen Mittelfeldspieler Edimilson Fernandes ausgesprochen…",
+      "url": "https://sfl.ch/de/articles/einsprache-gegen-die-sperre-von-fernandes",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1615634.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-28T11:00:00+00:00"
+    },
     {
       "id": "89bcb2c3e33fb571e0f3",
       "title": "«On veut montrer quel est le vrai visage de Servette Chênois»",
       "excerpt": "Pour son 3e match de la phase de ligue de la C1, le…",
       "url": "https://www.blick.ch/fr/sport/football/football-contre-louvain-servette-fccf-veut-marquer-lhistoire/kk32ct5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/O0IktkuTURBXy80NzJmNzRiMC04MGVkLTQxZWUtOTdjOC1iYTc5ZDIxZmIxZjYuanBlZ5KTBc0CWM0BO5MJpjlkZGRkOAY/ipz7ty9snhq.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/71_ktkuTURBXy80NzJmNzRiMC04MGVkLTQxZWUtOTdjOC1iYTc5ZDIxZmIxZjYuanBlZ5KTBc0CWM0BO5MJpmNlNWYwNgY/6lsb3hbiwhd.jpg",
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-10-28T10:48:34+00:00"
@@ -129,6 +345,30 @@
       "excerpt": "Prozessinformationen",
       "url": "https://www.bscyb.ch/news?nid=17672",
       "image": "https://bscyb.ch/cgi-bin/news/17672-news-3-20261027125456.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-27T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "572e60e7fade4671edac",
+      "title": "«Wir wollen noch besser werden»",
+      "excerpt": "Interview mit Armin Gigovic",
+      "url": "https://www.bscyb.ch/news?nid=17675",
+      "image": "https://bscyb.ch/cgi-bin/news/17675-news-3-20261028150217.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-10-27T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "f57701782a72d7f59c43",
+      "title": "U20-Frauen dominieren in Rapperswil",
+      "excerpt": "Nachwuchs",
+      "url": "https://www.bscyb.ch/news?nid=17674",
+      "image": "https://bscyb.ch/cgi-bin/news/17674-news-3-20261028130517.jpg",
       "source": "BSC Young Boys",
       "official": true,
       "language": "de",
@@ -850,236 +1090,6 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-10-24T22:21:42+00:00"
-    },
-    {
-      "id": "2dbe5e8f446589ae5687",
-      "title": "St. Galler Offensive lässt zu wünschen übrig",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten von der 0:2-Niederlage von St. Gallen gegen YB.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-st-gallen-noten-gegen-yb-runde-11/g527yv5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/LkYktkuTURBXy9hZmE4Mzg2NS1lMWVlLTQyYmQtODQ5Ni0wMTA1YTdiYTJjNjkuanBlZ5KTBc0CWM0BO5MJpjU0ZDA5MQY/noa90imcfjo.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T22:20:32+00:00"
-    },
-    {
-      "id": "877a12103d89a0809331",
-      "title": "Les highlights de Servette - Vaduz",
-      "excerpt": "Le résumé de la victoire genevoise avec notamment le magnifique but de Thomas Lopes.",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/les-highlights-de-servette-vaduz/flevwps",
-      "image": "https://ocdn.eu/pulscms-transforms/1/k7sktkuTURBXy9iMGM0YTc5ZC0yMjBmLTQyZDctODAyMS04ODYyNTM4OWMzYWYuanBlZ5KTBc0CWM0BO5MJpjQyMzhlZQY/3ek3yhpvhko.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-10-24T21:01:10+00:00"
-    },
-    {
-      "id": "0dffc5849cb97972eaad",
-      "title": "Für dieses Tackling sieht Fernandes Rot",
-      "excerpt": "Edimilson Fernandes wird gegen St. Gallen nach VAR-Intervention vom Platz gestellt.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-fernandes-fliegt-gegen-st-gallen-vom-platz/9c8yb0w",
-      "image": "https://ocdn.eu/pulscms-transforms/1/dWVktkuTURBXy83YTcwNTA2MC1kYmM1LTQ5Y2YtYWRiNC1mNGUyMGFiYTMwYWEuanBlZ5KTBc0CWM0BO5MJpjYwZDM0NgY/cmmwpl5u818.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T20:34:46+00:00"
-    },
-    {
-      "id": "81c89137005576a4133d",
-      "title": "YB siegt trotz Witz-Rot gegen Fernandes",
-      "excerpt": "YB schlägt St. Gallen mit 2:0. Zu reden gibt der Platzverweis von Edimilson Fernandes.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/yb-siegt-trotz-witz-rot-gegen-fernandes/c72z1pt",
-      "image": "https://ocdn.eu/pulscms-transforms/1/_4WktkuTURBXy8xMmVhOGJjNS1lYTYwLTRiNDItOTgxNy0yMTkzZWNlODIyNTcuanBlZ5KTBc0CWM0BO5MJpmE4Mzc2NQY/s4ss92rhlah.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T20:31:58+00:00"
-    },
-    {
-      "id": "97e77348f186919e1ed1",
-      "title": "Zwei Ungenügende – aber auch zwei gute Rückkehrer",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten vom 2:1 von Zürich gegen Luzern.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fcz-noten-zwei-ungenuegende-beim-sieg-gegen-luzern/dw7h2sd",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Z6pktkuTURBXy8wZjg3MjI1Mi0wZDRmLTQ3ZTEtODU2ZS01MTJiMjk4OTViOTIuanBlZ5KTBc0CWM0BO5MJpjViZjhlMgY/nxktg5bmonm.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T20:04:25+00:00"
-    },
-    {
-      "id": "c887522ab369c5082a3d",
-      "title": "Einmal gibts die Bestnote – und drei kassieren Höchststrafe",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten von der 1:2-Niederlage von Luzern gegen…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-luzern-noten-gegen-zuerich-runde-11/qchw23l",
-      "image": "https://ocdn.eu/pulscms-transforms/1/eKPktkuTURBXy8xOWUyZjE2Ny1iNGUyLTQ3ODEtODdlZi0wOWQ1NjVmYjVjNDkuanBlZ5KTBc0CWM0BO5MJpjExZDFkOAY/h79vpvzb2rv.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T19:55:40+00:00"
-    },
-    {
-      "id": "a2b61695d4268a67ccf4",
-      "title": "Une victoire à l'arraché comme «signe de bonne santé» pour le Servette FC",
-      "excerpt": "Face à Vaduz, Servette est allé chercher trois points précieux en…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/une-victoire-a-larrache-comme-signe-de-bonne-sante-pour-le-servette-fc/1bfl70m",
-      "image": "https://ocdn.eu/pulscms-transforms/1/YD2ktkuTURBXy8yYzE3NzJmMi03MzJmLTQwMmUtOWY3My0wMWZhMjNkMjA0ZGMuanBlZ5KTBc0CWM0BO5MJpjBlMjFkNQY/koyoopayjv.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-10-24T19:37:35+00:00"
-    },
-    {
-      "id": "df9f614eb27431faa408",
-      "title": "Ein Genfer Quartett verdient Sonderlob",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten der Servette-Spieler zum 2:1-Sieg gegen Vaduz.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/servette-noten-zum-21-sieg-gegen-vaduz/yljbs6p",
-      "image": "https://ocdn.eu/pulscms-transforms/1/tj9ktkuTURBXy9iMTc0MmIzOS00ZDdhLTRkMzctYTRjNS1jOGZhNWIzZDljOWMuanBlZ5KTBc0CWM0BO5MJpmJhYTMxYgY/4l24qwr1nwg.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T19:16:07+00:00"
-    },
-    {
-      "id": "9d7d31e1793528c323bd",
-      "title": "Ein Vaduzer glänzt – ein Trio bleibt blass",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten der Vaduz-Spieler zur 1:2-Niederlage gegen Servette.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/vaduz-noten-zur-12-niederlage-gegen-servette/xeegq31",
-      "image": "https://ocdn.eu/pulscms-transforms/1/W_dktkuTURBXy9mNDZlNjM5Yy1mOTMzLTRkYzMtYjRjMC01MjI0ZmYxZTRhZjkuanBlZ5KTBc0CWM0BO5MJpjIyOGZhNQY/vaztpmynyk9.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T19:09:11+00:00"
-    },
-    {
-      "id": "5a89435e46059860c166",
-      "title": "YB verlängert langfristig mit Eigengewächs",
-      "excerpt": "Lewin Blum bleibt den Young Boys langfristig erhalten: Der 25-jährige Verteidiger hat seinen Vertrag in Bern bis 2029 verlängert…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/yb-verlaengert-mit-eigengewaechs-lewin-blum/r8d48pv",
-      "image": "https://ocdn.eu/pulscms-transforms/1/oQ2ktkuTURBXy81NDRlNzUyOS0wMTc4LTRlZjItODBhZC05ODlkZDVhNjQxMTguanBlZ5KTBc0CWM0BO5MJpjg4ODNlNwY/66btnw2rfu.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T18:43:18+00:00"
-    },
-    {
-      "id": "d6bebe957a691877317d",
-      "title": "Spital-Schock um Seoane – YB-Coach verpasst FCSG-Spiel",
-      "excerpt": "YB muss im Heimspiel gegen St. Gallen kurzfristig auf Trainer Gerardo Seoane verzichten. Der 47-Jährige musste aufgrund…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/yb-coach-gerardo-seoane-verpasst-fcsg-spiel-nach-spitalaufenthalt/lzgz086",
-      "image": "https://ocdn.eu/pulscms-transforms/1/LQ0ktkuTURBXy9hMDVjZjRjYy0wMjk3LTQxMWYtYmUxMy0yMGYxYzdkOGU2YTcuanBlZ5KTBc0CWM0BO5MJpjUxZWFiZgY/chn7x2uettj.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T18:28:58+00:00"
-    },
-    {
-      "id": "fa71eca704dbefeb7a3e",
-      "title": "Lopes-Traumtor beim nächsten Vaduzer Gruseltrip",
-      "excerpt": "Vaduz muss sich auswärts auch Servette geschlagen geben – weil Thomas Lopes einen Mega-Hammer auspackt und Kingstone Mutandwa im…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/servette-lopes-mit-traumtor-naechster-vaduzer-auswaerts-schreck/yespbht",
-      "image": "https://ocdn.eu/pulscms-transforms/1/e1BktkuTURBXy9iMGM0YTc5ZC0yMjBmLTQyZDctODAyMS04ODYyNTM4OWMzYWYuanBlZ5KTBc0CWM0BO5MJpmU2MjJmNQY/7nfesoklcn2.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T18:09:43+00:00"
-    },
-    {
-      "id": "fc5f003fab70c23c77eb",
-      "title": "Avec un bijou de Thomas Lopes, Servette s'en sort face au FC Vaduz",
-      "excerpt": "Après une ouverture du score de toute beauté, Servette a bien…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/servette-sen-sort-de-justesse-face-au-fc-vaduz/g0dcrjv",
-      "image": "https://ocdn.eu/pulscms-transforms/1/7RPktkuTURBXy9iMGM0YTc5ZC0yMjBmLTQyZDctODAyMS04ODYyNTM4OWMzYWYuanBlZ5KTBc0CWM0BO5MJpjFlMGJiYQY/nz05hwitt7.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-10-24T17:54:58+00:00"
-    },
-    {
-      "id": "322d463a8207911a5de6",
-      "title": "Ultralässiger Kény-Penalty ebnet dem FCZ den Sieg",
-      "excerpt": "Der FCZ schlägt Luzern mit 2:1. Nach einer starken ersten Hälfte müssen die Zürcher am Ende noch…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/laessiger-keny-penalty-ebnet-fcz-den-sieg-gegen-luzern/egmgre5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/BXCktkuTURBXy85ODJkZGJmOC01ZTgyLTQyN2EtOTYwYi03YTQyNTk5YWUwNmIuanBlZ5KTBc0CWM0BO5MJpjQwZTk2NwY/ykuhcxua5h.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T17:53:08+00:00"
-    },
-    {
-      "id": "42c2f6d4e0794c3cf7e0",
-      "title": "Gerardo Seoane ne pourra pas coacher YB samedi",
-      "excerpt": "L’entraîneur de Young Boys ne pourra pas diriger son équipe ce samedi soir (20h30) au Wankdorf…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/gerardo-seoane-ne-pourra-pas-coacher-yb-samedi/kx8veqe",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ozoktkuTURBXy9iMjUyMDRiYS02ZGViLTQ4NTMtYTBkZS1mZDhlYTllYWQ4MDAuanBlZ5KTBc0CWM0BO5MJpjZiMDNhNwY/6rsifi8jmx.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-10-24T17:16:52+00:00"
-    },
-    {
-      "id": "fc12ed231e0c66d233fd",
-      "title": "Le coach d'YB hospitalisé pour des vertiges et un malaise",
-      "excerpt": "Hospitalisé vendredi pour une inflammation du nerf vestibulaire, Gerardo Seoane va manquer le match…",
-      "url": "https://www.20min.ch/fr/story/football-le-coach-d-yb-hospitalise-pour-des-vertiges-et-un-malaise-103655355",
-      "image": "https://image.20min.ch/2026/10/24/4ba8ecdd-6a41-4226-8c63-a25d49e5717e.jpg?s=71c4ce3d0786ea6d728072179cd4f458",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-10-24T16:58:36+00:00"
-    },
-    {
-      "id": "caf705f37276a75fd75b",
-      "title": "Luka Elsner garde foi en sa méthode et veut voir son LS décoller enfin",
-      "excerpt": "Le Lausanne-Sport se déplace à Sion pour y affronter le…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/luka-elsner-garde-foi-en-sa-methode-et-veut-voir-son-ls-decoller-enfin/jl65be8",
-      "image": "https://ocdn.eu/pulscms-transforms/1/D7RktkuTURBXy8xMWE5MmFkZi05MmQyLTQyMmEtOTgxMS1iM2NkODVlODdkMTguanBlZ5KTBc0CWM0BO5MJpjExMDlhOQY/boni1cnh0es.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-10-24T16:54:29+00:00"
-    },
-    {
-      "id": "25ae3ba77b57bb0dbb2e",
-      "title": "Nervenstörung im Ohr – YB gegen St. Gallen ohne Trainer Seoane",
-      "excerpt": "YB muss im Heimspiel gegen den FC St. Gallen auf Trainer Gerry Seoane…",
-      "url": "https://www.20min.ch/story/trainer-angeschlagen-schwindelgefuehle-yb-gegen-st-gallen-ohne-trainer-seoane-103655340",
-      "image": "https://image.20min.ch/2026/10/24/c1239509-e463-4f51-8358-ddbe8a1acc92.jpg?s=94c5e753464ea07cc65ccf8ca52e7620",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-10-24T16:42:26+00:00"
-    },
-    {
-      "id": "acb0dde2daade4311b6f",
-      "title": "Encore porté par Kingstone Mutandwa, Servette s'offre Vaduz",
-      "excerpt": "Grâce à un cinquième match consécutif avec un but de leur attaquant, les Grenat ont dominé…",
-      "url": "https://www.20min.ch/fr/story/super-league-encore-porte-par-kingstone-mutandwa-servette-s-offre-vaduz-103654961",
-      "image": "https://image.20min.ch/2026/10/24/41e0d129-eaee-47f9-a6de-d0085dcb58f4.jpg?s=ec09024db31ebef5448a9e15bdf0c7fe",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-10-24T15:43:12+00:00"
-    },
-    {
-      "id": "ac4115a95d9583b83657",
-      "title": "YB-Neuzugang Jenz schwärmt von seiner neuen Heimat",
-      "excerpt": "Gerade mal eine Viertelstunde braucht Moritz Jenz bei seinem ersten Startelf-Einsatz für YB, um sein erstes Tor…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/yb-neuzugang-moritz-jenz-hat-schon-alle-berner-cafes-abgecheckt/ygbm5qj",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ngyktkuTURBXy83OTBlM2RiMS1mMzEyLTRiNDAtOGEzMC02NDg4YTBmYWY1Y2YuanBlZ5KTBc0CWM0BO5MJpjYzYjhlZAY/26zzmwqp2lq.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T12:00:26+00:00"
-    },
-    {
-      "id": "0ad4616dfb58db0812ff",
-      "title": "Dem FCB gehen vor GC-Spiel die Flügelspieler aus",
-      "excerpt": "Vor dem Spiel gegen GC hat der FCB nur noch zwei gesunde Flügelspieler im Kader. Läuft…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-basel-dem-fcb-gehen-vor-gc-spiel-die-fluegelspieler-aus/6wv1zsb",
-      "image": "https://ocdn.eu/pulscms-transforms/1/UQZktkuTURBXy8wN2U1ZGY2YS03NDhkLTQ1OGYtYTA4Yy02NGQxOTcyNzZmM2IuanBlZ5KTBc0CWM0BO5MJpmMyNmRhOQY/n7aoayn5vr.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T10:52:54+00:00"
-    },
-    {
-      "id": "c8188d8b25d80bf81e9e",
-      "title": "«Wir haben das Fahrzeug umgedreht»",
-      "excerpt": "Nach der Niederlage gegen YB (0:2) beim Debüt von Olaf Janssen tankte GC im Cup in Grenchen Selbstvertrauen. Auf…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/gc-inside-der-11-runde-frischer-wind-auf-dem-campus/3p929hk",
-      "image": "https://ocdn.eu/pulscms-transforms/1/G8DktkuTURBXy8xYzQxZmI4OS1lZTAxLTQ3ZmUtOWIwYS1iOTAzZDA1ZjViOWQuanBlZ5KTBc0CWM0BO5MJpjFmNmU3NgY/9a1oqsmunf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T10:48:57+00:00"
-    },
-    {
-      "id": "ed64383c74c40e71e615",
-      "title": "Zieht GC Basel in den Abstiegssumpf?",
-      "excerpt": "Der FCB hat in dieser Saison erst ein Heimspiel gewonnen. Gegen GC muss am Sonntag dringend ein weiteres…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-basel-zieht-gc-den-fcb-in-den-abstiegssumpf/x1zw6y7",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Ux0ktkuTURBXy9lYWU1ZmZhMi05NTk5LTQzZDYtYTA1NC1mMjUzNjA5OGY1ZTcuanBlZ5KTBc0CWM0BO5MJpjA2YWE3MgY/7t16aahspyl.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-10-24T10:37:17+00:00"
     }
   ]
 }
