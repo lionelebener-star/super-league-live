@@ -26,7 +26,7 @@ Deno.serve(async(req)=>{
  if(p.action==='game.logout'){if(/^[a-f0-9]{64}$/.test(p.token||''))await db('game_sessions?token_hash=eq.'+await hash(p.token),{method:'DELETE'});return reply({ok:true});}
  if(p.action==='game.snapshot'){
  const id=await player(p.token);const [players,predictions,fixtures]=await Promise.all([db('game_players?select=key_hash,name'),db('game_predictions?select=key_hash,fixture_id,home,away'),db('game_fixtures?select=*&order=kickoff.asc')]);
- const points=(a,b,x,y)=>a===x&&b===y?3:Math.sign(a-b)===Math.sign(x-y)?1:0;
+ const points=(a,b,x,y)=>a===x&&b===y?2:Math.sign(a-b)===Math.sign(x-y)?1:0;
  const leaderboard=players.map(v=>({name:v.name,points:predictions.filter(q=>q.key_hash===v.key_hash).reduce((n,q)=>{const f=fixtures.find(f=>f.id===q.fixture_id);return n+(f?.final&&f.home_score!==null&&f.away_score!==null?points(q.home,q.away,f.home_score,f.away_score):0)},0)})).sort((a,b)=>b.points-a.points||a.name.localeCompare(b.name));
  return reply({player:players.find(x=>x.key_hash===id)?.name??null,leaderboard,fixtures:fixtures.map(f=>{const locked=Date.now()>=Date.parse(f.kickoff),mine=predictions.find(x=>x.key_hash===id&&x.fixture_id===f.id);return {id:f.id,home:f.home,away:f.away,kickoff:f.kickoff,cancelled:f.cancelled,final:f.final,homeScore:f.home_score,awayScore:f.away_score,locked,mine:mine?{home:mine.home,away:mine.away}:null,others:predictions.filter(x=>x.fixture_id===f.id&&x.key_hash!==id).map(x=>({name:players.find(v=>v.key_hash===x.key_hash)?.name||'Joueur',home:x.home,away:x.away}))}})});
  }

@@ -1,7 +1,8 @@
 -- Requires pg_cron and pg_net. Put CRON_SECRET into Vault as sl_cron_secret first.
 -- No secret values belong in this file.
-select cron.schedule('sl-fixtures-sync','*/15 * * * *',$job$
- select net.http_post(url:='https://sl.vamox.ch/api/game-sync',headers:=jsonb_build_object('Content-Type','application/json','Authorization','Bearer '||(select decrypted_secret from vault.decrypted_secrets where name='sl_cron_secret')),body:='{}'::jsonb,timeout_milliseconds:=60000);
+select cron.schedule('sl-fixtures-sync','* * * * *',$job$
+ select net.http_post(url:='https://sl.vamox.ch/api/game-sync',headers:=jsonb_build_object('Content-Type','application/json','Authorization','Bearer '||(select decrypted_secret from vault.decrypted_secrets where name='sl_cron_secret')),body:='{}'::jsonb,timeout_milliseconds:=60000)
+ where extract(minute from now())::integer % 15 = 0 or exists(select 1 from public.game_fixtures where not cancelled and kickoff between now()-interval '3 hours 30 minutes' and now()+interval '10 minutes');
 $job$);
 select cron.schedule('sl-match-reminders','* * * * *',$job$
  select net.http_post(url:='https://sl.vamox.ch/api/push-send',headers:=jsonb_build_object('Content-Type','application/json','Authorization','Bearer '||(select decrypted_secret from vault.decrypted_secrets where name='sl_cron_secret')),body:='{}'::jsonb,timeout_milliseconds:=60000)
