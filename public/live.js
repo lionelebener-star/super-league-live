@@ -1,6 +1,6 @@
 (() => {
  const baseFixture=fixture,baseTable=table,baseRenderResults=renderResults,baseRenderMatches=renderMatches;
- let live=null,failed=false,timer=null,inFlight=false,lastFetch=0;
+ let calendar=[],live=null,failed=false,timer=null,inFlight=false,lastFetch=0;
  const de=()=>window.SLI18n?.language==='de';
  const text=(fr,german)=>de()?german:fr;
  const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,11 +15,14 @@
   if(!live)return baseFixture(f);
   const e=live.fixtures.find(e=>e.home===f[0]&&e.away===f[1]);
   if(!e)return baseFixture(f);
+  return matchFixture(e);
+ };
+ function matchFixture(e){
   const date=new Intl.DateTimeFormat(locale(),{timeZone:'Europe/Zurich',weekday:'short',day:'numeric',month:'short'}).format(new Date(e.kickoff));
   const score=e.homeScore!==null&&e.awayScore!==null&&e.status!=='pre-game';
   const matchDay=day(e.kickoff),today=day(Date.now()),yesterday=day(Date.now()-86400000);
   const banner=e.status==='live'?text('Maintenant','Jetzt'):matchDay===today?text('Aujourd’hui','Heute'):matchDay===yesterday?text('Hier','Gestern'):'';
-  return `<article class="fixture ${banner?'has-day-banner':''}" data-no-i18n>${banner?`<div class="match-day-banner ${e.status==='live'?'day-live':matchDay===today?'day-today':'day-past'}">${banner}${['post-game','awarded'].includes(e.status)?' · '+text('Terminé','Beendet'):''}</div>`:''}<div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:format(e.kickoff)}</strong><small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
+  return `<article class="fixture ${banner?'has-day-banner':''}" data-no-i18n>${banner?`<div class="match-day-banner ${e.status==='live'?'day-live':matchDay===today?'day-today':'day-past'}">${banner}${['post-game','awarded'].includes(e.status)?' · '+text('Terminé','Beendet'):''}</div>`:''}<div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:e.timeConfirmed===false?text('À confirmer','Noch offen'):format(e.kickoff)}</strong><small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
  };
  function standingsScore(club){const e=[...live.fixtures,...live.results].find(e=>active(e)&&(e.home===club||e.away===club));if(!e||!Number.isInteger(e.homeScore)||!Number.isInteger(e.awayScore))return '';const own=e.home===club?e.homeScore:e.awayScore,other=e.home===club?e.awayScore:e.homeScore,state=own>other?'winning':own<other?'losing':'drawing',label=text('Match en cours','Spiel läuft')+' · '+text('score de cette équipe en premier','eigener Spielstand zuerst')+' : '+own+' – '+other;return `<span class="standings-live-score ${state}" aria-label="${escape(label)}" title="${escape(label)}">${own} – ${other}</span>`;}
  table=function(limit){
@@ -31,10 +34,13 @@
   if(!live)return baseRenderResults(limit);
   return live.results.slice(0,limit).map(e=>`<div class="result" data-no-i18n><span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span><strong class="score">${e.homeScore} – ${e.awayScore}</strong><span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div>`).join('');
  };
+ function matchEvents(){if(!live)return [];const all=[...new Map([...calendar,...live.results,...live.fixtures].map(e=>[String(e.id),e])).values()];const today=day(Date.now());return all.filter(e=>{const finished=['post-game','awarded'].includes(e.status);return matchFilter==='results'?finished&&day(e.kickoff)<today:(!finished||day(e.kickoff)>=today)&&e.status!=='cancelled';}).sort((a,b)=>matchFilter==='results'?Date.parse(b.kickoff)-Date.parse(a.kickoff):Date.parse(a.kickoff)-Date.parse(b.kickoff));}
+ window.SLMatchEvents=matchEvents;
  renderMatches=function(){
-  if(!live||matchFilter!=='next')return baseRenderMatches();
-  document.querySelector('#match-list').innerHTML=live.fixtures.map(e=>`<div class="panel">${fixture([e.home,e.away])}</div>`).join('');
+  if(!live)return baseRenderMatches();
+  const events=matchEvents();document.querySelector('#match-list').innerHTML=events.length?events.map(e=>{const compact=e.status==='pre-game'||e.status==='postponed';return `<div class="panel ${compact?'compact-match':''}" data-fixture-id="${escape(e.id)}">${matchFixture(e)}</div>`;}).join(''):`<p class="match-empty">${text('Aucun match à afficher.','Keine Spiele vorhanden.')}</p>`;
  };
+ fetch('/api/schedule').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{if(Array.isArray(data.events)){calendar=data.events;if(live)renderMatches();}}).catch(()=>{});
  const banner=document.createElement('section');banner.className='live-overview';banner.setAttribute('data-no-i18n','');banner.setAttribute('aria-live','polite');document.querySelector('#stats').before(banner);
  const tableNote=document.createElement('p');tableNote.className='live-table-note';tableNote.setAttribute('data-no-i18n','');document.querySelector('#full-table').before(tableNote);
  function decorate(){

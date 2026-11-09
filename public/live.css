@@ -24,3 +24,25 @@
 .standings-club-cell{display:flex;align-items:center;gap:8px}.standings-club-cell .standings-club-link{min-width:0}.standings-club-cell .standings-live-score{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;margin-left:auto;min-width:42px;padding:4px 7px;border-radius:20px;font-size:11px;font-weight:750;line-height:1.2;white-space:nowrap;font-variant-numeric:tabular-nums}
 .standings-live-score.winning{background:#e1f2e7;color:#246241}.standings-live-score.losing{background:#fbe6e6;color:#a54147}.standings-live-score.drawing{background:#e3effb;color:#305f8d}
 @media(max-width:480px){.standings-club-cell{gap:5px}.standings-club-cell .standings-live-score{min-width:36px;padding:4px 5px;font-size:10px}.standings-club-cell .club-link-arrow{display:none}}
+
+/* Equal-width sliding match selector and compact known fixtures. */
+html button,html a,html select,html input,html [role=button]{-webkit-tap-highlight-color:transparent}
+#matchs .filters{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1fr;width:100%;gap:0;padding:4px;border:1px solid var(--line);border-radius:15px;background:var(--soft);overflow:hidden}
+#matchs .filters:before{content:'';position:absolute;z-index:-1;left:4px;top:4px;bottom:4px;width:calc(50% - 4px);border-radius:11px;background:var(--club-action,var(--green));box-shadow:0 2px 8px #13251f12;transition:transform .3s cubic-bezier(.2,.75,.3,1)}
+#matchs .filters.show-results:before{transform:translateX(100%)}
+#matchs .filters button{width:100%;min-height:44px;padding:10px 8px;border:0;background:transparent;border-radius:11px;text-align:center;font-size:14px;color:var(--muted);transition:color .2s}
+#matchs .filters button.active{background:transparent;color:var(--club-action-text,white);font-weight:700}
+#matchs .filters button:focus:not(:focus-visible){outline:none}
+#matchs{overflow-x:clip}
+#match-list.match-grid{grid-auto-rows:auto;align-items:start}
+#match-list.match-grid>.compact-match,#match-list.match-grid>.compact-match:has(.has-day-banner){padding:12px 14px}
+#match-list .compact-match .match-day-banner,#match-list .compact-match .venue,#match-list .compact-match .live-match-state,#match-list .compact-match .match-club-rank,#match-list .compact-match .match-open-hint{display:none}
+#match-list .compact-match .match-open>.fixture{grid-template-columns:minmax(0,1fr) 86px minmax(0,1fr);min-height:50px;padding:0;gap:6px}
+#match-list .compact-match .team{gap:6px;font-size:12px;line-height:1.25;align-self:center}
+#match-list .compact-match .crest{width:28px;height:30px}
+#match-list .compact-match .match-open>.fixture .team>span{min-height:0}
+#match-list .compact-match .fixture-mid small{font-size:10px;line-height:1.3}
+#match-list .compact-match .fixture-mid strong{font-size:14px;margin:3px 0}
+#match-list .compact-match .match-open{border-radius:5px}
+@media(min-width:1000px){#match-list .compact-match .team{flex-direction:row;text-align:left}#match-list .compact-match .team:last-child{flex-direction:row-reverse;text-align:right}}
+@media(prefers-reduced-motion:reduce){#matchs .filters:before,#matchs .filters button{transition:none}}
