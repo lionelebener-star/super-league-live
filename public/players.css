@@ -65,3 +65,14 @@ header{padding:12px 32px;gap:16px}
 @media(prefers-reduced-motion:reduce){.player-profile-modal[open]{animation:none}}
 
 .player-season-stats.player-season-ranked{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:7px;gap:10px}.player-scorer-rank strong{font-size:25px}.player-scorer-rank small:last-child{display:block;margin-top:3px;font-size:10px}.player-scoring-source{font-size:10px;line-height:1.5;color:var(--muted);margin:0 0 22px}.player-scoring-source a{color:inherit;text-decoration:underline}@media(max-width:480px){.player-season-stats.player-season-ranked{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.player-scorer-rank strong{font-size:28px}}
+
+/* A compact playing-card profile that flips forward from its roster tile. */
+.player-profile-modal{width:min(960px,calc(100% - 24px));max-height:calc(100dvh - 32px);margin:auto;padding:16px;border-radius:24px;background:linear-gradient(145deg,white,var(--soft));transform-origin:center;backface-visibility:hidden;animation:none!important}
+.player-profile-modal::backdrop{background:#10231e80;backdrop-filter:blur(9px)}
+.player-profile-modal .player-modal-toolbar{margin-bottom:8px}.player-modal-toolbar button{width:30px;height:30px;background:transparent;color:var(--muted);font-size:23px}
+.player-profile-modal .player-profile{padding:12px;gap:18px;grid-template-columns:minmax(140px,.8fr) 1.5fr;background:transparent;border:0;box-shadow:none}
+.player-profile-modal .player-profile>.portrait-wrap{max-height:330px;align-self:start;aspect-ratio:3/4;background:linear-gradient(145deg,var(--soft),white)}
+.player-profile-modal .player-profile h1{font-size:clamp(24px,4vw,34px);margin:5px 0 8px}.player-profile-modal .player-facts{gap:10px 14px;margin:14px 0}.player-profile-modal .player-facts dt{font-size:11px}.player-profile-modal .player-facts dd{font-size:14px;margin-top:3px}
+.player-profile-modal .player-season-stats{gap:5px;margin:12px 0 5px}.player-profile-modal .player-season-stats>div{padding:9px 5px}.player-profile-modal .player-season-stats strong{font-size:23px}.player-profile-modal .player-season-stats small{font-size:10px}.player-profile-modal .player-scoring-source{font-size:10px;line-height:1.4}
+.player-profile-modal .player-profile h2,.player-profile-modal .player-profile h2+p,.player-profile-modal>.table-note{display:none}
+@media(max-width:600px){.player-profile-modal{padding:12px}.player-profile-modal .player-profile{grid-template-columns:1fr;padding:4px;gap:10px}.player-profile-modal .player-profile>.portrait-wrap{width:150px;max-height:160px;aspect-ratio:1/1;margin:auto}.player-profile-modal .player-profile h1{text-align:center}.player-profile-modal .profile-club{display:flex;justify-content:center}.player-profile-modal .player-facts{margin:10px 0}.player-profile-modal .player-season-stats{grid-template-columns:repeat(4,minmax(0,1fr))}}

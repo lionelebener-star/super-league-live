@@ -46,3 +46,4 @@ html button,html a,html select,html input,html [role=button]{-webkit-tap-highlig
 #match-list .compact-match .match-open{border-radius:5px}
 @media(min-width:1000px){#match-list .compact-match .team{flex-direction:row;text-align:left}#match-list .compact-match .team:last-child{flex-direction:row-reverse;text-align:right}}
 @media(prefers-reduced-motion:reduce){#matchs .filters:before,#matchs .filters button{transition:none}}
+#match-list .compact-match .fixture-mid .match-countdown{display:block;margin-top:4px;font-size:10px;font-weight:600;color:var(--green)}

@@ -17,12 +17,13 @@
   if(!e)return baseFixture(f);
   return matchFixture(e);
  };
+ function countdown(e){if(e.status!=='pre-game')return '';const days=Math.max(0,Math.round((Date.parse(day(e.kickoff))-Date.parse(day(Date.now())))/86400000));return `<small class="match-countdown" data-kickoff="${escape(e.kickoff)}">${days===0?text('Aujourd’hui','Heute'):days===1?text('Demain','Morgen'):text('Dans '+days+' jours','In '+days+' Tagen')}</small>`;}
  function matchFixture(e){
   const date=new Intl.DateTimeFormat(locale(),{timeZone:'Europe/Zurich',weekday:'short',day:'numeric',month:'short'}).format(new Date(e.kickoff));
   const score=e.homeScore!==null&&e.awayScore!==null&&e.status!=='pre-game';
   const matchDay=day(e.kickoff),today=day(Date.now()),yesterday=day(Date.now()-86400000);
   const banner=e.status==='live'?text('Maintenant','Jetzt'):matchDay===today?text('Aujourd’hui','Heute'):matchDay===yesterday?text('Hier','Gestern'):'';
-  return `<article class="fixture ${banner?'has-day-banner':''}" data-no-i18n>${banner?`<div class="match-day-banner ${e.status==='live'?'day-live':matchDay===today?'day-today':'day-past'}">${banner}${['post-game','awarded'].includes(e.status)?' · '+text('Terminé','Beendet'):''}</div>`:''}<div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:e.timeConfirmed===false?text('À confirmer','Noch offen'):format(e.kickoff)}</strong><small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
+  return `<article class="fixture ${banner?'has-day-banner':''}" data-no-i18n>${banner?`<div class="match-day-banner ${e.status==='live'?'day-live':matchDay===today?'day-today':'day-past'}">${banner}${['post-game','awarded'].includes(e.status)?' · '+text('Terminé','Beendet'):''}</div>`:''}<div class="team ${e.home===favorite?'favorite-team':''}">${crest(e.home)}<span>${escape(window.SLI18n.translate(teams[e.home][0]))}</span></div><div class="fixture-mid"><small>${date}</small><strong class="${active(e)?'live-score':''}">${score?e.homeScore+' – '+e.awayScore:e.timeConfirmed===false?text('À confirmer','Noch offen'):format(e.kickoff)}</strong>${countdown(e)}<small class="live-match-state ${active(e)?'live-active':''}">${status(e)}</small><small class="venue">${escape(e.venue)}</small></div><div class="team ${e.away===favorite?'favorite-team':''}">${crest(e.away)}<span>${escape(window.SLI18n.translate(teams[e.away][0]))}</span></div></article>`;
  };
  function standingsScore(club){const e=[...live.fixtures,...live.results].find(e=>active(e)&&(e.home===club||e.away===club));if(!e||!Number.isInteger(e.homeScore)||!Number.isInteger(e.awayScore))return '';const own=e.home===club?e.homeScore:e.awayScore,other=e.home===club?e.awayScore:e.homeScore,state=own>other?'winning':own<other?'losing':'drawing',label=text('Match en cours','Spiel läuft')+' · '+text('score de cette équipe en premier','eigener Spielstand zuerst')+' : '+own+' – '+other;return `<span class="standings-live-score ${state}" aria-label="${escape(label)}" title="${escape(label)}">${own} – ${other}</span>`;}
  table=function(limit){
@@ -98,5 +99,6 @@
  window.addEventListener('focus',refreshWhenNeeded);
  window.addEventListener('online',()=>{if(document.visibilityState!=='hidden')load();});
  window.addEventListener('hashchange',()=>{if(['#matchs','#classement'].includes(location.hash))refreshWhenNeeded();});
+ setInterval(()=>{if(document.visibilityState!=='hidden')document.querySelectorAll('.match-countdown[data-kickoff]').forEach(el=>{const days=Math.max(0,Math.round((Date.parse(day(el.dataset.kickoff))-Date.parse(day(Date.now())))/86400000));el.textContent=days===0?text('Aujourd’hui','Heute'):days===1?text('Demain','Morgen'):text('Dans '+days+' jours','In '+days+' Tagen');});},30000);
  decorate();load();
 })();
