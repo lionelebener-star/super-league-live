@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-10T13:33:04.519473+00:00",
-  "updatedAt": "2026-11-10T13:33:04.519473+00:00",
+  "checkedAt": "2026-11-11T12:46:50.556432+00:00",
+  "updatedAt": "2026-11-11T12:46:50.556432+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,28 +15,28 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 4
+      "count": 6
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 4
+      "count": 6
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 4
+      "count": 2
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 29
+      "count": 7
     },
     {
       "name": "20 minutes",
@@ -50,7 +50,7 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 7
+      "count": 6
     },
     {
       "name": "20 Minuten",
@@ -61,6 +61,124 @@
     }
   ],
   "articles": [
+    {
+      "id": "82f6fc8898de1e8bb88f",
+      "title": "So entscheiden die Blick-Leser in der FCB-Goaliefrage",
+      "excerpt": "Wer soll beim FC Basel künftig das Tor hüten? Die Blick-Leser finden entgegen den Statistiken, dass Mirko…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/blick-leser-entscheiden-in-fcb-goaliefrage-gegen-jonas-omlin/0yg19y8",
+      "image": "https://ocdn.eu/pulscms-transforms/1/1uuktkuTURBXy9hZDBhZWI3Mi0zOTg5LTQ4MDEtYWQ0Zi0yYWQ0YTBjNjMxZjIuanBlZ5KTBc0CWM0BO5MJpmYwOWQ4ZQY/rydbywndc4.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-11T09:35:05+00:00"
+    },
+    {
+      "id": "fb7e9dac177c4a562cea",
+      "title": "Lutfi Dalipi brille dans le classement mondial des M21 !",
+      "excerpt": "Belle performance pour Lutfi Dalipi ! Le joueur de 20 ans du FC Vaduz…",
+      "url": "https://sfl.ch/articles/lutfi-dalipi-brille-dans-le-classement-mondial-des-m21",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1615120.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-11T09:00:00+00:00"
+    },
+    {
+      "id": "2ab4a60cdf6446761ea0",
+      "title": "Lutfi Dalipi glänzt im weltweiten U21-Vergleich!",
+      "excerpt": "Starke Leistung von Lutfi Dalipi! Der 20-jährige Spieler des FC Vaduz führt ein weltweites U21-Ranking des CIES Football…",
+      "url": "https://sfl.ch/de/articles/lutfi-dalipi-glanzt-im-weltweiten-u21-vergleich",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1615120.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-11T09:00:00+00:00"
+    },
+    {
+      "id": "6088b67c957c97fb9a2c",
+      "title": "Selon les chiffres bruts, le FC Sion peut être champion",
+      "excerpt": "En analysant certaines données de base, comme le fait la plateforme Footballytics, le club…",
+      "url": "https://www.20min.ch/fr/story/football-selon-les-chiffres-bruts-le-fc-sion-peut-etre-champion-103665135",
+      "image": "https://image.20min.ch/2026/11/10/658bc671-26c8-41ca-832a-1cc398fafdaf.jpg?s=06e2cbf6edbdc71249127903269c46e4",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-11-11T07:01:10+00:00"
+    },
+    {
+      "id": "aabcf702cb7de2176377",
+      "title": "L'attaquante de la Nati Alayah Pilgrim fait mal à Servette en Champions League",
+      "excerpt": "Servette Chênois concède une troisième défaite en quatre matches de Champions…",
+      "url": "https://www.blick.ch/fr/sport/football/lattaquante-de-la-nati-alayah-pilgrim-fait-mal-a-servette-en-champions-league/3vswe5v",
+      "image": "https://ocdn.eu/pulscms-transforms/1/-UJktkuTURBXy9kMDAyMGMyMi0wZjliLTQ0YTEtYWFjNy00N2M1Mzc3ZDEzZDcuanBlZ5KTBc0CWM0BO5MJpjNmZjM0ZQY/w06a0e2vmaq.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-10T23:04:59+00:00"
+    },
+    {
+      "id": "138050da916dfd174df9",
+      "title": "Anmeldung YB Kids Camps",
+      "excerpt": "Ab Sonntag",
+      "url": "https://www.bscyb.ch/news?nid=17704",
+      "image": "https://bscyb.ch/cgi-bin/news/17704-news-3-20261111114737.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-10T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "d0187270ff491f3a689a",
+      "title": "Weiterbildung für inklusiven Fussball",
+      "excerpt": "Im Wankdorf",
+      "url": "https://www.bscyb.ch/news?nid=17703",
+      "image": "https://bscyb.ch/cgi-bin/news/17703-news-3-20261110174831.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-10T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "3eedca62761ceee94a95",
+      "title": "Diese Super-League-Spieler reisen zu Nationalteams",
+      "excerpt": "Die Länderspielpause hat begonnen: Für diverse Super-League-Stars heisst es jetzt: Klub-Trikot aus und Nationalmannschafts-Dress an.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-diese-spieler-reisen-zu-nationallteams/m29vgtz",
+      "image": "https://ocdn.eu/pulscms-transforms/1/drCktkuTURBXy9hYzI2ZDc1My05MzcxLTQ1ODctYWRkYy04OTE2YWVhNDVhZmQuanBlZ5KTBc0CWM0BO5MJpjhiMzI5ZAY/sdh9g30e14d.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-10T17:20:51+00:00"
+    },
+    {
+      "id": "a37cdd636b2f8ef9186e",
+      "title": "L’opposition pour Tasar est rejetée",
+      "excerpt": "Varol Tasar devra encore faire l’impasse sur les 2 prochains matches officiels d’Yverdon Sport.…",
+      "url": "https://sfl.ch/articles/lopposition-pour-tasar-est-rejetee",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1585776.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-10T14:00:00+00:00"
+    },
+    {
+      "id": "9ad403de18d703f23756",
+      "title": "Einsprache für Tasar abgewiesen",
+      "excerpt": "Varol Tasar muss die nächsten beiden Pflichtspiele von Yverdon Sport aussetzen.…",
+      "url": "https://sfl.ch/de/articles/einsprache-fur-tasar-abgewiesen",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1585776.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-10T14:00:00+00:00"
+    },
+    {
+      "id": "340ed66d079df1602664",
+      "title": "FCB hat ein Goalie-Problem – und das war absehbar",
+      "excerpt": "Jonas Omlin ist bisher nicht der Rückhalt, den sich der FCB gewünscht hat. Entweder fehlt…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/jonas-omlin-vs-mirko-salvi-auf-welchen-goalie-soll-der-fcb-setzen/3zkxzm0",
+      "image": "https://ocdn.eu/pulscms-transforms/1/BIjktkuTURBXy9jNDU5OGJmZi01MjBmLTRiN2YtODM2ZC1mZGIxMjI1NzdjMGMuanBlZ5KTBc0CWM0BO5MJpjliYmQ2ZAY/151ect907fr.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-10T13:39:27+00:00"
+    },
     {
       "id": "ff257d5897349e10a0e9",
       "title": "Lugano reagiert mit Einsprache auf Ajeti-Sperre",
@@ -98,7 +216,7 @@
       "title": "FCSG-Fanliebling für kosovarische Nati nachnominiert",
       "excerpt": "Schöne Nachrichten für FCSG-Verteidiger Betim Fazliji: Der 27-Jährige wurde für die kosovarische Nationalmannschaft aufgeboten.",
       "url": "https://www.blick.ch/sport/fussball/superleague/fcsg-fanliebling-fazliji-fuer-kosovarische-nati-nachnominiert/wcp795m",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Wn_ktkuTURBXy9mNGY1ZTk0MC1hNjYxLTRjMWQtOGVlMy1kYWY2NjY0NjgwZDYuanBlZ5KTBc0CWM0BO5MJpjEzM2EyOAY/ldacvd83wj9.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/IXKktkuTURBXy9mNGY1ZTk0MC1hNjYxLTRjMWQtOGVlMy1kYWY2NjY0NjgwZDYuanBlZ5KTBc0CWM0BO5MJpmNkMTVjNAY/fcvu6d752q.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-10T10:30:43+00:00"
@@ -106,7 +224,7 @@
     {
       "id": "919dc3beb7ef48180fa9",
       "title": "Ticketverkaufsstart",
-      "excerpt": "Cup-Achtelfinal",
+      "excerpt": "Cup-Achtelfinal YB - Basel",
       "url": "https://www.bscyb.ch/news?nid=17699",
       "image": "https://bscyb.ch/cgi-bin/news/17699-news-3-20261110122110.jpg",
       "source": "BSC Young Boys",
@@ -121,6 +239,30 @@
       "excerpt": "Am Donnerstag",
       "url": "https://www.bscyb.ch/news?nid=17698",
       "image": "https://bscyb.ch/cgi-bin/news/17698-news-3-20261110072405.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-09T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "d154198b0f5bc6afbc6d",
+      "title": "«Wer bin ich?» mit Zesiger und Jenz",
+      "excerpt": "AMAG amüsant",
+      "url": "https://www.bscyb.ch/news?nid=17702",
+      "image": "https://bscyb.ch/cgi-bin/news/17702-news-3-20261110164948.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-09T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "294828692ade6a4b6943",
+      "title": "U16-Frauen feiern Kantersieg",
+      "excerpt": "Nachwuchs",
+      "url": "https://www.bscyb.ch/news?nid=17701",
+      "image": "https://bscyb.ch/cgi-bin/news/17701-news-3-20261110152840.jpg",
       "source": "BSC Young Boys",
       "official": true,
       "language": "de",
@@ -946,138 +1088,6 @@
       "source": "20 minutes",
       "language": "fr",
       "publishedAt": "2026-11-07T17:13:08+00:00"
-    },
-    {
-      "id": "5900a776088803fcd4c7",
-      "title": "Victoire de Sion face à Vaduz",
-      "excerpt": "Nivokazi, qui remplaçait Boteli à la pointe de l’attaque, a réalisé un doublé et permis à Sion de…",
-      "url": "https://www.20min.ch/fr/story/football-suivez-en-direct-la-rencontre-entre-vaduz-et-sion-103663667",
-      "image": "https://image.20min.ch/2026/11/07/13fff1aa-1667-48d0-9708-e5fc177512a2.jpg?s=f50db4d02b47f5eba64640bdd7dbbbc5",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-07T16:46:12+00:00"
-    },
-    {
-      "id": "6e9b15e9a764aef9e5c6",
-      "title": "Bâle est-il déjà engagé dans la lutte contre la relégation?",
-      "excerpt": "Sans victoire depuis huit matches, le FC Bâle voit la zone de relégation se…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/football-le-fc-bale-doit-il-craindre-la-relegation/mqq8hz1",
-      "image": "https://ocdn.eu/pulscms-transforms/1/P5NktkuTURBXy85YmUwYmYwMi1lMjhhLTRkNTMtYjYzYS1kZGQ0YjJjNGVjNjQuanBlZ5KTBc0CWM0BO5MJpmIxMjlkNAY/nxsqbiy16o9.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-07T13:39:58+00:00"
-    },
-    {
-      "id": "9d605101d1f09c7a46b4",
-      "title": "Croci-Torti verlangt Biss – trotz Rekord-Vorsprung",
-      "excerpt": "Lugano will als ungeschlagener Tabellenführer in die Länderspielpause. Dafür wartet am Sonntag mit St. Gallen ein starker Gegner…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/geht-lugano-ohne-niederlage-in-die-laenderspielpause/y3ngkbk",
-      "image": "https://ocdn.eu/pulscms-transforms/1/h2uktkuTURBXy9iNWYwNmU5MS1iM2ZkLTRhZjYtOGU2NS0wMTdjMjA2MjUzOTYuanBlZ5KTBc0CWM0BO5MJpjY0ZWU1NgY/syqj5s3hqf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T10:35:44+00:00"
-    },
-    {
-      "id": "12f1d142b5b1c7b5276b",
-      "title": "In einer Kategorie ist der FC St. Gallen Liga-Krösus",
-      "excerpt": "Leader Lugano ist seit 23 Spielen ungeschlagen – die letzte Pleite gab es im Mai…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/espen-inside-der-fcsg-ist-die-fairste-mannschaft-der-liga/s4bnd95",
-      "image": "https://ocdn.eu/pulscms-transforms/1/sDbktkuTURBXy84NDdmNWFiOS0wNmM2LTQ4N2ItODcwOS0yOWE1OWRiNWM3YTUuanBlZ5KTBc0CWM0BO5MJpmIzMWY5YwY/lwbkam2pv9.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T10:26:21+00:00"
-    },
-    {
-      "id": "5cc8a4bc9d9f7896a623",
-      "title": "In einer Kategorie ist der FC St. Gallen absolut spitze",
-      "excerpt": "Leader Lugano ist seit 23 Spielen ungeschlagen – die letzte Pleite gab es im…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/in-einer-kategorie-ist-der-fc-st-gallen-absolut-spitze/s4bnd95",
-      "image": "https://ocdn.eu/pulscms-transforms/1/SuOktkuTURBXy84NDdmNWFiOS0wNmM2LTQ4N2ItODcwOS0yOWE1OWRiNWM3YTUuanBlZ5KTBc0CWM0BO5MJpjc5YzNkMAY/ogphxeq72ji.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T10:26:21+00:00"
-    },
-    {
-      "id": "e5ec32a575177c471cb7",
-      "title": "Thun-Held Labeau entkam aggressiven Lausanne-Ultras",
-      "excerpt": "Brighton Labeau schiesst seinen Ex-Klub Lausanne vor einer Woche ins Elend – und steht danach plötzlich dessen wütenden Ultras…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/thun-inside-der-13-runde-labeau-entkam-lausanne-ultras-knapp/11bnx34",
-      "image": "https://ocdn.eu/pulscms-transforms/1/_IzktkuTURBXy85ZGM5YTMyYS1kNzMwLTQ4ZGQtYjU2My00ZWRhOWU4ZDg0ZGYuanBlZ5KTBc0CWM0BO5MJpmUxZTM3OAY/6se4jrygza6.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T10:09:04+00:00"
-    },
-    {
-      "id": "8cec16b8d547620f0c9b",
-      "title": "FCZ-Punktgewinn gegen Servette? Es spricht nichts dagegen!",
-      "excerpt": "Was Marcel Koller zu den Nati-Aufgeboten von Silas Huber und Lindrit Kamberi sagt. Und wie weit die…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fcz-inside-haelt-die-punkteserie-auch-gegen-servette/nfvv69h",
-      "image": "https://ocdn.eu/pulscms-transforms/1/tOWktkuTURBXy8wMDU3MWU4Zi0wMTA0LTRlOWUtYmY2ZS0yODZjYWY5YzY1NzYuanBlZ5KTBc0CWM0BO5MJpjI0OWI1NgY/0mjl87et35i8.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T09:48:29+00:00"
-    },
-    {
-      "id": "e97a48168202860b365a",
-      "title": "Wer ersetzt Xherdan Shaqiri gegen Thun?",
-      "excerpt": "FCB-Trainer Slavisa Jokanovic (58) will auswärts in Thun beim heimschwächsten Team der Super League endlich seinen ersten Sieg…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-basel-wer-ersetzt-xherdan-shaqiri-gegen-thun/hfsvm0x",
-      "image": "https://ocdn.eu/pulscms-transforms/1/8HFktkuTURBXy85N2Q5NWFkNy1kMDQ1LTRjMDMtOWNjZC04MDQ3YzBlNDU1NzAuanBlZ5KTBc0CWM0BO5MJpjI4NzlhYQY/mn1g1uputxc.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T09:25:24+00:00"
-    },
-    {
-      "id": "4a63c517eed1b2707134",
-      "title": "Stürmer-Schock und kuriose Servette-Zahlen",
-      "excerpt": "Schock für Servette: Torgarant Kingstone Mutandwa verletzt sich in St. Gallen früh und fällt für den gesamten Rest des Jahres…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/servette-inside-der-13-runde-sind-die-genfer-ohne-ball-besser/d2detxr",
-      "image": "https://ocdn.eu/pulscms-transforms/1/-qfktkuTURBXy80YjA3M2FhOS0yNzY0LTQzYjMtYTRhOS0yYjY0ZjBmYzFjMjMuanBlZ5KTBc0CWM0BO5MJpjQ3ZGUxYgY/s6ltw6q8lg.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T09:15:24+00:00"
-    },
-    {
-      "id": "a12d06c4f8c4259f036b",
-      "title": "Théo Bouchlarhem et le SLO sont inarrêtables",
-      "excerpt": "Deuxième doublé consécutif pour Théo Bouchlarhem! Le piston gauche du SLO a de nouveau brillé ce vendredi…",
-      "url": "https://www.blick.ch/fr/sport/football/challenge-league/theo-bouchlarhem-et-le-slo-sont-inarretables/v689z2y",
-      "image": "https://ocdn.eu/pulscms-transforms/1/7EYktkuTURBXy81NzRiMzRjOC1iZWVjLTRjNmQtOWIwZC0yMDYxMjJmMTY4ZWUuanBlZ5KTBc0CWM0BO5MJpjg4NTdhZgY/l25229wuhh.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-07T08:09:44+00:00"
-    },
-    {
-      "id": "c477f48cf22b81cfb504",
-      "title": "500 Franken veränderten das Leben dieses Schweizers",
-      "excerpt": "Louis Lurvink mag in der Schweiz ein unbeschriebenes Blatt sein. In Tschechien startet der Ex-FCB-Spieler aber gerade…",
-      "url": "https://www.20min.ch/story/louis-lurvink-schweizer-verteidiger-sigma-olomouc-tschechien-karriere-103657961",
-      "image": "https://image.20min.ch/2026/11/03/d2e6a4c8-28f8-4785-b66c-e86ab4e3212f.jpg?s=68d23a3a3b707379936770ebe77122a5",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-07T03:54:37+00:00"
-    },
-    {
-      "id": "502100b82951d280d8c6",
-      "title": "Essende sorgt für den späten Jubel",
-      "excerpt": "Luzern - YB 2:3",
-      "url": "https://www.bscyb.ch/news?nid=17695",
-      "image": "https://bscyb.ch/cgi-bin/news/17695-news-3-20261109110458.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-06T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "c68d67226d17a2b7039a",
-      "title": "Abrashi wird zum Platzwart und Janssen schaut alte Magnin-Spiele",
-      "excerpt": "Vor dem Kellerduell gegen Lausanne schaut Olaf Janssen alte Spiele von Lausannes neuem Trainer Ludovic…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/abrashi-wird-zu-platzwart-und-janssen-schaut-alte-magnin-spiele/yskq6my",
-      "image": "https://ocdn.eu/pulscms-transforms/1/-igktkuTURBXy9mOTlmNzgwNi0xNTY4LTQyNmQtYmEzYi00NGI0ZDllYzcwZTMuanBlZ5KTBc0CWM0BO5MJpjg5MmZjNQY/q8w7grqpxn.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-06T18:29:18+00:00"
     }
   ]
 }
