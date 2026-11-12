@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-11T12:46:50.556432+00:00",
-  "updatedAt": "2026-11-11T12:46:50.556432+00:00",
+  "checkedAt": "2026-11-12T13:50:10.914986+00:00",
+  "updatedAt": "2026-11-12T13:50:10.914986+00:00",
   "status": "ok",
   "sources": [
     {
@@ -50,17 +50,87 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 6
+      "count": 3
     },
     {
       "name": "20 Minuten",
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 4
+      "count": 5
     }
   ],
   "articles": [
+    {
+      "id": "eb98673aeda56c212345",
+      "title": "Manzambi verlässt Nati-Camp – Yakins Lazarett wird immer grösser",
+      "excerpt": "Johan Manzambi verlässt das Nati-Camp in St. Gallen. Wegen Wadenproblemen fehlt der Mittelfeldspieler gegen Slowenien…",
+      "url": "https://www.20min.ch/story/nations-league-manzambi-faellt-aus-naechster-schreck-fuer-yakin-103666065",
+      "image": "https://image.20min.ch/2026/11/12/040130a0-ce1b-4e6c-8f36-bd48913bdc56.jpg?s=c5607377e538a330fa7f9b0017074b89",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-11-12T10:05:14+00:00"
+    },
+    {
+      "id": "9f8ee3ad80f1f292b836",
+      "title": "Le FC Thoune pleure la mort d'un jeune talent de 16 ans",
+      "excerpt": "Yosef Shonora est décédé dans la nuit de dimanche à lundi, annonce…",
+      "url": "https://www.blick.ch/fr/sport/football/le-fc-thoune-pleure-la-mort-dun-jeune-talent-de-16-ans/27219lj",
+      "image": "https://ocdn.eu/pulscms-transforms/1/MGuktkuTURBXy9mYzM5NDkxMC03MDE5LTRjOTItYjNiYi0yYzE1MmI0ZmIyOGYuanBlZ5KTBc0CWM0BO5MJpjFiMDZjNgY/41vt6ye7lgs.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-12T06:21:39+00:00"
+    },
+    {
+      "id": "112eb33b73b2f55b98ad",
+      "title": "Heisser Flirt von Ex-FCB-Sportchef Stucki in Deutschland",
+      "excerpt": "Gemäss Blick-Infos ist Daniel Stucki (45) bei Hannover 96 als Top-Kandidat für die neue sportliche Führung gehandelt…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/daniel-stucki-ex-fcb-sportchef-sagt-hannover-96-ab/4xvw3s0",
+      "image": "https://ocdn.eu/pulscms-transforms/1/LxOktkuTURBXy9hNDhmZTAxOC0wMzRiLTQ1MzctYjg3Zi0yNjFiODRjNjIxZTIuanBlZ5KTBc0CWM0BO5MJpjNkNWMxZAY/0ev9w05tljr.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-11T22:38:17+00:00"
+    },
+    {
+      "id": "f749a16a24cef5dbc435",
+      "title": "Thun-Junior (†16) plötzlich verstorben",
+      "excerpt": "Yosef Shonora ist in der Nacht auf Montag verstorben, das gibt der FC Thun am Mittwoch bekannt. Der 16-Jährige war…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/thun-junior-yosef-shonora-16-ploetzlich-verstorben/gmb51wk",
+      "image": "https://ocdn.eu/pulscms-transforms/1/N0sktkuTURBXy9mYzM5NDkxMC03MDE5LTRjOTItYjNiYi0yYzE1MmI0ZmIyOGYuanBlZ5KTBc0CWM0BO5MJpjU3OTJlNwY/9urhswx1yu8.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-11T20:31:54+00:00"
+    },
+    {
+      "id": "22f8963b5ee153f00f55",
+      "title": "Noch ein Walliser Bub lässt die Sion-Herzen höher schlagen",
+      "excerpt": "Dank Théo Berdayes ist der FC Sion richtig walliserisch geworden. Doch wer ist dieses Eigengewächs…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/berdayes-schon-der-dritte-sion-stammspieler-aus-dem-wallis/zl68plc",
+      "image": "https://ocdn.eu/pulscms-transforms/1/tHQktkuTURBXy9hYWY4N2MzYi00NDk3LTQxMTYtYjljOS00NDEyNDZmMzQ5MTcuanBlZ5KTBc0CWM0BO5MJpmI3NGM0NgY/d28e34njpv.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-11T17:58:10+00:00"
+    },
+    {
+      "id": "b7d7529d88b0ea355a09",
+      "title": "Der FC Thun trauert um Nachwuchstalent (16)",
+      "excerpt": "Der Thuner Nachwuchsfussballer Yosef Shonora ist verstorben. Der Verein bestätigt den Tod, gibt aber keine weiteren Informationen…",
+      "url": "https://www.20min.ch/story/yosef-shonora-der-fc-thun-trauert-um-nachwuchstalent-16-103665723",
+      "image": "https://image.20min.ch/2026/11/11/85395e46-6c56-44b9-9cdc-3c33d107600a.webp?s=8615b4db3f2c3979b13002ef5942d4af",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-11-11T17:53:33+00:00"
+    },
+    {
+      "id": "32a34b4fdbc4727f604f",
+      "title": "Ein Talent müssen alle beobachten – und wie lauffaul ist Shaqiri?",
+      "excerpt": "Blick zeigt, welche Spieler in der Super League besonders schnell unterwegs sind. Welcher…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/dieses-schweizer-talent-muessen-alle-auf-dem-zettel-haben/jb90jez",
+      "image": "https://ocdn.eu/pulscms-transforms/1/UDektkuTURBXy9iMGIyZGUwNC03YzYyLTQxMTktOWUzOS02Njc3MTJjYzgzZWQuanBlZ5KTBc0CWM0BO5MJpjM1NWFiNQY/2qn5df4pvwq.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-11T15:51:41+00:00"
+    },
     {
       "id": "82f6fc8898de1e8bb88f",
       "title": "So entscheiden die Blick-Leser in der FCB-Goaliefrage",
@@ -138,6 +208,18 @@
       "dateOnly": true
     },
     {
+      "id": "2cddca15611bacb2f1ca",
+      "title": "Testspiel gegen Stade Lausanne-Ouchy",
+      "excerpt": "Am Donnerstag",
+      "url": "https://www.bscyb.ch/news?nid=17698",
+      "image": "https://bscyb.ch/cgi-bin/news/17698-news-3-20261110072405.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-10T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
       "id": "3eedca62761ceee94a95",
       "title": "Diese Super-League-Spieler reisen zu Nationalteams",
       "excerpt": "Die Länderspielpause hat begonnen: Für diverse Super-League-Stars heisst es jetzt: Klub-Trikot aus und Nationalmannschafts-Dress an.",
@@ -174,7 +256,7 @@
       "title": "FCB hat ein Goalie-Problem – und das war absehbar",
       "excerpt": "Jonas Omlin ist bisher nicht der Rückhalt, den sich der FCB gewünscht hat. Entweder fehlt…",
       "url": "https://www.blick.ch/sport/fussball/superleague/jonas-omlin-vs-mirko-salvi-auf-welchen-goalie-soll-der-fcb-setzen/3zkxzm0",
-      "image": "https://ocdn.eu/pulscms-transforms/1/BIjktkuTURBXy9jNDU5OGJmZi01MjBmLTRiN2YtODM2ZC1mZGIxMjI1NzdjMGMuanBlZ5KTBc0CWM0BO5MJpjliYmQ2ZAY/151ect907fr.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/lIQktkuTURBXy9jNDU5OGJmZi01MjBmLTRiN2YtODM2ZC1mZGIxMjI1NzdjMGMuanBlZ5KTBc0CWM0BO5MJpjAyNmEyYgY/vg7fhdq629.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-10T13:39:27+00:00"
@@ -227,18 +309,6 @@
       "excerpt": "Cup-Achtelfinal YB - Basel",
       "url": "https://www.bscyb.ch/news?nid=17699",
       "image": "https://bscyb.ch/cgi-bin/news/17699-news-3-20261110122110.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-09T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "2cddca15611bacb2f1ca",
-      "title": "Testspiel gegen Stade-Lausanne-Ouchy",
-      "excerpt": "Am Donnerstag",
-      "url": "https://www.bscyb.ch/news?nid=17698",
-      "image": "https://bscyb.ch/cgi-bin/news/17698-news-3-20261110072405.jpg",
       "source": "BSC Young Boys",
       "official": true,
       "language": "de",
@@ -1018,76 +1088,6 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-07T20:56:28+00:00"
-    },
-    {
-      "id": "ae49ec050d87f1900a35",
-      "title": "«Dieser Sieg ist noch schöner als die anderen»",
-      "excerpt": "Nach dem wilden 3:3 Anfang September im Wankdorf unterliegt Luzern nun YB zu Hause in einem…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sl-zesiger-erleichtert-im-interview-nach-sieg-in-luzern/hqexcts",
-      "image": "https://ocdn.eu/pulscms-transforms/1/UvZktkuTURBXy8wNDA0MjQzNC0wYzFhLTQxMGQtOTUwOC1jMzZhOWYwZGFmNTguanBlZ5KTBc0CWM0BO5MJpjZmNjhkNQY/z1dq51h5x2.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T20:34:06+00:00"
-    },
-    {
-      "id": "1bca5342f68f6b2ba1af",
-      "title": "Lausanne arrache le nul pour le retour de Magnin",
-      "excerpt": "Dominateur mais longtemps inefficace, le LS a arraché le nul face à Grasshopper. Pour le…",
-      "url": "https://www.20min.ch/fr/story/super-league-magnin-de-retour-pour-lancer-l-operation-maintien-103663811",
-      "image": "https://image.20min.ch/2026/11/07/35da157a-e57c-4456-9778-e5e1b0b5b1bb.jpg?s=3fb9c9e18ac267565e9742df79fd5940",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-07T19:22:20+00:00"
-    },
-    {
-      "id": "cf0e947b9a3567559d2a",
-      "title": "Luzern erlebt Nachspielzeit des Grauens",
-      "excerpt": "Nach dem wilden 3:3 Anfang September im Wankdorf unterliegt Luzern nun YB zu Hause in einem ähnlich verrückten Spiel…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/luzern-erlebt-gegen-yb-nachspielzeit-des-grauens/yll77p2",
-      "image": "https://ocdn.eu/pulscms-transforms/1/zKcktkuTURBXy9jOTk3MWU1My0yOTU4LTQxMDQtOGVkNC00YTE4NzExYjU3NDUuanBlZ5KTBc0CWM0BO5MJpmRhYjVkNQY/k2a9c0gtlf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T19:17:25+00:00"
-    },
-    {
-      "id": "99efe4cf3dd890ae5d15",
-      "title": "Le FC Sion reprend sa marche en avant grâce notamment à Rilind Nivokazi",
-      "excerpt": "Le FC Sion s'est largement imposé 4-0 à Vaduz grâce notamment…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/le-fc-sion-reprend-sa-marche-en-avant-grace-notamment-a-rilind-nivokazi/0n3rkw8",
-      "image": "https://ocdn.eu/pulscms-transforms/1/KzhktkuTURBXy9jNTIxN2ViNi0wNTkwLTRiZDAtODk2Ni1hOTY5M2IxYmNjNmUuanBlZ5KTBc0CWM0BO5MJpmM4YTIzYwY/14nb5f75dpl.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-07T19:00:19+00:00"
-    },
-    {
-      "id": "43af45469112693e6f03",
-      "title": "Boteli-Ersatz erteilt Vaduz eine Lehrstunde",
-      "excerpt": "Effiziente Walliser lassen im Ländle keine Punkte liegen. Gegen Vaduz gewinnt Sion unter anderem dank einem Doppelpack von Rilind…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sion-fertigt-vaduz-im-rheinpark-ab/w2ghysp",
-      "image": "https://ocdn.eu/pulscms-transforms/1/pGmktkuTURBXy9kZWQ3MjZkOS0xMTNkLTRlNDItYmQ1Mi1lMTJiZDRlYTJhYjcuanBlZ5KTBc0CWM0BO5MJpjgzNWNkMwY/y05tsg6ve9e.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T18:54:44+00:00"
-    },
-    {
-      "id": "70d2fb179c5df52420d2",
-      "title": "L'Argentine veut saisir le TAS contre ses sanctions",
-      "excerpt": "L'Argentine conteste les sanctions de la FIFA. Après la suspension de dix matches pour Leandro Paredes…",
-      "url": "https://www.blick.ch/fr/sport/football/football-largentine-veut-saisir-le-tas-contre-ses-sanctions/pg4wvgf",
-      "image": "https://ocdn.eu/pulscms-transforms/1/C_ektkuTURBXy9jZjU1MjJlZS05YWMwLTRlMzgtYWJmNC1jZDFhZmU1ZTEwZmMuanBlZ5KTBc0CWM0BO5MJpjBhODhiMgY/8xdqu6yz7sw.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-07T17:19:04+00:00"
-    },
-    {
-      "id": "9bd31aaa44a142c4a32c",
-      "title": "Le Burnley de Fabio Celestini fait une «Lausanne-Sport»",
-      "excerpt": "Moins d'une semaine après le naufrage du LS contre Thoune (4-5), la nouvelle équipe de l'entraîneur…",
-      "url": "https://www.20min.ch/fr/story/football-le-burnley-de-fabio-celestini-fait-une-lausanne-sport-103663692",
-      "image": "https://image.20min.ch/2026/11/07/39cad5f2-a288-4468-b12e-22d1f13c192c.jpg?s=73e7ffe519bb1ce4829fd2ec3cb44495",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-07T17:13:08+00:00"
     }
   ]
 }
