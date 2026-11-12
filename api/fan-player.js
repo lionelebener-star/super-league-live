@@ -1,0 +1,2 @@
+const {call}=require('../lib/site-api.cjs');
+module.exports=async(req,res)=>{res.setHeader('Cache-Control','private,no-store,max-age=0');res.setHeader('Vary','Authorization');if(req.method!=='GET')return res.status(405).json({error:'method'});const token=(req.headers.authorization||'').replace(/^Bearer /,'');if(!/^[a-f0-9]{64}$/.test(token))return res.status(401).json({error:'login_required'});try{return res.status(200).json(await call('game.fanCard',{},token));}catch(e){return res.status(e.status||503).json({error:e.status===401?'login_required':'unavailable'});}};
