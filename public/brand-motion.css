@@ -82,3 +82,13 @@ body .floating-nav.nav-revealing .nav-items a svg,body .floating-nav.nav-reveali
 @media(prefers-reduced-motion:reduce){body .floating-nav.nav-revealing .nav-items a svg,body .floating-nav.nav-revealing .nav-items a span{animation:none}}
 
 @media(max-width:360px){body .floating-nav .nav-items a{font-size:8px;letter-spacing:-.2px}body .floating-nav .nav-items [data-tab="actu"] span{font-size:8px}}
+
+/* High-contrast club-colored dock with a pale sliding selection. */
+body .floating-nav.nav-can-minimize{background:var(--club-action);border-color:color-mix(in srgb,var(--club-action-text) 18%,var(--club-action));box-shadow:0 6px 26px color-mix(in srgb,var(--club-action) 30%,transparent)}
+body .floating-nav::before{background:color-mix(in srgb,var(--club-action) 14%,white)}
+body .floating-nav .nav-items a{color:var(--club-action-text)}
+body .floating-nav .nav-items a.active{color:var(--ink)}
+body .floating-nav .nav-minimize,body .floating-nav .nav-open{color:var(--club-action-text)}
+body .floating-nav .nav-minimize{border-left-color:color-mix(in srgb,var(--club-action-text) 28%,transparent)}
+body .floating-nav a:focus-visible,body .floating-nav button:focus-visible{outline:2px solid var(--club-action-text);outline-offset:-2px}
+body .floating-nav a.active:focus-visible{outline-color:var(--ink)}
