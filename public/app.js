@@ -22,10 +22,10 @@ $('#club-select').addEventListener('change',e=>{favorite=Number(e.target.value);
 function syncFloatingIndicator(id){
  const nav=document.querySelector('.floating-nav'),link=nav?.querySelector(`[data-tab="${id}"]`);
  if(!link)return;
- nav.style.setProperty('--nav-active-x',link.offsetLeft+'px');
+ nav.style.setProperty('--nav-active-x',(link.getBoundingClientRect().left-nav.getBoundingClientRect().left-nav.clientLeft)+'px');
  nav.style.setProperty('--nav-active-width',link.offsetWidth+'px');
  nav.style.setProperty('--nav-active-height',link.offsetHeight+'px');
- nav.style.setProperty('--nav-active-y',link.offsetTop+'px');
+ nav.style.setProperty('--nav-active-y',(link.getBoundingClientRect().top-nav.getBoundingClientRect().top-nav.clientTop)+'px');
 }
 function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});syncFloatingIndicator(id);document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
 let navigationSerial=0,previousNavigation='',navigationAnimation=null,routeRendering=false;
