@@ -66,3 +66,11 @@ body .floating-nav .nav-items,body .floating-nav .nav-minimize{top:5px;height:46
 body .floating-nav .nav-items a{height:46px;min-height:46px;padding:0 1px 2px}
 body .floating-nav.nav-is-compact{width:58px}
 @media(min-width:701px){body .floating-nav.nav-can-minimize{height:60px}body .floating-nav .nav-items,body .floating-nav .nav-minimize{height:48px}body .floating-nav .nav-items a{height:48px;min-height:48px}body .floating-nav.nav-is-compact{width:60px}}
+
+/* Tighter tab spacing and a 20% narrower minimize area. */
+body .floating-nav.nav-can-minimize{--nav-expanded-width:min(396px,calc(100vw - 28px))}
+body .floating-nav .nav-items{width:calc(var(--nav-expanded-width) - 40px);transform:translateX(calc(-50% - 13px))}
+body .floating-nav .nav-items a{gap:1px}
+body .floating-nav .nav-minimize{width:24px}
+body .floating-nav .nav-minimize svg{width:20.8px;height:24px;padding:4px 2.4px}
+@media(min-width:701px){body .floating-nav.nav-can-minimize{--nav-expanded-width:min(456px,calc(100vw - 36px))}}
