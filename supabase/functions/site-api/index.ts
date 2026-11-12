@@ -9,10 +9,10 @@ async function player(token){if(!/^[a-f0-9]{64}$/.test(token||''))return null;co
 Deno.serve(async(req)=>{
  if(req.method!=='POST')return reply({error:'method'},405);
  const key=req.headers.get('x-app-key')||'';
- if(await hash(key)!=='__APP_KEY_DIGEST__')return reply({error:'unauthorized'},401);
+ if(await hash(key)!==Deno.env.get('SITE_APP_KEY_DIGEST'))return reply({error:'unauthorized'},401);
  try{
  const text=await req.text();if(text.length>100000)return reply({error:'too_large'},413);const p=JSON.parse(text),data=p.data||{};
- if(['fixtures.sync','push.claim','push.complete'].includes(p.action)&&await hash(req.headers.get('x-scheduler-key')||'')!=='__CRON_KEY_DIGEST__')return reply({error:'scheduler_unauthorized'},401);
+ if(['fixtures.sync','push.claim','push.complete'].includes(p.action)&&await hash(req.headers.get('x-scheduler-key')||'')!==Deno.env.get('SITE_CRON_KEY_DIGEST'))return reply({error:'scheduler_unauthorized'},401);
  if(p.action==='game.authenticate'){
  const name=typeof data.name==='string'?data.name.trim().replace(/\s+/g,' '):'',pin=data.pin;
  if(name.length<2||name.length>30||/[\x00-\x1f]/.test(name)||!/^\d{4}$/.test(pin||''))return reply({error:'invalid_credentials'},400);
@@ -24,6 +24,7 @@ Deno.serve(async(req)=>{
  const token=random();await write('game_sessions',{token_hash:await hash(token),key_hash:account.key_hash,expires_at:new Date(Date.now()+30*86400000).toISOString()});return reply({ok:true,token,name:account.name});
  }
  if(p.action==='game.logout'){if(/^[a-f0-9]{64}$/.test(p.token||''))await db('game_sessions?token_hash=eq.'+await hash(p.token),{method:'DELETE'});return reply({ok:true});}
+ if(p.action==='game.fanCard'){const id=await player(p.token);if(!id)return reply({error:'login_required'},401);const accounts=await db('game_players?key_hash=eq.'+id+'&select=name_key');if(!accounts[0])return reply({error:'login_required'},401);const cards=await db('game_fan_cards?owner_name=eq.'+encodeURIComponent(accounts[0].name_key)+'&select=card');return reply({card:cards[0]?.card||null});}
  if(p.action==='game.snapshot'){
  const id=await player(p.token);const [players,predictions,fixtures]=await Promise.all([db('game_players?select=key_hash,name'),db('game_predictions?select=key_hash,fixture_id,home,away'),db('game_fixtures?select=*&order=kickoff.asc')]);
  const points=(a,b,x,y)=>a===x&&b===y?2:Math.sign(a-b)===Math.sign(x-y)?1:0;
