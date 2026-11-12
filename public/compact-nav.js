@@ -3,7 +3,7 @@
  const links=[...nav.querySelectorAll('a[data-tab]')];
  const items=document.createElement('div');items.className='nav-items';items.id='floating-nav-items';
  links.forEach((link,index)=>{link.style.setProperty('--nav-index',index);items.append(link);});
- const icon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l7 7-7 7"/></svg>';
+ const icon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
  const minimize=document.createElement('button');minimize.type='button';minimize.className='nav-minimize';minimize.innerHTML=icon;minimize.setAttribute('aria-controls',items.id);
  const open=document.createElement('button');open.type='button';open.className='nav-open';open.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 9h10M7 12h10M7 15h6"/></svg><span data-no-i18n>Open</span>';open.setAttribute('aria-controls',items.id);open.setAttribute('aria-expanded','false');open.hidden=true;
  nav.append(items,minimize,open);nav.classList.add('nav-can-minimize');

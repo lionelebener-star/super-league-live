@@ -59,3 +59,10 @@ body .floating-nav.nav-revealing .nav-items a span{animation:nav-label-heartbeat
 @keyframes nav-label-heartbeat{0%{opacity:0;filter:blur(5px);transform:translateY(-9px) scale(.75)}45%{opacity:1;filter:blur(0);transform:translateY(1px) scale(1.12)}66%{transform:translateY(0) scale(.96)}84%{transform:scale(1.04)}100%{opacity:1;filter:blur(0);transform:translateY(0) scale(1)}}
 @media(min-width:701px){body .floating-nav.nav-can-minimize{--nav-expanded-width:min(492px,calc(100vw - 28px));height:66px}body .floating-nav .nav-items,body .floating-nav .nav-minimize{height:52px}body .floating-nav .nav-items a{height:52px;min-height:52px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){body .floating-nav.nav-can-minimize,body .floating-nav .nav-items,body .floating-nav::before{transition:none}body .floating-nav.nav-revealing .nav-items a span{animation:none}}
+
+/* A 10% lower dock with balanced top/bottom spacing; animation timings unchanged. */
+body .floating-nav.nav-can-minimize{height:58px;padding:5px}
+body .floating-nav .nav-items,body .floating-nav .nav-minimize{top:5px;height:46px}
+body .floating-nav .nav-items a{height:46px;min-height:46px;padding:0 1px 2px}
+body .floating-nav.nav-is-compact{width:58px}
+@media(min-width:701px){body .floating-nav.nav-can-minimize{height:60px}body .floating-nav .nav-items,body .floating-nav .nav-minimize{height:48px}body .floating-nav .nav-items a{height:48px;min-height:48px}body .floating-nav.nav-is-compact{width:60px}}
