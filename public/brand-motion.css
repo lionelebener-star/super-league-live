@@ -24,3 +24,13 @@ body .floating-nav a:focus-visible{outline:2px solid var(--green);outline-offset
 body footer{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
 body .feedback-launch{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
 @media(min-width:701px){body .floating-nav{width:min(520px,clamp(440px,45vw,520px),calc(100% - 28px));padding:7px}body .floating-nav a{font-size:11px;min-height:54px;gap:4px}body .floating-nav [data-tab="actu"] span{font-size:10px;letter-spacing:0}body .floating-nav svg{width:32px;height:32px;flex-basis:32px}}
+
+/* Auditorium-inspired navigation: one sliding surface, 15% transparent shell. */
+body .floating-nav{border-radius:22px;background:color-mix(in srgb,var(--bg) 85%,transparent);-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);isolation:isolate}
+body .floating-nav::before{content:'';position:absolute;left:0;top:0;width:var(--nav-active-width,0px);height:var(--nav-active-height,52px);transform:translate(var(--nav-active-x,6px),var(--nav-active-y,6px));border-radius:16px;background:var(--club-action,var(--green));pointer-events:none;z-index:-1;transition:transform .5s cubic-bezier(.22,.8,.25,1),width .5s cubic-bezier(.22,.8,.25,1),height .5s cubic-bezier(.22,.8,.25,1),background-color .25s}
+body .floating-nav a{position:relative;border-radius:16px;background:transparent;transition:color .25s ease;touch-action:manipulation}
+body .floating-nav a.active{color:var(--club-action-text,#fff)}
+body .floating-nav a.active svg,body .floating-nav a svg{background:transparent;color:inherit;border-radius:0;animation:none}
+body .floating-nav a:active{background:transparent;box-shadow:none}
+.view{animation:none;overflow-wrap:break-word}
+@media(prefers-reduced-motion:reduce){body .floating-nav::before,body .floating-nav a{transition:none}}

@@ -19,7 +19,15 @@ function renderFavorite(){
 function render(){renderFavorite();window.renderSeasonDetails(teams,favorite,crest); $('#stats').innerHTML=[['⚽','Buts inscrits',String(teams.reduce((sum,t)=>sum+t[6],0)),'3,80 par match'],['▥','Matchs joués',String(teams.reduce((sum,t)=>sum+t[3]+t[4]+t[5],0)/2),'Après la 10ᵉ journée'],['★','Leader',teams[0][0],teams[0][2]+' points · 6 points d’avance']].map(([icon,label,value,caption])=>`<article class="stat"><div class="stat-icon" aria-hidden="true">${icon}</div><div><small>${label}</small><strong>${value}</strong><small class="caption">${caption}</small></div></article>`).join('');$('#preview-fixtures').innerHTML=fixtures.slice(0,3).map(fixture).join('');$('#preview-table').innerHTML=table(5);$('#full-table').innerHTML=table(12);$('#full-table').classList.toggle('show-details',detailed);$('#preview-results').innerHTML=renderResults(3);renderMatches();}
 $('#club-select').innerHTML=teams.map((t,i)=>`<option value="${i}">${t[0]}</option>`).join('');$('#club-select').value=favorite;
 $('#club-select').addEventListener('change',e=>{favorite=Number(e.target.value);try{localStorage.setItem('sl-club',favorite);}catch{}render();});
-function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
+function syncFloatingIndicator(id){
+ const nav=document.querySelector('.floating-nav'),link=nav?.querySelector(`[data-tab="${id}"]`);
+ if(!link)return;
+ nav.style.setProperty('--nav-active-x',link.offsetLeft+'px');
+ nav.style.setProperty('--nav-active-width',link.offsetWidth+'px');
+ nav.style.setProperty('--nav-active-height',link.offsetHeight+'px');
+ nav.style.setProperty('--nav-active-y',link.offsetTop+'px');
+}
+function applyRoute(){const section=location.hash.slice(1).split('/')[0];const id=['actu','classement','matchs','pronos','joueurs'].includes(section)?section:'actu';document.querySelectorAll('.view').forEach(v=>v.hidden=v.id!==id);document.querySelectorAll('[data-tab]').forEach(a=>{const active=a.dataset.tab===id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});syncFloatingIndicator(id);document.title='Super League — '+({actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'}[id]);if(id==='joueurs')return window.renderPlayers(teams,crest);window.SLI18n.apply();}
 let navigationSerial=0,previousNavigation='',navigationAnimation=null,routeRendering=false;
 if('scrollRestoration' in history)history.scrollRestoration='manual';
 const routeKey=()=>location.hash||'#actu';
@@ -42,8 +50,13 @@ async function route(){
  previousNavigation=next;
  navigationAnimation?.cancel();
  const motion=!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&typeof Element!=='undefined'&&Element.prototype.animate;
+ const order=['actu','classement','matchs','joueurs','pronos'];
+ const section=hash=>order.includes(hash.replace(/^#/, '').split('/')[0])?hash.replace(/^#/, '').split('/')[0]:'actu';
+ const fromSection=section(from),toSection=section(next),lateral=from&&fromSection!==toSection;
+ const direction=order.indexOf(toSection)>order.indexOf(fromSection)?1:-1;
+ syncFloatingIndicator(toSection);
  const current=document.querySelector('.view:not([hidden])');
- if(motion&&from&&from!==next&&current){
+ if(motion&&from&&from!==next&&current&&!lateral){
   navigationAnimation=current.animate([{opacity:1},{opacity:0}],{duration:75,easing:'ease-out'});
   await navigationAnimation.finished.catch(()=>{});
   if(serial!==navigationSerial)return;
@@ -60,8 +73,8 @@ async function route(){
  if(motion&&from&&from!==next&&visible){
   const entering=next.startsWith('#joueurs/equipe/')&&!from.startsWith('#joueurs/equipe/');
   const closing=next==='#joueurs'&&from.startsWith('#joueurs/');
-  const frames=entering?[{opacity:0,transform:'scale(.982)'},{opacity:1,transform:'scale(1)'}]:closing?[{opacity:0,transform:'scale(1.008)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0,transform:'translateY(3px)'},{opacity:1,transform:'translateY(0)'}];
-  navigationAnimation=visible.animate(frames,{duration:entering?205:155,easing:'cubic-bezier(.2,.65,.3,1)'});
+  const frames=lateral?[{opacity:0,transform:`translateX(${direction*48}px)`},{opacity:1,transform:'translateX(0)'}]:entering?[{opacity:0,transform:'scale(.982)'},{opacity:1,transform:'scale(1)'}]:closing?[{opacity:0,transform:'scale(1.008)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0,transform:'translateY(3px)'},{opacity:1,transform:'translateY(0)'}];
+  navigationAnimation=visible.animate(frames,{duration:lateral?500:entering?205:155,easing:lateral?'cubic-bezier(.22,.8,.25,1)':'cubic-bezier(.2,.65,.3,1)'});
  }
 }
 window.addEventListener('hashchange',route);
@@ -70,11 +83,15 @@ let matchTransition=0;
 document.querySelectorAll('[data-match-filter]').forEach(b=>b.addEventListener('click',()=>{if(matchFilter===b.dataset.matchFilter)return;const direction=b.dataset.matchFilter==='results'?1:-1;matchFilter=b.dataset.matchFilter;const filters=b.parentElement;filters.classList.toggle('show-results',matchFilter==='results');document.querySelectorAll('[data-match-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});const list=document.querySelector('#match-list'),serial=++matchTransition;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduced||!list.animate){renderMatches();return;}list.getAnimations().forEach(a=>a.cancel());const out=list.animate([{opacity:1,transform:'translateX(0)'},{opacity:0,transform:`translateX(${-direction*18}px)`}],{duration:120,easing:'ease-in',fill:'forwards'});out.finished.then(()=>{if(serial!==matchTransition)return;out.cancel();renderMatches();list.animate([{opacity:0,transform:`translateX(${direction*18}px)`},{opacity:1,transform:'translateX(0)'}],{duration:220,easing:'cubic-bezier(.2,.7,.3,1)'});}).catch(()=>{});}));
 render();route();
 const mobileNav=document.querySelector('.floating-nav');
+const repositionNav=()=>syncFloatingIndicator(document.querySelector('.floating-nav a.active')?.dataset.tab||'actu');
+if(typeof ResizeObserver!=='undefined')new ResizeObserver(repositionNav).observe(mobileNav);
+window.addEventListener('resize',repositionNav,{passive:true});
+document.fonts?.ready.then(repositionNav);
 const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(!reduceMotion){
  let seen=false;try{seen=localStorage.getItem('sl-nav-intro-seen')==='1';if(window.matchMedia('(max-width: 700px)').matches)localStorage.setItem('sl-nav-intro-seen','1');}catch{}
  if(!seen&&window.matchMedia('(max-width: 700px)').matches){mobileNav.classList.add('nav-intro');mobileNav.addEventListener('animationend',()=>mobileNav.classList.remove('nav-intro'),{once:true});}
- mobileNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{link.classList.remove('tap-feedback');void link.offsetWidth;link.classList.add('tap-feedback');}));
+ // The single sliding indicator provides touch feedback; icons remain still.
  mobileNav.addEventListener('animationend',event=>{if(event.animationName==='navTap')event.target.closest('a')?.classList.remove('tap-feedback');});
 }
 function escapeText(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
