@@ -44,7 +44,10 @@
  fetch('/api/schedule').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{if(Array.isArray(data.events)){calendar=data.events;if(live)renderMatches();}}).catch(()=>{});
  const banner=document.createElement('section');banner.className='live-overview';banner.setAttribute('data-no-i18n','');banner.setAttribute('aria-live','polite');document.querySelector('#stats').before(banner);
  const tableNote=document.createElement('p');tableNote.className='live-table-note';tableNote.setAttribute('data-no-i18n','');document.querySelector('#full-table').before(tableNote);
+ // Official SFL 2026/27 calendar: opening 25 July, final championship round 29/30 May.
+ function seasonProgress(){const host=document.querySelector('#matchs .filters');if(!host)return;let strip=document.querySelector('#season-progress');if(!strip){strip=document.createElement('div');strip.id='season-progress';strip.className='season-progress';strip.setAttribute('data-no-i18n','');host.before(strip);}const start=Date.parse('2026-07-25'),end=Date.parse('2027-05-30'),today=Date.parse(day(Date.now())),percent=Math.round(Math.min(1,Math.max(0,(today-start)/(end-start)))*100);strip.innerHTML=`<div class="season-endpoint"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m5 3 8 5-8 5Z"/></svg>${text('Début','Start')}</span><time datetime="2026-07-25">25.07.2026</time></div><div class="season-time-track" role="progressbar" aria-label="${text('Temps écoulé dans la saison 2026/27','Zeitlicher Saisonfortschritt 2026/27')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percent}" aria-valuetext="${percent}% · ${text('fin prévue les 29–30 mai 2027','geplantes Ende am 29.–30. Mai 2027')}"><span class="season-time-fill" style="width:${percent}%"></span><span class="season-time-now" style="left:${percent}%"><span>${percent}%</span></span></div><div class="season-endpoint season-end"><span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 14V2m0 0h9l-2 3 2 3H3"/></svg>${text('Fin prévue','Ende geplant')}</span><span>29–30.05.2027</span></div>`;}
  function decorate(){
+  seasonProgress();
   const stale=live&&Date.now()-Date.parse(live.updatedAt)>(live.provisional?20*60000:26*3600000);
   const title=live?.provisional?text('Classement provisoire · matchs en cours','Vorläufige Tabelle · laufende Spiele'):text('Scores & classement SFL','Resultate & Tabelle SFL');
   const failure=failed||stale;
@@ -99,6 +102,6 @@
  window.addEventListener('focus',refreshWhenNeeded);
  window.addEventListener('online',()=>{if(document.visibilityState!=='hidden')load();});
  window.addEventListener('hashchange',()=>{if(['#matchs','#classement'].includes(location.hash))refreshWhenNeeded();});
- setInterval(()=>{if(document.visibilityState!=='hidden')document.querySelectorAll('.match-countdown[data-kickoff]').forEach(el=>{const days=Math.max(0,Math.round((Date.parse(day(el.dataset.kickoff))-Date.parse(day(Date.now())))/86400000));el.textContent=days===0?text('Aujourd’hui','Heute'):days===1?text('Demain','Morgen'):text('Dans '+days+' jours','In '+days+' Tagen');});},30000);
+ setInterval(()=>{seasonProgress();if(document.visibilityState!=='hidden')document.querySelectorAll('.match-countdown[data-kickoff]').forEach(el=>{const days=Math.max(0,Math.round((Date.parse(day(el.dataset.kickoff))-Date.parse(day(Date.now())))/86400000));el.textContent=days===0?text('Aujourd’hui','Heute'):days===1?text('Demain','Morgen'):text('Dans '+days+' jours','In '+days+' Tagen');});},30000);
  decorate();load();
 })();

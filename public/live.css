@@ -47,3 +47,14 @@ html button,html a,html select,html input,html [role=button]{-webkit-tap-highlig
 @media(min-width:1000px){#match-list .compact-match .team{flex-direction:row;text-align:left}#match-list .compact-match .team:last-child{flex-direction:row-reverse;text-align:right}}
 @media(prefers-reduced-motion:reduce){#matchs .filters:before,#matchs .filters button{transition:none}}
 #match-list .compact-match .fixture-mid .match-countdown{display:block;margin-top:4px;font-size:10px;font-weight:600;color:var(--green)}
+
+/* Compact season timeline, measured in elapsed calendar time. */
+.season-progress{display:flex;align-items:center;gap:16px;width:100%;padding:9px 1px 12px;margin:0 0 12px;color:var(--muted)}
+.season-endpoint{display:flex;flex-direction:column;gap:4px;font-size:11px;line-height:1.25;white-space:nowrap;font-variant-numeric:tabular-nums}
+.season-endpoint>span:first-child{display:flex;align-items:center;gap:4px;font-size:10px}.season-endpoint svg{width:12px;height:12px;flex-shrink:0}.season-endpoint time,.season-endpoint>span:last-child{color:var(--ink);font-weight:600}
+.season-end{align-items:flex-end;text-align:right}.season-time-track{position:relative;flex:1;min-width:25px;height:5px;margin-top:10px;border-radius:10px;background:color-mix(in srgb,var(--green) 12%,var(--line))}
+.season-time-fill{position:absolute;inset:0 auto 0 0;border-radius:inherit;background:var(--green);transition:width .5s ease}
+.season-time-now{position:absolute;top:50%;width:9px;height:9px;border-radius:50%;background:var(--green);transform:translate(-50%,-50%)}
+.season-time-now>span{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);font-size:10px;font-weight:650;color:var(--green);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:380px){.season-progress{gap:10px}.season-endpoint{font-size:10px}.season-endpoint>span:first-child{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.season-time-fill{transition:none}}
