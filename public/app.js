@@ -41,42 +41,39 @@ document.addEventListener('click',event=>{
  const link=event.target.closest?.('a[href]');
  if(link&&link.getAttribute('href').startsWith('#'))saveScrollPosition();
 },true);
-async function route(){
- const serial=++navigationSerial,next=location.hash||'#actu',from=previousNavigation;
+function route(){
+ const serial=++navigationSerial,next=routeKey(),from=previousNavigation;
  const saved=history.state;
  const scrollPosition=saved?.slRoute===next?[saved.slScrollX||0,saved.slScrollY||0]:[0,0];
  routeRendering=true;
  history.replaceState({...saved,slRoute:next,slScrollX:scrollPosition[0],slScrollY:scrollPosition[1]},'');
  previousNavigation=next;
  navigationAnimation?.cancel();
- const motion=!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&typeof Element!=='undefined'&&Element.prototype.animate;
+ navigationAnimation=null;
  const order=['actu','classement','matchs','joueurs','pronos'];
  const section=hash=>order.includes(hash.replace(/^#/, '').split('/')[0])?hash.replace(/^#/, '').split('/')[0]:'actu';
- const fromSection=section(from),toSection=section(next),lateral=from&&fromSection!==toSection;
+ const fromSection=section(from),toSection=section(next);
+ const lateral=Boolean(from)&&fromSection!==toSection;
  const direction=order.indexOf(toSection)>order.indexOf(fromSection)?1:-1;
- syncFloatingIndicator(toSection);
- const current=document.querySelector('.view:not([hidden])');
- if(motion&&from&&from!==next&&current&&!lateral){
-  navigationAnimation=current.animate([{opacity:1},{opacity:0}],{duration:75,easing:'ease-out'});
-  await navigationAnimation.finished.catch(()=>{});
-  if(serial!==navigationSerial)return;
- }
- document.querySelectorAll('.view').forEach(v=>v.style.opacity='');
+ // Render immediately. Network work must never hide the page or delay navigation.
+ document.querySelectorAll('.view').forEach(v=>{v.style.opacity='';v.style.transform='';});
  const pending=applyRoute(),visible=document.querySelector('.view:not([hidden])');
- if(pending&&motion&&visible)visible.style.opacity='0';
- await pending;
- if(serial!==navigationSerial)return;
- if(visible)visible.style.opacity='';
- window.SLI18n.apply();
  window.scrollTo({left:scrollPosition[0],top:scrollPosition[1],behavior:'instant'});
  routeRendering=false;
- if(motion&&from&&from!==next&&visible){
-  const entering=next.startsWith('#joueurs/equipe/')&&!from.startsWith('#joueurs/equipe/');
-  const closing=next==='#joueurs'&&from.startsWith('#joueurs/');
-  const frames=lateral?[{opacity:0,transform:`translateX(${direction*48}px)`},{opacity:1,transform:'translateX(0)'}]:entering?[{opacity:0,transform:'scale(.982)'},{opacity:1,transform:'scale(1)'}]:closing?[{opacity:0,transform:'scale(1.008)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0,transform:'translateY(3px)'},{opacity:1,transform:'translateY(0)'}];
-  navigationAnimation=visible.animate(frames,{duration:lateral?500:entering?205:155,easing:lateral?'cubic-bezier(.22,.8,.25,1)':'cubic-bezier(.2,.65,.3,1)'});
+ const motion=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(motion&&lateral&&visible?.animate){
+  navigationAnimation=visible.animate([
+   {transform:`translate3d(${direction*window.innerWidth}px,0,0)`},
+   {transform:'translate3d(0,0,0)'}
+  ],{duration:300,easing:'cubic-bezier(.22,.8,.25,1)'});
  }
+ // Player data may finish later; only restore a saved deep position on its own route.
+ if(pending?.then)pending.then(()=>{
+  if(serial!==navigationSerial||routeKey()!==next)return;
+  if(scrollPosition[1]&&window.scrollY===0)window.scrollTo({left:scrollPosition[0],top:scrollPosition[1],behavior:'instant'});
+ }).catch(()=>{});
 }
+
 window.addEventListener('hashchange',route);
 $('#details').addEventListener('click',()=>{detailed=!detailed;$('#full-table').classList.toggle('show-details',detailed);$('#details').setAttribute('aria-pressed',detailed);$('#details').textContent=detailed?'Vue simplifiée':'Statistiques détaillées';});
 let matchTransition=0;
@@ -87,13 +84,6 @@ const repositionNav=()=>syncFloatingIndicator(document.querySelector('.floating-
 if(typeof ResizeObserver!=='undefined')new ResizeObserver(repositionNav).observe(mobileNav);
 window.addEventListener('resize',repositionNav,{passive:true});
 document.fonts?.ready.then(repositionNav);
-const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(!reduceMotion){
- let seen=false;try{seen=localStorage.getItem('sl-nav-intro-seen')==='1';if(window.matchMedia('(max-width: 700px)').matches)localStorage.setItem('sl-nav-intro-seen','1');}catch{}
- if(!seen&&window.matchMedia('(max-width: 700px)').matches){mobileNav.classList.add('nav-intro');mobileNav.addEventListener('animationend',()=>mobileNav.classList.remove('nav-intro'),{once:true});}
- // The single sliding indicator provides touch feedback; icons remain still.
- mobileNav.addEventListener('animationend',event=>{if(event.animationName==='navTap')event.target.closest('a')?.classList.remove('tap-feedback');});
-}
 function escapeText(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 window.addEventListener("sl-language-change",()=>{render();route();window.SLI18n.apply();});
 window.SLI18n.apply();
