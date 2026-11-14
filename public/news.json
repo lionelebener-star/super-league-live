@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-13T13:11:48.651365+00:00",
-  "updatedAt": "2026-11-13T13:11:48.651365+00:00",
+  "checkedAt": "2026-11-14T12:15:39.758941+00:00",
+  "updatedAt": "2026-11-14T12:15:39.758941+00:00",
   "status": "ok",
   "sources": [
     {
@@ -29,14 +29,14 @@
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 4
+      "count": 3
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 6
+      "count": 3
     },
     {
       "name": "20 minutes",
@@ -62,11 +62,21 @@
   ],
   "articles": [
     {
+      "id": "e6b079b7b6b495efa388",
+      "title": "Die Schweizer Liga wehrt sich gegen Influencer",
+      "excerpt": "Stadion-Vlogs von Influencern verstossen gegen die Richtlinien der SFL. Deshalb geht die Liga gegen die Creator vor…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/die-sfl-geht-gegen-influencer-und-deren-stadion-vlogs-vor/rwthtwp",
+      "image": "https://ocdn.eu/pulscms-transforms/1/aI2ktktTURBXy9mYWU5MzFjMC05MDYwLTRkNDItODAzMy1lMGE1OWUwNzY2MDAucG5nkpMFzQJYzQE7kwmmM2Y2MDgwBg/0ir7rplyfgf.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-14T12:00:21+00:00"
+    },
+    {
       "id": "bda65c9e056505ffecac",
       "title": "«Edi ist für YB trotz allem unverzichtbar»",
       "excerpt": "Nach den zwei unberechtigten Spielsperren kann YB-Stabilisator Edimilson Fernandes im Derby gegen Thun wieder mittun. Sein Cousin…",
       "url": "https://www.blick.ch/sport/fussball/superleague/fifa-direktor-gelson-fernandes-beurteilt-cousin-edimilson-von-yb/tnvl4n1",
-      "image": "https://ocdn.eu/pulscms-transforms/1/0UrktkuTURBXy8wOTIxZDJhNy1mODRiLTQ5YTQtOWM0Ni1jNmIxYjUxZjQyMGMuanBlZ5KTBc0CWM0BO5MJpjgzMmNiYQY/bul9a3u8smi.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/-VcktkuTURBXy8wOTIxZDJhNy1mODRiLTQ5YTQtOWM0Ni1jNmIxYjUxZjQyMGMuanBlZ5KTBc0CWM0BO5MJpjAzNmNhYgY/ciwljufjd7p.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-13T09:48:56+00:00"
@@ -124,6 +134,30 @@
       "dateOnly": true
     },
     {
+      "id": "973c77fdc3f9c258985c",
+      "title": "Zukunftstag bei YB",
+      "excerpt": "Im Wankdorf",
+      "url": "https://www.bscyb.ch/news?nid=17707",
+      "image": "https://bscyb.ch/cgi-bin/news/17707-news-3-20261113121302.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-12T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "09a30d5d420f2885df1e",
+      "title": "Mit Rückenwind nach Yverdon",
+      "excerpt": "YB Frauen",
+      "url": "https://www.bscyb.ch/news?nid=17706",
+      "image": "https://bscyb.ch/cgi-bin/news/17706-news-3-20261113105925.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-12T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
       "id": "29aa968c00658d75f983",
       "title": "Yakin l’encensait, Dalipi choisit finalement le Kosovo",
       "excerpt": "Prêté par Young Boys à Vaduz, le Fribourgeois Lutfi Dalipi, 20 ans, choisit le Kosovo après avoir…",
@@ -158,7 +192,7 @@
       "title": "Torjäger Labeau bleibt beim FC Thun",
       "excerpt": "Der FC Thun kann weiter auf die Dienste von Brighton Labeau zählen. Er hat seinen Vertrag bis 2028…",
       "url": "https://www.blick.ch/sport/fussball/superleague/brighton-labeau-verlaengert-vorzeitig-bis-2028-bei-thun/p12q5ms",
-      "image": "https://ocdn.eu/pulscms-transforms/1/KdJktkuTURBXy8yYzZjZGQ3Ny1iYWNhLTQyYzgtODEyOC1mZWM3NjQ5ZmZlOTQuanBlZ5KTBc0CWM0BO5MJpmY3OTM0MgY/im2djegkbh.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/I24ktkuTURBXy8yYzZjZGQ3Ny1iYWNhLTQyYzgtODEyOC1mZWM3NjQ5ZmZlOTQuanBlZ5KTBc0CWM0BO5MJpjRjNTM5NgY/vsi1tuo1res.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-12T14:35:24+00:00"
@@ -1062,36 +1096,6 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-07T23:17:59+00:00"
-    },
-    {
-      "id": "6da620b639bcc03b87b2",
-      "title": "Bei Magnins Comeback fällt ein Trio ab",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Noten der Lausanne-Spieler zum 1:1 gegen GC.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/die-lausanne-noten-zum-11-remis-gegen-gc/z3g8g4w",
-      "image": "https://ocdn.eu/pulscms-transforms/1/KN2ktkuTURBXy84NDdiNTAxNS02ZGJlLTQ0NjUtYmE2NS1jZmU1N2ViNDBhMTAuanBlZ5KTBc0CWM0BO5MJpjhiYTZkOAY/nyu8h38m2pl.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T23:08:45+00:00"
-    },
-    {
-      "id": "2361715b78b9d1974b18",
-      "title": "Nivokazi ist bei seinem 70‑Meter-Sprint nicht zu stoppen",
-      "excerpt": "In Zusammenarbeit mit blue Sport präsentiert Blick die Highlights der Partie Vaduz – Sion (0:4).",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-die-highlights-der-partie-vaduz-sion-04/tc321gp",
-      "image": "https://ocdn.eu/pulscms-transforms/1/VnYktkuTURBXy9lYTFkNTczYS1jMjZjLTQxNTktYTk3Mi1kMTFhMWU4MjljZTcuanBlZ5KTBc0CWM0BO5MJpjE3OTNjOAY/22jcj18d972.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T23:02:09+00:00"
-    },
-    {
-      "id": "98b21a0d7bcd700f023c",
-      "title": "Krasniqis missglückter Volley wird zum Assist",
-      "excerpt": "In Zusammenarbeit mit blue Sport präsentiert Blick die Highlights der Partie GC – Lausanne (1:1).",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-die-highlights-der-partie-gc-lausanne-11/15xffvl",
-      "image": "https://ocdn.eu/pulscms-transforms/1/-ZDktkuTURBXy83MjVlZWEyNy00YmIwLTQzM2UtOGU0Mi0zNTI3MTUxYzE5YTMuanBlZ5KTBc0CWM0BO5MJpjE4YTQ1MAY/nk12tostm3n.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T23:02:09+00:00"
     }
   ]
 }
