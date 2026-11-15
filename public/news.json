@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-14T12:15:39.758941+00:00",
-  "updatedAt": "2026-11-14T12:15:39.758941+00:00",
+  "checkedAt": "2026-11-15T12:48:25.102578+00:00",
+  "updatedAt": "2026-11-15T12:48:25.102578+00:00",
   "status": "ok",
   "sources": [
     {
@@ -36,7 +36,7 @@
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 3
+      "count": 1
     },
     {
       "name": "20 minutes",
@@ -62,14 +62,68 @@
   ],
   "articles": [
     {
+      "id": "7311dabcede5c4c89be5",
+      "title": "René Weiler licencié de Washington avec effet immédiat après une fin de saison désastreuse",
+      "excerpt": "René Weiler n'est plus l'entraîneur de D.C. United. Le club…",
+      "url": "https://www.blick.ch/fr/sport/football/rene-weiler-licencie-de-washington-avec-effet-immediat-apres-une-fin-de-saison/h2wkn1w",
+      "image": "https://ocdn.eu/pulscms-transforms/1/hyoktkuTURBXy9jZTZkNjA3NS0yMWM5LTQwYTEtYTIwYS0xOTFiMzBhZDgyNTIuanBlZ5KTBc0CWM0BO5MJpmEzOWIwZQY/lt9eo3cx5qj.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-15T11:55:12+00:00"
+    },
+    {
+      "id": "bb396b3ca93c0c241ae9",
+      "title": "«Être un leader ne s’apprend pas du jour au lendemain»",
+      "excerpt": "Après deux matches de suspension, le milieu d'YB Edimilson Fernandes pourra de nouveau jouer…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/football-gelson-fernandes-analyse-les-performances-de-son-cousin/830jpn9",
+      "image": "https://ocdn.eu/pulscms-transforms/1/FwgktkuTURBXy8wOTIxZDJhNy1mODRiLTQ5YTQtOWM0Ni1jNmIxYjUxZjQyMGMuanBlZ5KTBc0CWM0BO5MJpmNhNDIwMgY/c70ynatjha.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-15T10:04:21+00:00"
+    },
+    {
+      "id": "9b446d07210cfb395f17",
+      "title": "YB unterzeichnet Klimacharta",
+      "excerpt": "Klimaplattform",
+      "url": "https://www.bscyb.ch/news?nid=17709",
+      "image": "https://bscyb.ch/cgi-bin/news/17709-news-3-20261115111717.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-14T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "92ea2120b26358544885",
+      "title": "Surprise: Yverdon fait tomber Young Boys!",
+      "excerpt": "Surprise en Women's Super League! Yverdon a fait tomber YB (2-1) ce samedi au Stade Municipal, lors de…",
+      "url": "https://www.blick.ch/fr/sport/football/surprise-yverdon-fait-tomber-young-boys/kdemq04",
+      "image": "https://ocdn.eu/pulscms-transforms/1/9OcktkuTURBXy9kMzI4NWZmNy1hODA4LTQ5YTQtOTEyNC04NzVkNDllODEyYTMuanBlZ5KTBc0CWM0BO5MJpmY3OTY2YwY/6szjojamhdu.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-14T20:23:22+00:00"
+    },
+    {
       "id": "e6b079b7b6b495efa388",
       "title": "Die Schweizer Liga wehrt sich gegen Influencer",
       "excerpt": "Stadion-Vlogs von Influencern verstossen gegen die Richtlinien der SFL. Deshalb geht die Liga gegen die Creator vor…",
       "url": "https://www.blick.ch/sport/fussball/superleague/die-sfl-geht-gegen-influencer-und-deren-stadion-vlogs-vor/rwthtwp",
-      "image": "https://ocdn.eu/pulscms-transforms/1/aI2ktktTURBXy9mYWU5MzFjMC05MDYwLTRkNDItODAzMy1lMGE1OWUwNzY2MDAucG5nkpMFzQJYzQE7kwmmM2Y2MDgwBg/0ir7rplyfgf.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/-X4ktktTURBXy9mYWU5MzFjMC05MDYwLTRkNDItODAzMy1lMGE1OWUwNzY2MDAucG5nkpMFzQJYzQE7kwmmNTM1NGM4Bg/mkrovkodhpk.jpg",
       "source": "Blick",
       "language": "de",
-      "publishedAt": "2026-11-14T12:00:21+00:00"
+      "publishedAt": "2026-11-14T12:00:20+00:00"
+    },
+    {
+      "id": "97aab4d07a90fd2c897f",
+      "title": "Zweite Saisonniederlage",
+      "excerpt": "Yverdon - YB Frauen 2:1",
+      "url": "https://www.bscyb.ch/news?nid=17708",
+      "image": "https://bscyb.ch/cgi-bin/news/17708-news-3-20261115101945.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-13T23:00:00+00:00",
+      "dateOnly": true
     },
     {
       "id": "bda65c9e056505ffecac",
@@ -1046,56 +1100,6 @@
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-08T07:31:14+00:00"
-    },
-    {
-      "id": "b2747c7851a5a1bedea1",
-      "title": "«Ich gehe jetzt zwei Tage in die Eistonne»",
-      "excerpt": "Loïc Lüthi spricht nach der bitteren 2:3-Niederlage im Interview über die wilden 90 Minuten. Und meint…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/loic-luethi-spricht-nach-bitteren-23-niederlage-im-interview/9sd7q9n",
-      "image": "https://ocdn.eu/pulscms-transforms/1/fDlktkuTURBXy9mNmFjNTY1OC1mM2MwLTRjZTQtOGY0Yy1mZTkxZmE5NjhkMDQuanBlZ5KTBc0CWM0BO5MJpmU4OWRmZQY/mx773d1d5di.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T06:10:37+00:00"
-    },
-    {
-      "id": "ed65b8ed4e760f6e1aaa",
-      "title": "So tief steckt der FC Basel im Elend – diese 6 Punkte zeigen es",
-      "excerpt": "Der FC Basel hat nur eines seiner letzten acht Ligaspiele…",
-      "url": "https://www.20min.ch/story/vor-thun-spiel-so-tief-steckt-der-fc-basel-im-elend-diese-6-punkte-zeigen-es-103663644",
-      "image": "https://image.20min.ch/2026/11/07/3eaddc56-db71-489a-a6f7-7e3ff81fff17.jpg?s=60e8866386d405944c47b2145b3b70b4",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-08T04:00:21+00:00"
-    },
-    {
-      "id": "4c12886e1386305b488a",
-      "title": "Ludovic Magnin: «Ce soir, on a perdu 1-1»",
-      "excerpt": "Le Lausanne-Sport a pris un point ce samedi face à GC, en égalisant à la 85e…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/ludovic-magnin-on-a-perdu-1-1/e9dkbqp",
-      "image": "https://ocdn.eu/pulscms-transforms/1/2bNktkuTURBXy84NDdiNTAxNS02ZGJlLTQ0NjUtYmE2NS1jZmU1N2ViNDBhMTAuanBlZ5KTBc0CWM0BO5MJpmFiZjdjMAY/k5usqzt37q8.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-08T00:52:10+00:00"
-    },
-    {
-      "id": "31e968d1291bde9adaf0",
-      "title": "Crevetten-Schock um Boteli – was heisst das für die Nati?",
-      "excerpt": "Eine Lebensmittelvergiftung brachte Sion-Star Winsley Boteli ins Spital. Gegen Vaduz musste der Stürmer noch…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/crevetten-schock-um-boteli-was-heisst-das-fuer-die-nati/3ee6x5k",
-      "image": "https://ocdn.eu/pulscms-transforms/1/3E_ktkuTURBXy8wNDEyMjI1YS05YWYyLTQ2ZGUtOTIxNS1jYzcyN2FlNGE2Y2IuanBlZ5KTBc0CWM0BO5MJpmE0ODM3NwY/5aipzzho1tb.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T23:33:35+00:00"
-    },
-    {
-      "id": "8632a19266b562ee3f39",
-      "title": "Trotz Sieg – unzufriedener Seoane wird zum YB-Chefkritiker",
-      "excerpt": "Samuel Essende bringt den Young Boys den späten 3:2-Sieg in Luzern. Aber YB-Trainer Gerardo Seoane mag…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/trotz-sieg-unzufriedener-seoane-wird-zum-yb-chefkritiker/jxgyp1b",
-      "image": "https://ocdn.eu/pulscms-transforms/1/zDgktkuTURBXy81MTg1NDQwZS1lMzVhLTQ3MTEtODc3Ny04NjEzOGM5MDczYTYuanBlZ5KTBc0CWM0BO5MJpmExMTVlYgY/t9t8dqthcnh.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-07T23:17:59+00:00"
     }
   ]
 }
