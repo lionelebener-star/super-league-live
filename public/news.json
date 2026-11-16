@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T12:48:25.102578+00:00",
-  "updatedAt": "2026-11-15T12:48:25.102578+00:00",
+  "checkedAt": "2026-11-16T13:44:07.473749+00:00",
+  "updatedAt": "2026-11-16T13:44:07.473749+00:00",
   "status": "ok",
   "sources": [
     {
@@ -29,7 +29,7 @@
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 3
+      "count": 5
     },
     {
       "name": "Blick",
@@ -57,16 +57,68 @@
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 5
+      "count": 3
     }
   ],
   "articles": [
+    {
+      "id": "5cbe8122b21b0c992f9b",
+      "title": "Yverdon réalise un superbe exploit face à Young Boys",
+      "excerpt": "Chaque lundi, Keystone-ATS fait le point sur l'actualité du football féminin, de la Women's Super…",
+      "url": "https://www.blick.ch/fr/sport/football/football-yverdon-realise-un-superbe-exploit-face-a-yb/5re0933",
+      "image": "https://ocdn.eu/pulscms-transforms/1/8bvktkuTURBXy9mNjc4MjgzZC1jNDU4LTQ4YmItOGE3OS1iMTg2N2Y4NTgwMDAuanBlZ5KTBc0CWM0BO5MJpjAwZmEyMgY/26cfl48s136.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-16T10:56:20+00:00"
+    },
+    {
+      "id": "18a05ad09c673b7ab9b9",
+      "title": "Positiver Gesamteindruck",
+      "excerpt": "Youth Base",
+      "url": "https://www.bscyb.ch/news?nid=17710",
+      "image": "https://bscyb.ch/cgi-bin/news/17710-news-3-20261116114228.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-15T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "ddfe7f25bb737e174fa3",
+      "title": "Pas de surprise: Murat Yakin a envie de prolonger son contrat et l'ASF veut le garder",
+      "excerpt": "Sous contrat jusqu'en 2028, Murat Yakin a confirmé…",
+      "url": "https://www.blick.ch/fr/sport/football/pas-de-surprise-murat-yakin-a-envie-de-prolonger-son-contrat-et-lasf-veut-le-garder/802td8g",
+      "image": "https://ocdn.eu/pulscms-transforms/1/hx_ktkuTURBXy81NGQ0ZGQ2Yi00ZTU4LTQ4NzYtOGJiYi0zZjQzNjk3NzIwZjUuanBlZ5KTBc0CWM0BO5MJpjc2MzQ5ZQY/i2qad0jwh.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-15T18:15:04+00:00"
+    },
+    {
+      "id": "21d5818275bec4c56196",
+      "title": "Murat Yakin en discussion pour prolonger son contrat",
+      "excerpt": "Le sélectionneur est en négociation avec l’ASF pour prolonger son contrat, qui se termine en 2028…",
+      "url": "https://www.20min.ch/fr/story/football-murat-yakin-en-discussion-pour-prolonger-son-contrat-103668151",
+      "image": "https://image.20min.ch/2026/11/15/04a88d3c-0dc1-4f7b-b492-4443ad2d9175.jpg?s=6289ca52d3ce762a4fdd3947f461f3d4",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-11-15T16:22:19+00:00"
+    },
+    {
+      "id": "b1515ee296c26706c55c",
+      "title": "Der steile Aufstieg von FCZ-Youngster Lichtenstein",
+      "excerpt": "Vom FCZ-Nachwuchs in die Super League und jetzt ins U21-Nati-Camp: Doron Lichtenstein ist erstmals für die Auswahl von…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/doron-lichtenstein-in-der-u21-nati-wirklich-schnell-gegangen/683tcl1",
+      "image": "https://ocdn.eu/pulscms-transforms/1/0lPktkuTURBXy8xMjI3MTViZi0zY2VjLTRiYjgtYTliZi1jNjU1Y2I3ODczZjguanBlZ5KTBc0CWM0BO5MJpmIyNTA0MQY/u0nhkrwmhfe.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-15T15:37:54+00:00"
+    },
     {
       "id": "7311dabcede5c4c89be5",
       "title": "René Weiler licencié de Washington avec effet immédiat après une fin de saison désastreuse",
       "excerpt": "René Weiler n'est plus l'entraîneur de D.C. United. Le club…",
       "url": "https://www.blick.ch/fr/sport/football/rene-weiler-licencie-de-washington-avec-effet-immediat-apres-une-fin-de-saison/h2wkn1w",
-      "image": "https://ocdn.eu/pulscms-transforms/1/hyoktkuTURBXy9jZTZkNjA3NS0yMWM5LTQwYTEtYTIwYS0xOTFiMzBhZDgyNTIuanBlZ5KTBc0CWM0BO5MJpmEzOWIwZQY/lt9eo3cx5qj.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/EDMktkuTURBXy9jZTZkNjA3NS0yMWM5LTQwYTEtYTIwYS0xOTFiMzBhZDgyNTIuanBlZ5KTBc0CWM0BO5MJpmJiNjdmOAY/rvsz7umsidm.jpg",
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-15T11:55:12+00:00"
@@ -1050,56 +1102,6 @@
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-08T10:06:58+00:00"
-    },
-    {
-      "id": "b04690db9312fe504809",
-      "title": "Lüthi und der Bowling-Effekt – plötzlich Hoffnung für Luzern",
-      "excerpt": "Mitten in eine schwierige Phase des FC Luzern kommt Loïc Lüthi als Hoffnungsträger. Speziell: Vor…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/luethi-und-der-bowling-effekt-ploetzlich-hoffnung-fuer-luzern/1ykr79q",
-      "image": "https://ocdn.eu/pulscms-transforms/1/RH_ktkuTURBXy9jYTcwYWQ5MC0zZjM0LTQ4MjUtOGI2ZS01NjVmNmZiNGVkZmIuanBlZ5KTBc0CWM0BO5MJpmM0MjQxYQY/cizkjrgpj8u.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T10:01:18+00:00"
-    },
-    {
-      "id": "61fe834a45ee9ed6b585",
-      "title": "Le curieux paradoxe du Servette FC avant de recevoir Zurich",
-      "excerpt": "Servette a remporté deux de ses trois derniers matches en n'ayant pas la possession…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/le-curieux-paradoxe-du-servette-fc-avant-de-recevoir-zurich/jhfnrq3",
-      "image": "https://ocdn.eu/pulscms-transforms/1/PD0ktkuTURBXy9iMGM0YTc5ZC0yMjBmLTQyZDctODAyMS04ODYyNTM4OWMzYWYuanBlZ5KTBc0CWM0BO5MJpmY5YzE4ZQY/687vqzowbc.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-08T09:56:35+00:00"
-    },
-    {
-      "id": "3b90138edcaaa54336c1",
-      "title": "Sions Nivokazi sehnte sich drei Monate nach diesem Moment",
-      "excerpt": "Volle drei Monate ist es her, dass Rilind Nivokazi das letzte Mal in Sions Startelf…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sions-rilind-nivokazi-nach-drei-monaten-wieder-in-der-startelf/sb2xyr4",
-      "image": "https://ocdn.eu/pulscms-transforms/1/u8fktkuTURBXy9iNzhjYzViMS1lMzY2LTRkOTgtYTY5MC0xNDM3YWE2Yzk0N2MuanBlZ5KTBc0CWM0BO5MJpjI2MjEzYwY/5sfpgblapey.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T09:43:21+00:00"
-    },
-    {
-      "id": "eb7915335cdfe00e3d5b",
-      "title": "«Nous avons perdu 1-1»: Magnin entre frustration et espoir",
-      "excerpt": "De retour, Ludovic Magnin a vu le Lausanne-Sport dominer Grasshopper sans gagner (1-1). Un point…",
-      "url": "https://www.20min.ch/fr/story/football-nous-avons-perdu-1-1-magnin-entre-frustration-et-espoir-103663977",
-      "image": "https://image.20min.ch/2026/11/07/8a7643a3-ba5f-4c11-9624-0cecc689dfac.jpg?s=97a343ac8aa07c5bf6f2ca1194c38496",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-08T08:06:50+00:00"
-    },
-    {
-      "id": "009204dd3a527901b50b",
-      "title": "Steve Rouiller a retrouvé le brassard et n'en fait pas une histoire",
-      "excerpt": "Dépossédé de «son» brassard de capitaine du Servette FC en début de…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/steve-rouiller-a-retrouve-le-brassard-et-nen-fait-pas-une-histoire/6g3y77h",
-      "image": "https://ocdn.eu/pulscms-transforms/1/3yJktkuTURBXy82MTFkZWI0ZC00NDAzLTRmZjQtOTVhNy00ZDk2NmViMGU0NjYuanBlZ5KTBc0CWM0BO5MJpjlhOTdiNwY/qpeos8gls3.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-08T07:31:14+00:00"
     }
   ]
 }
