@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-16T13:44:07.473749+00:00",
-  "updatedAt": "2026-11-16T13:44:07.473749+00:00",
+  "checkedAt": "2026-11-17T14:33:54.437978+00:00",
+  "updatedAt": "2026-11-17T14:33:54.437978+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,21 +15,21 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 6
+      "count": 8
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 6
+      "count": 8
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 5
+      "count": 4
     },
     {
       "name": "Blick",
@@ -50,17 +50,137 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "name": "20 Minuten",
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 3
+      "count": 1
     }
   ],
   "articles": [
+    {
+      "id": "239c33a98813d1571490",
+      "title": "BSL: efficacité devant le but et capacité de réaction",
+      "excerpt": "Quels joueurs se montrent particulièrement efficaces devant le but ? Et quelles équipes parviennent à…",
+      "url": "https://sfl.ch/articles/bsl-efficacite-devant-le-but-et-capacite-de-reaction",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1618611.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-17T09:30:00+00:00"
+    },
+    {
+      "id": "b4ab5f9936a5f9d0c2b7",
+      "title": "BSL: Effizienz und Comeback-Qualitäten",
+      "excerpt": "Wer nutzt seine Torchancen besonders effizient? Und welche Mannschaften beweisen auch nach einem Rückstand ihre Comeback-Qualitäten? Zwei spannende Statistiken aus…",
+      "url": "https://sfl.ch/de/articles/bsl-effizienz-und-comeback-qualitaten",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1618611.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-17T09:30:00+00:00"
+    },
+    {
+      "id": "bcee5d8b77ad22608d5f",
+      "title": "Boteli, Sanches, Schmidt: Nächste Nati-Generation tanzt Ballet",
+      "excerpt": "Die Schweiz schiesst Schottland zum Abschluss der Nations League mit 4:0 aus dem Kybunpark. Das Schaulaufen in…",
+      "url": "https://www.20min.ch/story/next-gen-neue-gesichter-nati-tanzt-mit-ballet-boteli-und-sanches-103668890",
+      "image": "https://image.20min.ch/2026/11/17/248b9a9f-9aba-480f-b7ac-8a162d53c93c.jpg?s=58173cc0744b5c186e55e1b6aa08c72a",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-11-17T08:57:42+00:00"
+    },
+    {
+      "id": "41542026dc8435e5eaf5",
+      "title": "DCL: efficacité devant le but et capacité de réaction",
+      "excerpt": "Quels joueurs se montrent particulièrement efficaces devant le but ? Et quelles équipes parviennent à…",
+      "url": "https://sfl.ch/articles/dcl-efficacite-devant-le-but-et-capacite-de-reaction",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1618660.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-17T07:30:00+00:00"
+    },
+    {
+      "id": "9004cce0476b46266acb",
+      "title": "DCL: Effizienz und Comeback-Qualitäten",
+      "excerpt": "Wer nutzt seine Torchancen besonders effizient? Und welche Mannschaften beweisen auch nach einem Rückstand ihre Comeback-Qualitäten? Zwei spannende Statistiken aus…",
+      "url": "https://sfl.ch/de/articles/dcl-effizienz-und-comeback-qualitaten",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1618660.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-17T07:30:00+00:00"
+    },
+    {
+      "id": "67259fefaeb793dad7bb",
+      "title": "Murat Yakin: «Cette équipe a de la joie à jouer ensemble»",
+      "excerpt": "Une jeune et enthousiasmante Nati a balayé l'Ecosse (4-0) lundi soir à Saint-Gall…",
+      "url": "https://www.blick.ch/fr/sport/football/murat-yakin-cette-equipe-a-de-la-joie-a-jouer-ensemble/dt97fv6",
+      "image": "https://ocdn.eu/pulscms-transforms/1/gjSktkuTURBXy9jZDk3ODlmYi00OTdjLTQ0YjAtYmY5Ny03MmEwNmFmZjJjN2UuanBlZ5KTBc0CWM0BO5MJpmY3YmI0ZQY/oc4kc4i8pcs.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-16T23:57:35+00:00"
+    },
+    {
+      "id": "a0939401109a2bff009d",
+      "title": "U16-Frauen mit starkem Auftritt gegen Servette",
+      "excerpt": "Nachwuchs",
+      "url": "https://www.bscyb.ch/news?nid=17713",
+      "image": "https://bscyb.ch/cgi-bin/news/17713-news-3-20261117104909.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-16T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "6094114fbdb4e01bd19e",
+      "title": "Team des Jahres",
+      "excerpt": "Bärnchampions 2026",
+      "url": "https://www.bscyb.ch/news?nid=17712",
+      "image": "https://bscyb.ch/cgi-bin/news/17712-news-3-20261117100511.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-16T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "87e6b10010c7bb0a6e1f",
+      "title": "«Wer bin ich?» mit Zesiger und Jenz",
+      "excerpt": "AMAG amüsant",
+      "url": "https://www.bscyb.ch/news?nid=17711",
+      "image": "https://bscyb.ch/cgi-bin/news/17711-news-3-20261116180530.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-16T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "81c321de1875af7019cc",
+      "title": "Les notes de la victoire de la Nati face à l'Ecosse avec des Romands au top!",
+      "excerpt": "La Suisse a battu l'Ecosse très facilement (4-0)…",
+      "url": "https://www.blick.ch/fr/sport/football/les-notes-de-la-victoire-de-la-nati-face-a-lecosse/zeflvst",
+      "image": "https://ocdn.eu/pulscms-transforms/1/y3dktkuTURBXy8zMjdhZWUxZi1jOWFiLTQzMDgtYmIwMC02NTExYjExNmQ3MGEuanBlZ5KTBc0CWM0BO5MJpjI1MGQwMwY/qojuyf47mrf.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-16T21:53:51+00:00"
+    },
+    {
+      "id": "2f17b84682ca73a7e00a",
+      "title": "Une Nati expérimentale écrase l'Ecosse",
+      "excerpt": "Un jeune équipe de Suisse a fêté son retour en Ligue A en s'imposant avec la manière face à…",
+      "url": "https://www.20min.ch/fr/story/nations-league-une-nati-experimentale-ecrase-l-ecosse-103668690",
+      "image": "https://image.20min.ch/2026/11/16/4984352a-56ae-42ec-874a-2a7e4c6a9096.jpg?s=7ff558d89252b347f105aa2f1779669a",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-11-16T19:30:50+00:00"
+    },
     {
       "id": "5cbe8122b21b0c992f9b",
       "title": "Yverdon réalise un superbe exploit face à Young Boys",
@@ -992,116 +1112,6 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-08T17:25:27+00:00"
-    },
-    {
-      "id": "570e655624e0bb16dc52",
-      "title": "Der Leader enttäuscht – Trio fällt komplett durch",
-      "excerpt": "Leader Lugano kommt in der Ostschweiz unter die Räder und verliert erstmals in dieser Saison. Wer…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/der-leader-enttaeuscht-die-lugano-noten-gegen-st-gallen/0rbhwy4",
-      "image": "https://ocdn.eu/pulscms-transforms/1/40MktkuTURBXy84N2IwOWQ0NS04MTE1LTRjN2QtOTliMi0zNWM3NWM5NDQ3MDUuanBlZ5KTBc0CWM0BO5MJpmM4ZGNhOQY/yqo05fkesne.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T16:35:11+00:00"
-    },
-    {
-      "id": "9746699c799d59e345f2",
-      "title": "Fulminante Espen überzeugen gegen den Leader durchs Band",
-      "excerpt": "St. Gallen tritt gegen den Leader fulminant auf. Wer hat wie abgeschnitten? Hier findest du die…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/keiner-faellt-ab-die-noten-des-fc-st-gallen-gegen-lugano/ps34qe7",
-      "image": "https://ocdn.eu/pulscms-transforms/1/oM6ktkuTURBXy8yZGJjMTA2Ni03MmE3LTQyNzctYWU1Mi1kN2JkYWNlMDc5NWQuanBlZ5KTBc0CWM0BO5MJpmE5ZGY0NQY/rbkaivhwjob.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T16:27:02+00:00"
-    },
-    {
-      "id": "4f38b73903f62e3f4980",
-      "title": "Servette et Zurich se séparent sur un nul décevant",
-      "excerpt": "Au terme d'une rencontre peu animée, les Grenat et le FCZ se quittent sur un…",
-      "url": "https://www.20min.ch/fr/story/super-league-servette-et-zurich-se-separent-sur-un-nul-decevant-103664073",
-      "image": "https://image.20min.ch/2026/11/08/ab5dced3-e7c8-4215-a558-bc8365379604.jpg?s=4233e5355edece3b6e5028cf2d6f2a4b",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-08T15:03:49+00:00"
-    },
-    {
-      "id": "12bf019ef79f2a2de50e",
-      "title": "«So abschlachten lassen dürfen wir uns nicht»",
-      "excerpt": "Lugano verliert in St. Gallen zum ersten Mal in dieser Saison – und kommt gleich gründlich unter…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/st-gallen-schlaegt-lugano-deutlich-mit-50/1ln5m0v",
-      "image": "https://ocdn.eu/pulscms-transforms/1/r8FktkuTURBXy8wZTM1NWYyNy0wZTJmLTQyYWEtOTE3Yi03MTFmODJlYTBhNmMuanBlZ5KTBc0CWM0BO5MJpjA1NzBiOQY/ba90n0n46wh.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T14:56:20+00:00"
-    },
-    {
-      "id": "21a873e3df4bccae0649",
-      "title": "Vaduz-Coach Schneider rückt nicht von seiner Strategie ab",
-      "excerpt": "Marc Schneider hat mit Aufsteiger Vaduz erstmals Schiffbruch erlitten. Dennoch rückt er kein Stück von seiner…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/vaduz-coach-schneider-rueckt-nicht-von-offensivstrategie-ab/3blq5z5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/5osktkuTURBXy84ZWU4YzMyMC04Mzg1LTQ5MGMtODIxYi0wNDQ5NDU1ODkzZGIuanBlZ5KTBc0CWM0BO5MJpmM2YzE1MgY/5thds8itfr.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T13:19:58+00:00"
-    },
-    {
-      "id": "a4b8fba0eb6378cc9557",
-      "title": "YB-Matchwinner hält sich an Ansage von Fassnacht",
-      "excerpt": "Christian Fassnacht bittet Samuel Essende: «Sami, du musst uns retten!» Aber dass Essende das 3:2 gegen Luzern…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/spaete-wende-yb-matchwinner-essende-war-fast-schon-draussen/8bpgnxp",
-      "image": "https://ocdn.eu/pulscms-transforms/1/kWJktkuTURBXy9lYTIzYzQ5Yi05ODg4LTQyMDgtYjlkYi0wY2FmZDQ4Yjk4NjkuanBlZ5KTBc0CWM0BO5MJpmI5ODdjOAY/e1cx11gpgf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T12:42:18+00:00"
-    },
-    {
-      "id": "e99552013730dfd99ccb",
-      "title": "«Mein Herz hat sofort Ja gesagt, aber ...»",
-      "excerpt": "Ludovic Magnin ist wieder zurück bei Lausanne und zeigt beim 1:1 gegen GC ein anderes Gesicht…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/lausanne-trainer-magnin-ist-nach-rueckkehr-voller-tatendrang/gfl7nld",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ZRsktkuTURBXy84ZWIzNjRlYS1jYTcxLTQ2MTctOTQ3ZC02MDI1ZGNlNGNjZjIuanBlZ5KTBc0CWM0BO5MJpjkyODViMgY/72hqp36svd2.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T11:58:43+00:00"
-    },
-    {
-      "id": "a48ca9c959c796ad4858",
-      "title": "«Ich schaute keine Thun-Spiele mehr»",
-      "excerpt": "Dominik Albrecht (41) führte den FC Thun als Sportchef aus der Challenge League bis zum Meistertitel. Kurz darauf trat…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-thun-dominik-albrecht-ueber-seine-auszeit-und-die-rueckkehr/2kc98hy",
-      "image": "https://ocdn.eu/pulscms-transforms/1/l61ktkuTURBXy82NGMyMGI3OC1jMDYwLTQ1MjEtOWQ0MS1hMTAwN2Y0OGYzN2EuanBlZ5KTBc0CWM0BO5MJpjVmYzUyZgY/ljxj4ozi0p.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T11:53:31+00:00"
-    },
-    {
-      "id": "914ab61af374ee606a8a",
-      "title": "Winsley Boteli vaincu par une attaque de crevettes, Sion s'impose sans lui",
-      "excerpt": "Une intoxication alimentaire a envoyé Winsley Boteli à l’hôpital. L’attaquant du FC…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/winsley-boteli-vaincu-par-une-attaque-de-crevettes-sion-simpose-sans-lui/n5ypd0k",
-      "image": "https://ocdn.eu/pulscms-transforms/1/fEcktkuTURBXy8wNDEyMjI1YS05YWYyLTQ2ZGUtOTIxNS1jYzcyN2FlNGE2Y2IuanBlZ5KTBc0CWM0BO5MJpjFhYTk1MQY/zqnsjr3ut1i.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-08T10:53:54+00:00"
-    },
-    {
-      "id": "e8b01646df643fb03e55",
-      "title": "«Den Klassenerhalt zu schaffen, wird kein Zuckerschlecken»",
-      "excerpt": "GC kommt gegen Schlusslicht Lausanne trotz Führung nur zu einem 1:1 und wartet seit fünf Spielen auf…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/gc-trainer-janssen-blickt-dem-ernst-der-lage-ins-auge/ldqjvn6",
-      "image": "https://ocdn.eu/pulscms-transforms/1/4sXktkuTURBXy9iNzgzMmE0Yy0xYTlhLTQzYjAtYTUxOC00YTI0NTc2NWVjNTAuanBlZ5KTBc0CWM0BO5MJpmViY2RkZQY/gxz8lkuaq9l.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T10:34:14+00:00"
-    },
-    {
-      "id": "d744fd125fb337c25b37",
-      "title": "Olivier Custodio: «On a tous très mal dormi dimanche et lundi»",
-      "excerpt": "Le dimanche noir du Lausanne-Sport a eu des conséquences concrètes. Le capitaine Olivier…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/olivier-custodio-on-a-tous-tres-mal-dormi-dimanche-et-lundi/5e7nh3r",
-      "image": "https://ocdn.eu/pulscms-transforms/1/_LFktkuTURBXy82ODdkZmVlZC01NDAwLTQ3YzQtOGE0ZC0yZDkyZjU3ZjljZmEuanBlZ5KTBc0CWM0BO5MJpmZhNjNmNwY/1nqehkh7cqb.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-08T10:06:58+00:00"
     }
   ]
 }
