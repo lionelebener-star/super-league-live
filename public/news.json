@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-18T14:10:10.776557+00:00",
-  "updatedAt": "2026-11-18T14:10:10.776557+00:00",
+  "checkedAt": "2026-11-19T14:29:18.512742+00:00",
+  "updatedAt": "2026-11-19T14:29:18.512742+00:00",
   "status": "ok",
   "sources": [
     {
@@ -29,14 +29,14 @@
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 4
+      "count": 3
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 2
+      "count": 7
     },
     {
       "name": "20 minutes",
@@ -62,11 +62,83 @@
   ],
   "articles": [
     {
+      "id": "7cb689056aee9ecac6c9",
+      "title": "Wo YB miserabel ist – und wo Thun sogar die Bayern schlägt",
+      "excerpt": "Florian Hohmann von der HSG St. Gallen hat sowohl die Arbeit der…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/wo-yb-miserabel-ist-und-thun-sogar-die-bayern-schlaegt/63wz7fn",
+      "image": "https://ocdn.eu/pulscms-transforms/1/SZhktkuTURBXy8yMDlkZDNmZC1hYmU3LTQ2MzEtYTY1Zi1iZjBkZTNhZjcyYjUuanBlZ5KTBc0CWM0BO5MJpjJhYTZmZAY/d378rn7i5zl.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-19T11:09:05+00:00"
+    },
+    {
+      "id": "adaeeb4a05ea841df05d",
+      "title": "YB-Podcast #45 mit Bernhardt und Bonsu",
+      "excerpt": "Jetzt anhören",
+      "url": "https://www.bscyb.ch/news?nid=17718",
+      "image": "https://bscyb.ch/cgi-bin/news/17718-news-3-20261119113253.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-18T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "cc356ffd2dc0fcec62a2",
+      "title": "Das sagt der FC Thun zu seinen Problem-Fans",
+      "excerpt": "Ein Fan in Haft, Pyro im Stadion und eine Schlägerei in der Innenstadt: Rund um den…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fc-thun-hat-der-schweizer-meister-ein-fan-problem/qtd2qrl",
+      "image": "https://ocdn.eu/pulscms-transforms/1/jVqktkuTURBXy9lMTIyYzU3NS1iYmY4LTQwNjAtYjkyYi00YWIyZGE5YzU3MGEuanBlZ5KTBc0CWM0BO5MJpjJmZDFhZgY/6zddxi02byq.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-18T18:46:46+00:00"
+    },
+    {
+      "id": "f4806065b32fa004d4c3",
+      "title": "FCB-Zukunft von Klub-Legende Stocker ist geklärt",
+      "excerpt": "Valentin Stocker verlängert sein Engagement beim FC Basel. Die Klub-Legende nimmt sich zu Beginn des Jahres 2027 eine…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-valentin-stocker-bleibt-beim-fcb-sportlicher-leiter/rwp22m9",
+      "image": "https://ocdn.eu/pulscms-transforms/1/_QQktkuTURBXy8xOGYxN2U4Yy1hMWVjLTQ0YTEtYTZkZi02YzkxNWY5OTQzYzAuanBlZ5KTBc0CWM0BO5MJpjM2N2RlZgY/wvqgq9kr3m.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-18T17:53:25+00:00"
+    },
+    {
+      "id": "19722994816179366d7b",
+      "title": "Ce jeune Valaisan fait battre les cœurs sédunois",
+      "excerpt": "Grâce à Théo Berdayes, le FC Sion a pris une belle coloration valaisanne. Mais qui est…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/ce-jeune-valaisan-fait-battre-les-coeurs-sedunois/sbw2rrp",
+      "image": "https://ocdn.eu/pulscms-transforms/1/woaktkuTURBXy83MDhkMWY2ZS03NDg3LTRmMWMtYTc1OC04MzJmMjljN2ZjODMuanBlZ5KTBc0CWM0BO5MJpmI0YTBjMAY/fv37vzldr8t.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-18T17:26:50+00:00"
+    },
+    {
+      "id": "cf3e15849e3d5bde3917",
+      "title": "Das sind die Dauerbrenner der Super League",
+      "excerpt": "Wer hat in dieser Saison bis jetzt die meisten Spiele in den Beinen? Die Europacup-Teams haben in…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-diese-spieler-haben-die-meisten-minuten-gesammelt/vq4t323",
+      "image": "https://ocdn.eu/pulscms-transforms/1/RZlktkuTURBXy83Yjg1YTM2YS1iZTUxLTQ2NDctOTIzNi0zNzAyZjYwZDY5OWQuanBlZ5KTBc0CWM0BO5MJpmQ5NDE3MQY/t4b38nzvk2.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-18T16:56:29+00:00"
+    },
+    {
+      "id": "2c4f6e8e8a0d07e458bf",
+      "title": "Die Espen sind die Pressing-Könige der Liga",
+      "excerpt": "Der FCSG drückt der Liga mit seinem Pressing und Konterspiel den Stempel auf. Bisher verhinderte auch die…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-fcsg-ist-pressing-koenig-zahlt-sich-das-aus/76lrtez",
+      "image": "https://ocdn.eu/pulscms-transforms/1/kKlktkuTURBXy82ZDY3YjYyOS1iNzM2LTQ0MzYtYThmYy04OTVlMTFhODFiYzQuanBlZ5KTBc0CWM0BO5MJpmZhYjYzOAY/7nn0h5gw3ls.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-18T16:02:27+00:00"
+    },
+    {
       "id": "4085622094ef45238f72",
       "title": "Das ist die wertvollste Elf der Super League",
       "excerpt": "Wer sich die teuerste Elf der Super League leisten will, muss tief in die Tasche greifen…",
       "url": "https://www.blick.ch/sport/fussball/superleague/das-ist-die-wertvollste-elf-der-super-league/x75lgnz",
-      "image": "https://ocdn.eu/pulscms-transforms/1/lrtktkuTURBXy83ZTMxYWFlOC1lMWUxLTRiZGMtYjk4My1iZTExMDE1YTNkYjMuanBlZ5KTBc0CWM0BO5MJpmI0ZjM0NQY/plxj1lvvjpn.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/BqVktkuTURBXy83ZTMxYWFlOC1lMWUxLTRiZGMtYjk4My1iZTExMDE1YTNkYjMuanBlZ5KTBc0CWM0BO5MJpmUwMjNjMwY/dmi2b57d6c9.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-18T07:23:37+00:00"
@@ -1044,82 +1116,6 @@
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-08T23:14:54+00:00"
-    },
-    {
-      "id": "2cddca15611bacb2f1ca",
-      "title": "Testspiel gegen Stade Lausanne-Ouchy",
-      "excerpt": "Am Donnerstag",
-      "url": "https://www.bscyb.ch/news?nid=17698",
-      "image": "https://bscyb.ch/cgi-bin/news/17698-news-3-20261110072405.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-08T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "5907ee24bd1f5047d11b",
-      "title": "Acht YB-Spieler unterwegs",
-      "excerpt": "Nationalteams",
-      "url": "https://www.bscyb.ch/news?nid=17697",
-      "image": "https://bscyb.ch/cgi-bin/news/17697-news-3-20261109140104.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-08T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "58554cc5f7828b3667e2",
-      "title": "U17-Frauen-Nati",
-      "excerpt": "Aufgebote",
-      "url": "https://www.bscyb.ch/news?nid=17696",
-      "image": "https://bscyb.ch/cgi-bin/news/17696-news-3-20261109120927.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-08T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "306dd8661d76a1e9dd4f",
-      "title": "«Am Schluss wäre noch mehr drin gewesen»",
-      "excerpt": "Der FC Thun liegt gegen Basel nach 12 Minuten 0:2 zurück und rettet sich zu einem 3:3…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-reichmuth-am-schluss-waere-noch-mehr-drin-gewesen/52fdjj0",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ofXktkuTURBXy8xYjc1ZmE5ZC03YzhlLTQ4MmItOThhOC03YTIwNTg3OTc2YzcuanBlZ5KTBc0CWM0BO5MJpjg4MDNhZAY/1iphs15vftq.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T22:38:13+00:00"
-    },
-    {
-      "id": "e50b7d7a2db08d67f5e0",
-      "title": "FCSG-Daschner und Hunziker verraten das Erfolgsrezept",
-      "excerpt": "Der FC St. Gallen fertigt Leader Lugano mit 5:0 ab. Andrin Hunziker und Lukas Daschner erzählen, warum Lugano…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-fcsg-daschner-und-hunziker-nach-50-gegen-lugano/74vvsvw",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Z6TktkuTURBXy9lM2ZjYzE2ZS1mYWU5LTQzODEtODI4Mi0yM2M0ODZkZTY4YmIuanBlZ5KTBc0CWM0BO5MJpjUwMzk1YQY/t4pmln793bn.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T22:35:55+00:00"
-    },
-    {
-      "id": "ff6e5c02c0db7b75b6bc",
-      "title": "Zwei stechen bei kämpferischen Oberländern heraus",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die Thun-Noten zum 3:3 gegen Basel.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-thun-noten-gegen-basel-in-der-13-runde/88cdwd0",
-      "image": "https://ocdn.eu/pulscms-transforms/1/enaktkuTURBXy81ZmMzOWQ0OS01ZjU4LTRlNGQtOWZkMi04M2YxZWJlN2U3MDguanBlZ5KTBc0CWM0BO5MJpmYzOTNjYQY/lekr3zed3.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T21:09:42+00:00"
-    },
-    {
-      "id": "6773a09cd986d220c2a2",
-      "title": "Neben Patzer-Omlin fallen zwei weitere Basler durch",
-      "excerpt": "Wer hat wie abgeschnitten? Hier findest du die FCB-Noten zum 3:3 gegen Thun.",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-basel-noten-gegen-thun-in-der-13-runde/ql104rk",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Q4dktkuTURBXy82NTA2ZWFhNC05OWI3LTQxN2ItOWE4NC1iYmFiMGQ5MGM2N2UuanBlZ5KTBc0CWM0BO5MJpjlkMDYzZgY/wn5cw9sqsj.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-08T21:08:08+00:00"
     }
   ]
 }
