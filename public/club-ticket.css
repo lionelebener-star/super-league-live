@@ -25,3 +25,13 @@
  body>header>.brand{font-size:17px;gap:8px}
  body>header>.brand .swiss.crystal-logo{width:36px;height:36px}
 }
+
+/* Compact dual selector: shared club theme, independent controls. */
+header .club-choice>.ticket-controls{display:flex;flex:1;align-items:stretch;border:1px solid color-mix(in srgb,var(--club-accent) 45%,var(--line));border-radius:12px;background:linear-gradient(120deg,var(--soft),white);box-shadow:0 3px 12px #13251f0b;min-height:36px}
+.club-choice .club-ticket,.club-choice .competition-ticket{display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;width:auto;padding:4px 10px;border:0;border-radius:0;background:transparent;box-shadow:none;color:var(--ink);font-size:14px;line-height:1.25;white-space:nowrap}
+.club-choice .club-ticket{flex:0 0 auto;border-radius:11px 0 0 11px}.club-choice .competition-ticket{flex:1;border-left:1px dashed color-mix(in srgb,var(--green) 25%,transparent);border-radius:0 11px 11px 0}.club-choice .club-ticket strong{font-size:14px}.club-choice .club-ticket .club-jersey{width:22px;height:24px;filter:none}.competition-ticket svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;flex-shrink:0}.competition-ticket span:last-child{margin-left:auto}.competition-option{display:flex;justify-content:space-between;width:100%;margin:10px 0;text-align:left}.competition-dialog h2{font-size:22px}.competition-dialog p{font-size:14px}
+.club-choice.ticket-is-pinned .club-ticket{position:static;width:auto;animation:none;box-shadow:none;background:transparent}.club-choice.ticket-is-pinned>.ticket-controls{position:fixed;z-index:80;top:max(10px,env(safe-area-inset-top,0px));left:var(--ticket-dock-left,12px);width:var(--ticket-dock-width,calc(100% - 24px));height:36px!important;box-shadow:0 6px 24px #13251f24}
+@media(min-width:701px){body>header{grid-template-columns:minmax(0,1fr) 320px minmax(0,1fr)}body>header>.club-choice{width:320px}}
+@media(max-width:360px){.club-choice .club-ticket,.club-choice .competition-ticket{gap:5px;padding:4px 7px;font-size:13px}}
+
+header .club-choice{background:transparent;box-shadow:none;border:0}.ticket-controls{width:100%;min-width:0}
