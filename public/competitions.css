@@ -1,2 +1,9 @@
 body.champions-active #content{display:none!important}#competition-content[hidden]{display:none!important}.cl-team-link{display:flex;gap:8px;align-items:center;border:0;padding:0;background:none;color:var(--ink);text-align:left;font-size:inherit}.cl-team-link .crest{width:23px;height:25px}.cl-squad{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}.cl-squad h2{font-size:16px;letter-spacing:0}.cl-avatar{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--soft);color:var(--green);font-size:22px;margin-bottom:12px}#competition-content table{font-variant-numeric:tabular-nums}#competition-content footer{padding-bottom:120px}
 .club-choice .competition-ticket>span{display:inline}.club-choice .competition-ticket{overflow:hidden}.club-choice .competition-ticket>span:first-of-type{overflow:hidden;text-overflow:ellipsis}.club-choice .competition-ticket>span:last-child{flex-shrink:0}
+
+.cl-avatar{position:relative;width:72px;height:72px;overflow:hidden;isolation:isolate}
+.cl-avatar img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%;background:var(--soft)}
+.cl-photo-credits{margin:24px 0;font-size:14px;color:var(--muted)}
+.cl-photo-credits summary{cursor:pointer;min-height:44px;display:list-item;align-content:center}
+.cl-photo-credits ul{padding-left:20px;line-height:1.65;overflow-wrap:anywhere}
+
