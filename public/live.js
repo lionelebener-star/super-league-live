@@ -37,11 +37,12 @@
  };
  function matchEvents(){if(!live)return [];const all=[...new Map([...calendar,...live.results,...live.fixtures].map(e=>[String(e.id),e])).values()];const today=day(Date.now());return all.filter(e=>{const finished=['post-game','awarded'].includes(e.status);return matchFilter==='results'?finished&&day(e.kickoff)<today:(!finished||day(e.kickoff)>=today)&&e.status!=='cancelled';}).sort((a,b)=>matchFilter==='results'?Date.parse(b.kickoff)-Date.parse(a.kickoff):Date.parse(a.kickoff)-Date.parse(b.kickoff));}
  window.SLMatchEvents=matchEvents;
+ window.SLTeamMatches=()=>[...calendar,...(live?.results||[]),...(live?.fixtures||[])];
  renderMatches=function(){
   if(!live)return baseRenderMatches();
   const events=matchEvents();document.querySelector('#match-list').innerHTML=events.length?events.map(e=>{const compact=e.status==='pre-game'||e.status==='postponed';return `<div class="panel ${compact?'compact-match':''}" data-fixture-id="${escape(e.id)}">${matchFixture(e)}</div>`;}).join(''):`<p class="match-empty">${text('Aucun match à afficher.','Keine Spiele vorhanden.')}</p>`;
  };
- fetch('/api/schedule').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{if(Array.isArray(data.events)){calendar=data.events;if(live)renderMatches();}}).catch(()=>{});
+ fetch('/api/schedule').then(r=>{if(!r.ok)throw Error();return r.json();}).then(data=>{if(Array.isArray(data.events)){calendar=data.events;if(live)renderMatches();window.dispatchEvent(new Event('sl-team-results-updated'));}}).catch(()=>{});
  const banner=document.createElement('section');banner.className='live-overview';banner.setAttribute('data-no-i18n','');banner.setAttribute('aria-live','polite');document.querySelector('#stats').before(banner);
  const tableNote=document.createElement('p');tableNote.className='live-table-note';tableNote.setAttribute('data-no-i18n','');document.querySelector('#full-table').before(tableNote);
  // Official SFL 2026/27 calendar: opening 25 July, final championship round 29/30 May.

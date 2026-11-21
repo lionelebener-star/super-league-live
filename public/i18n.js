@@ -83,7 +83,7 @@
       button.setAttribute('aria-pressed',String(active));button.classList.toggle('active',active);
     });
     const tab=location.hash.slice(1).split('/')[0]||'actu';
-    const titles=language==='de'?{actu:'News & Statistiken',classement:'Tabelle',matchs:'Spiele',pronos:'Tippspiel',joueurs:'Teams & Spieler'}:{actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Équipes & joueurs'};
+    const titles=language==='de'?{actu:'News & Statistiken',classement:'Tabelle',matchs:'Spiele',pronos:'Tippspiel',joueurs:'Teams'}:{actu:'Actu et stats',classement:'Classement',matchs:'Matchs',pronos:'Pronos entre amis',joueurs:'Teams'};
     if(tab!=='joueurs')document.title='Super League — '+(titles[tab]||titles.actu);
   }
   document.addEventListener('click',event=>{
