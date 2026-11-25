@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-24T15:57:05.352558+00:00",
-  "updatedAt": "2026-11-24T15:57:05.352558+00:00",
+  "checkedAt": "2026-11-25T15:43:15.042751+00:00",
+  "updatedAt": "2026-11-25T15:43:15.042751+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,35 +15,35 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 6
+      "count": 7
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 6
+      "count": 7
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 6
+      "count": 2
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 29
+      "count": 12
     },
     {
       "name": "20 minutes",
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/super-league",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "name": "20 minutes",
@@ -62,11 +62,105 @@
   ],
   "articles": [
     {
+      "id": "d3137eb11ca0e2b0474f",
+      "title": "«Grosse Zukunft»: 18-jähriger Schweizer verzückt Schottland",
+      "excerpt": "«Hervorragend zwischen den Linien», «Sehr gut und clever», «So abgeklärt»: Ex-GC-Spieler Leart Kabashi begeistert in Schottland. Am Sonntag…",
+      "url": "https://www.20min.ch/story/leart-kabashi-grosse-zukunft-18-jaehriger-schweizer-verzueckt-schottland-103672553",
+      "image": "https://image.20min.ch/2026/11/23/0680e2c4-c230-415f-a1c4-172ce82d9dfc.jpg?s=eeaac8aead5618c32e78bacfab986a13",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-11-25T15:35:49+00:00"
+    },
+    {
+      "id": "f0a535e7400b4b5b3fd1",
+      "title": "Lugano stattet Supertalent (15) mit erstem Profivertrag aus",
+      "excerpt": "Niccolò Bernardazzi hat Jahrgang 2011 und am Mittwoch seinen ersten Profivertrag beim FC Lugano unterschrieben.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/lugano-stattet-bernardazzi-15-mit-erstem-profivertrag-aus/p92dnyy",
+      "image": "https://ocdn.eu/pulscms-transforms/1/q0vktkuTURBXy82Mjc5ZmQxMi03M2RiLTQxOGMtOTI4ZC02MzY2MjI0ZDEyYzIuanBlZ5KTBc0CWM0BO5MJpmFmMGRiYgY/jyv9znypzb.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-25T13:58:26+00:00"
+    },
+    {
+      "id": "cbb565761552237e7872",
+      "title": "FCL-Edeltechniker Di Giusto steht vor speziellem Meilenstein",
+      "excerpt": "Matteo Di Giusto könnte am Sonntag sein 100. Spiel in Folge in der Super League absolvieren. Er…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/matteo-di-giusto-fcl-spieler-steht-vor-speziellem-meilenstein/83lrbdr",
+      "image": "https://ocdn.eu/pulscms-transforms/1/EqGktkuTURBXy9mNTU0MjY4My03Y2MyLTQxZjMtYTI5Ni04YWFhY2Y0ZWMxZDMuanBlZ5KTBc0CWM0BO5MJpjA3NjYxOAY/ptmjdu1sikr.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-25T13:34:28+00:00"
+    },
+    {
+      "id": "29bff314dc1999512b88",
+      "title": "«So endet Basel noch wie GC»",
+      "excerpt": "Nati-Legende Kubilay Türkyilmaz hält wenig von der Funktionsweise von David Degens FC Basel. Ein türkischer Basar sei nicht…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/nati-legende-zerlegt-den-fcb-so-endet-basel-noch-wie-gc/29h115s",
+      "image": "https://ocdn.eu/pulscms-transforms/1/pA5ktkuTURBXy8wYjVlNDhjMC1kNDAzLTQwMTUtOWVjOS1lZjA3N2I0ZmFiYmYuanBlZ5KTBc0CWM0BO5MJpmUwNzYwNQY/d82ukon7yts.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-25T09:20:26+00:00"
+    },
+    {
+      "id": "d381e892cb2f57e8fda8",
+      "title": "L’infatigable Di Giusto aux portes de l’histoire",
+      "excerpt": "99 matches consécutifs, 7798 minutes de jeu, 24 buts et 20 passes décisives: Matteo Di Giusto est…",
+      "url": "https://sfl.ch/articles/linfatigable-di-giusto-aux-portes-de-lhistoire",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1597444.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-25T09:00:00+00:00"
+    },
+    {
+      "id": "7889992112074a7460b2",
+      "title": "Dauerbrenner Di Giusto vor historischem Meilenstein",
+      "excerpt": "99 Spiele in Folge, 7798 Einsatzminuten, 24 Tore und 20 Assists: Matteo Di Giusto ist der Dauerbrenner der…",
+      "url": "https://sfl.ch/de/articles/dauerbrenner-di-giusto-vor-historischem-meilenstein",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1597444.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-25T09:00:00+00:00"
+    },
+    {
+      "id": "2d5d42078f47da6783af",
+      "title": "U18-Frauen nach Hinrunde an der Tabellenspitze",
+      "excerpt": "Nachwuchs",
+      "url": "https://www.bscyb.ch/news?nid=17728",
+      "image": "https://bscyb.ch/cgi-bin/news/17728-news-3-20261125113816.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-24T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "7c3ac95066724feb62ac",
+      "title": "Ibrahim Bah Mendes montre la voie au LS sur les ailes",
+      "excerpt": "Remplaçant au coup d'envoi, Ibrahim Bah Mendes a déchiré la défense de Vaduz…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/ibrahim-bah-mendes-montre-la-voie-au-ls-sur-les-ailes/wg1ysp6",
+      "image": "https://ocdn.eu/pulscms-transforms/1/hElktkuTURBXy8zYTM3OTE2OS01OGIzLTQ4ZTQtYWNjYy04MDkxMjdmYmQzOGYuanBlZ5OVA8zMEs0FX80C_JMFzQJYzQE7kwmmN2RkMTNkBg/ygsdjidhux.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-24T18:21:10+00:00"
+    },
+    {
+      "id": "2e53f74962f8350d0d6a",
+      "title": "«David Degen ist nicht das Problem des FCB»",
+      "excerpt": "Grosser Frust bei den FCB-Fans. Am Wochenende verteilt die Muttenzerkurve Flugblätter und fordert ein umdenken. Doch…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/forza-degen-ist-nicht-das-problem-bei-basel/dfn9nwn",
+      "image": "https://ocdn.eu/pulscms-transforms/1/nKmktkuTURBXy85M2IwYmJkZC0xOTEzLTRlYjYtOWQyNC1hNWEzZTZlY2QwN2EuanBlZ5KTBc0CWM0BO5MJpjk0ZTYyYQY/lqm4qm54bg.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-24T15:25:47+00:00"
+    },
+    {
       "id": "e2525bc88897a7ed98f0",
       "title": "Nati-Goalie Keller gibt private Einblicke",
       "excerpt": "In einem Interview mit der «Frankfurter Allgemeinen» nennt YB-Goalie Marvin Keller seine Lieblingsspieler, adelt zwei Nati-Kollegen und gibt auch…",
       "url": "https://www.blick.ch/sport/fussball/superleague/bewundere-meine-schwester-nati-goalie-keller-gibt-private-einblicke/9emx7x5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/5gUktkuTURBXy82YmMxNGE1ZS05OTkxLTRjN2YtODc2Yi05NDY1ZTgxZGYyODEuanBlZ5KTBc0CWM0BO5MJpjFiMDE3OQY/gl8c0mklpjd.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/LGTktkuTURBXy82YmMxNGE1ZS05OTkxLTRjN2YtODc2Yi05NDY1ZTgxZGYyODEuanBlZ5KTBc0CWM0BO5MJpmY5YTVlYQY/2d8dgnl4vpb.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-24T12:45:30+00:00"
@@ -982,98 +1076,6 @@
       "language": "de",
       "publishedAt": "2026-11-20T23:00:00+00:00",
       "dateOnly": true
-    },
-    {
-      "id": "07e996de64b7e6099e57",
-      "title": "Keine Punkte zum Jahresabschluss",
-      "excerpt": "Luzern - YB Frauen 3:2",
-      "url": "https://www.bscyb.ch/news?nid=17724",
-      "image": "https://bscyb.ch/cgi-bin/news/17724-news-3-20261121190932.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-20T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "8b5988ad0f6786ac5490",
-      "title": "Cette fois, Yverdon Sport ne s'est pas laissé plomber par un carton rouge",
-      "excerpt": "Vainqueur de Winterthour vendredi, Yverdon est désormais seul deuxième de Challenge…",
-      "url": "https://www.blick.ch/fr/sport/football/challenge-league/football-cette-fois-le-carton-rouge-na-pas-plombe-yverdon-sport/blb8z6z",
-      "image": "https://ocdn.eu/pulscms-transforms/1/sEPktkuTURBXy82ZTJhNWJmZS0wNWIwLTQzYTktYjcyMy0zMWRiNTVkZmQxYmMuanBlZ5KTBc0CWM0BO5MJpjcwMmI5ZgY/7av6d17mqx7.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-20T22:18:30+00:00"
-    },
-    {
-      "id": "ee884cec898011607ab2",
-      "title": "Ilija Despotovic offre la victoire au Red Star dans les arrêts de jeu",
-      "excerpt": "Quelle entrée fracassante! Parti dans des circonstances troubles du Lausanne-Sport cet…",
-      "url": "https://www.blick.ch/fr/sport/football/ilija-despotovic-offre-la-victoire-au-red-star-dans-les-arrets-de-jeu/zhgwdx2",
-      "image": "https://ocdn.eu/pulscms-transforms/1/rjfktkuTURBXy9lNmU2ZTBmZS1jNDBiLTQzZjItOTMyYi1lMDU3NGNlNGM5NWYuanBlZ5KTBc0CWM0BO5MJpjVkOWMyMwY/5i59ebawtj5.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-20T21:48:09+00:00"
-    },
-    {
-      "id": "6c6a3039979df19cd998",
-      "title": "Ab ins Wankdorf – das Berner Derby verspricht Spektakel",
-      "excerpt": "Die Thuner werden gewiss mit einem mulmigen Gefühl im Magen im Wankdorf einlaufen, nachdem sie…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/das-yb-inside-der-14-runde-wird-thun-wieder-abgeschossen/sfmjrzv",
-      "image": "https://ocdn.eu/pulscms-transforms/1/2pXktktTURBXy80ODhlMmNhZi1jZDAzLTRlYTAtOGY1MS0xODAyYjI3N2NmMDUucG5nkpMFzQJYzQE7kwmmNGM4YWQ5Bg/z5jmp0893vi.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-20T18:19:40+00:00"
-    },
-    {
-      "id": "e128a27e69f1c1974b7b",
-      "title": "Sion will dem Servette-Fluch ein Ende setzen",
-      "excerpt": "Seit fünf Jahren wartet der FC Sion auf einen Sieg gegen den Erzrivalen Servette. Nach der 0:3-Klatsche…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sion-inside-der-14-runde-findet-der-derby-fluch-ein-ende/8yt51x4",
-      "image": "https://ocdn.eu/pulscms-transforms/1/lQ5ktkuTURBXy8wYTFkMTcwOC1lZjI5LTRhNzAtYjRhMS02ODY3MDY3ZjhlZmYuanBlZ5KTBc0CWM0BO5MJpmZlMjY0NAY/56pstuoymrx.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-20T18:09:45+00:00"
-    },
-    {
-      "id": "0147acdf1b235ddd8fa0",
-      "title": "Historisch schlechter FCL-Coach – aber Portmann bleibt cool",
-      "excerpt": "Trotz des schlechtesten Punkteschnitts eines FCL-Trainers seit 13 Jahren will Coach Udo Portmann nichts von einer…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/luzern-inside-so-will-coach-portmann-shaqiri-stoppen/5py2gzw",
-      "image": "https://ocdn.eu/pulscms-transforms/1/untktkuTURBXy8yOGRkZTM4OS1kZjA1LTRiODgtOWY4ZS1kZDMxNzA5MTc3ZmIuanBlZ5KTBc0CWM0BO5MJpmNlYjY5ZgY/6reugoebsoi.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-20T17:46:59+00:00"
-    },
-    {
-      "id": "0f6b9c37658a7298860e",
-      "title": "La Super League se cherche-t-elle une nouvelle formule?",
-      "excerpt": "La SFL réfléchit-elle à un changement de formule en Super League? La ligue a de nouveau…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/la-super-league-se-cherche-t-elle-une-nouvelle-formule/0z85zrv",
-      "image": "https://ocdn.eu/pulscms-transforms/1/HA4ktkuTURBXy83ZjNjY2RhYi1lYTNkLTRlNDMtODVmMS1hYWE0NTJjMTQ0MGYuanBlZ5KTBc0CWM0BO5MJpjMyYzRlNAY/mo711e4sa1.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-20T17:33:49+00:00"
-    },
-    {
-      "id": "78c554bfc8175937dc99",
-      "title": "Weshalb Hassane aus dem GC-Kader flog",
-      "excerpt": "Vor dem Spiel gegen Leader Lugano ist Olaf Janssen auf Social Media aktiv und will sich im Tessin…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/das-gc-inside-der-14-runde-darum-flog-hassane-aus-dem-kader/dx5fxkt",
-      "image": "https://ocdn.eu/pulscms-transforms/1/QX4ktkuTURBXy9mMmU1ZmFmMS1hYmZiLTRmZGUtYjRmZC1jYjkxZGYzMjcyZWYuanBlZ5KTBc0CWM0BO5MJpmRjZjAxYgY/iix028tbeh.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-20T17:02:03+00:00"
-    },
-    {
-      "id": "e6b21caed2d87d1ff9da",
-      "title": "Seitenhieb aus Vaduz gegen die Hoppers",
-      "excerpt": "Obwohl Vaduz den tiefsten Zuschauerschnitt der Liga hat, müsse man sich vor Konkurrenten wie GC nicht verstecken, so…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/vaduz-inside-ex-inter-juwel-ist-wieder-bei-100-prozent/f5vzk5l",
-      "image": "https://ocdn.eu/pulscms-transforms/1/VKZktkuTURBXy84N2FiOGFmZi05ZDYxLTQ5MWEtODlkMS04ZmQ0NjNhNWM5NTUuanBlZ5KTBc0CWM0BO5MJpjU2NGZlZQY/grtumemte4n.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-20T16:42:23+00:00"
     }
   ]
 }
