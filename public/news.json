@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-25T15:43:15.042751+00:00",
-  "updatedAt": "2026-11-25T15:43:15.042751+00:00",
+  "checkedAt": "2026-11-26T15:24:29.987125+00:00",
+  "updatedAt": "2026-11-26T15:24:29.987125+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,28 +15,28 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 7
+      "count": 8
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 7
+      "count": 8
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 12
+      "count": 6
     },
     {
       "name": "20 minutes",
@@ -50,21 +50,97 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 7
+      "count": 6
     },
     {
       "name": "20 Minuten",
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 8
+      "count": 6
     }
   ],
   "articles": [
     {
+      "id": "8b7a0521cc8cee5507ae",
+      "title": "FCB reagiert auf Degen-Interview im Blick",
+      "excerpt": "Wie viel Geld fehlt dem FC Basel? Eine Aussage von Präsident David Degen sorgt für Aufsehen. Der Klub…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/der-fcb-reagiert-auf-degen-interview-im-blick/542dyt2",
+      "image": "https://ocdn.eu/pulscms-transforms/1/lPfktkuTURBXy8wMjQzYzIzNi05YWVhLTQ0YmYtODE2ZC0wZDY3MDVhNmFmNTguanBlZ5KTBc0CWM0BO5MJpjNkMjgxNAY/79hip07ovat.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-26T12:08:52+00:00"
+    },
+    {
+      "id": "16b87ba675a72e71687a",
+      "title": "Butler-Oyedeji fällt vier Monate aus - Aktuelle News aus der DCL",
+      "excerpt": "Hier findest du eine Übersicht über alle Neuigkeiten aus der dieci Challenge League.…",
+      "url": "https://sfl.ch/de/articles/butler-oyedeji-fallt-vier-monate-aus-aktuelle-news-aus-der-dcl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/LS%20Spieler.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-26T11:30:00+00:00"
+    },
+    {
+      "id": "dbf9d4ecf0b8f5ec5046",
+      "title": "Quatre mois d’absence pour Butler-Oyedeji - Tickers DCL",
+      "excerpt": "Vous retrouverez ici au fil des jours et des semaines toute l’actualité des transferts (et générale)…",
+      "url": "https://sfl.ch/articles/quatre-mois-dabsence-pour-butler-oyedeji-tickers-dcl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/LS%20Spieler.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-26T10:00:00+00:00"
+    },
+    {
+      "id": "3e89d6948a75c5e771d8",
+      "title": "Adventsaktionen im Überblick",
+      "excerpt": "Gelbschwarze Vorfreude",
+      "url": "https://www.bscyb.ch/news?nid=17729",
+      "image": "https://bscyb.ch/cgi-bin/news/17729-news-3-20261126092705.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-25T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "8d698ecd12bbd1074715",
+      "title": "Opposition contre la suspension de Maier",
+      "excerpt": "Le FC Saint-Gall fait opposition contre la suspension de 2 matches infligée à son entraîneur-assistant Jonas Maier.…",
+      "url": "https://sfl.ch/articles/opposition-contre-la-suspension-de-maier",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1489435.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-25T18:30:00+00:00"
+    },
+    {
+      "id": "72694cf64ea84f55a8a4",
+      "title": "Einsprache gegen die Sperre von Maier",
+      "excerpt": "Der FC St.Gallen legt Einsprache gegen die zwei Spielsperren ein, die gegen seinen Assistenztrainer Jonas Maier ausgesprochen wurden.…",
+      "url": "https://sfl.ch/de/articles/einsprache-gegen-die-sperre-von-maier",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1489435.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-25T18:30:00+00:00"
+    },
+    {
+      "id": "6085a4ec237a775b9a02",
+      "title": "«Vier Trainer, kein Erfolg – dann liegt es am Team»",
+      "excerpt": "Die Krise beim FC Basel dauert an. Laut den FCB-Fans liegt das Problem nicht…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fcb-fans-sehen-trainer-jokanovic-nicht-als-problem/tt7rv21",
+      "image": "https://ocdn.eu/pulscms-transforms/1/XePktkuTURBXy8zMzk1MTI5OS0xMDg5LTQ5YzgtOGZiMy1lNDQ2MzIxMDAxODguanBlZ5KTBc0CWM0BO5MJpjFlYzZkMAY/rc915okdwo.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-25T16:04:23+00:00"
+    },
+    {
       "id": "d3137eb11ca0e2b0474f",
       "title": "«Grosse Zukunft»: 18-jähriger Schweizer verzückt Schottland",
-      "excerpt": "«Hervorragend zwischen den Linien», «Sehr gut und clever», «So abgeklärt»: Ex-GC-Spieler Leart Kabashi begeistert in Schottland. Am Sonntag…",
+      "excerpt": "Bei den Grasshoppers musste Leart Kabashi unten durch. In Schottland nutzt er seine Chance bisher.",
       "url": "https://www.20min.ch/story/leart-kabashi-grosse-zukunft-18-jaehriger-schweizer-verzueckt-schottland-103672553",
       "image": "https://image.20min.ch/2026/11/23/0680e2c4-c230-415f-a1c4-172ce82d9dfc.jpg?s=eeaac8aead5618c32e78bacfab986a13",
       "source": "20 Minuten",
@@ -76,7 +152,7 @@
       "title": "Lugano stattet Supertalent (15) mit erstem Profivertrag aus",
       "excerpt": "Niccolò Bernardazzi hat Jahrgang 2011 und am Mittwoch seinen ersten Profivertrag beim FC Lugano unterschrieben.",
       "url": "https://www.blick.ch/sport/fussball/superleague/lugano-stattet-bernardazzi-15-mit-erstem-profivertrag-aus/p92dnyy",
-      "image": "https://ocdn.eu/pulscms-transforms/1/q0vktkuTURBXy82Mjc5ZmQxMi03M2RiLTQxOGMtOTI4ZC02MzY2MjI0ZDEyYzIuanBlZ5KTBc0CWM0BO5MJpmFmMGRiYgY/jyv9znypzb.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/kQ1ktkuTURBXy82Mjc5ZmQxMi03M2RiLTQxOGMtOTI4ZC02MzY2MjI0ZDEyYzIuanBlZ5KTBc0CWM0BO5MJpmNhYTNmMQY/h6xjnjqyy6.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-25T13:58:26+00:00"
@@ -86,7 +162,7 @@
       "title": "FCL-Edeltechniker Di Giusto steht vor speziellem Meilenstein",
       "excerpt": "Matteo Di Giusto könnte am Sonntag sein 100. Spiel in Folge in der Super League absolvieren. Er…",
       "url": "https://www.blick.ch/sport/fussball/superleague/matteo-di-giusto-fcl-spieler-steht-vor-speziellem-meilenstein/83lrbdr",
-      "image": "https://ocdn.eu/pulscms-transforms/1/EqGktkuTURBXy9mNTU0MjY4My03Y2MyLTQxZjMtYTI5Ni04YWFhY2Y0ZWMxZDMuanBlZ5KTBc0CWM0BO5MJpjA3NjYxOAY/ptmjdu1sikr.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/jtBktkuTURBXy9mNTU0MjY4My03Y2MyLTQxZjMtYTI5Ni04YWFhY2Y0ZWMxZDMuanBlZ5KTBc0CWM0BO5MJpjBkYmI0MgY/xxxro52q6k.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-25T13:34:28+00:00"
@@ -1002,80 +1078,6 @@
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-21T09:20:54+00:00"
-    },
-    {
-      "id": "9a63be20073524fda71d",
-      "title": "Nati-Pause ist vorbei – bist du bereit für die Super League?",
-      "excerpt": "Die Nati-Pause ist vorbei – und die Super League zurück. In Bern und…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/das-quiz-zur-14-runde-der-super-league/7kg5k7m",
-      "image": "https://ocdn.eu/pulscms-transforms/1/5TKktkuTURBXy9hNGQ3Y2M4ZS02MTI4LTQxZTQtOGMyZi03OWFjMGZiMmFkNmUuanBlZ5KTBc0CWM0BO5MJpjRmM2ZlZQY/36qtlvjdo1a.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T08:08:17+00:00"
-    },
-    {
-      "id": "39144bceca2e6066423e",
-      "title": "Gute Nachrichten für Goalie Silas Huber",
-      "excerpt": "Der FCZ will gegen St. Gallen den nächsten Heimsieg einfahren. Marcel Koller verrät, wie es Goalie Silas Huber…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fcz-inside-gute-nachrichten-fuer-goalie-silas-huber/ghst9z8",
-      "image": "https://ocdn.eu/pulscms-transforms/1/HcVktkuTURBXy9kNzA5Mzg1OC0wMTVlLTRlM2ItYWQxMC0yYzM3ZWU4MDI0OTEuanBlZ5KTBc0CWM0BO5MJpjY3YTk1YgY/yjqzlkghhsf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T07:50:41+00:00"
-    },
-    {
-      "id": "1a6183dc928a7e87eda3",
-      "title": "Erlöst Magnin Lausanne mit dem ersten Heimsieg?",
-      "excerpt": "Nach dem Fan-Eklat beim 4:5 gegen Thun kehrt Lausanne als Tabellenletzter in die Tuilière zurück. Gegen das…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/lausanne-inside-kann-magnin-den-heim-knoten-endlich-loesen/ffwe9gw",
-      "image": "https://ocdn.eu/pulscms-transforms/1/gkKktkuTURBXy84NDdiNTAxNS02ZGJlLTQ0NjUtYmE2NS1jZmU1N2ViNDBhMTAuanBlZ5KTBc0CWM0BO5MJpjVhMDJhOQY/l2vnakk5w6k.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T07:46:07+00:00"
-    },
-    {
-      "id": "7fd36650a234b376404b",
-      "title": "«Es ist der FC Basel 1893 – und nicht der FC Shaqiri»",
-      "excerpt": "Der FCB ist unter Slavisa Jokanovic noch ohne Sieg in der Liga…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fcb-inside-der-14-runde-jokanovic-wird-bei-shaq-frage-deutlich/mb6jzjt",
-      "image": "https://ocdn.eu/pulscms-transforms/1/erjktkuTURBXy85NjVmMmQ1MC03ZjVhLTQzMWUtODk1ZC1jZmEzNzQ0NWI4NDYuanBlZ5KTBc0CWM0BO5MJpmQwMzdiOQY/zsf4bsi3zl.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T07:17:26+00:00"
-    },
-    {
-      "id": "2aef16964db4713b3a44",
-      "title": "Ärger um Vlogs: Influencer muss auf FCZ-Geschäftsstelle antraben",
-      "excerpt": "Stadionvlogs sind bei Fans beliebt. Die Schweizer Fussballliga und der FCZ setzen einem Influencer aber Grenzen…",
-      "url": "https://www.20min.ch/story/fcz-kevin-aerger-um-vlogs-influencer-muss-auf-fcz-geschaeftsstelle-antraben-103670660",
-      "image": "https://image.20min.ch/2026/11/20/89f9d357-68ca-43f4-9c13-44b0ce3226ce.png?s=28527d8fc763825ac24c49ac3209faad",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-21T03:36:12+00:00"
-    },
-    {
-      "id": "be1f204753b3a976705b",
-      "title": "YB - Thun 3:2 (0:0)",
-      "excerpt": "Matchcenter",
-      "url": "https://www.bscyb.ch/news?nid=17722",
-      "image": "https://bscyb.ch/cgi-bin/news/17722-news-3-20261120103827.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-20T23:00:00+00:00",
-      "dateOnly": true
-    },
-    {
-      "id": "178b07941105654581f4",
-      "title": "Happy End im Kantonsderby",
-      "excerpt": "YB - Thun 3:2",
-      "url": "https://www.bscyb.ch/news?nid=17725",
-      "image": "https://bscyb.ch/cgi-bin/news/17725-news-3-20261121201020.jpg",
-      "source": "BSC Young Boys",
-      "official": true,
-      "language": "de",
-      "publishedAt": "2026-11-20T23:00:00+00:00",
-      "dateOnly": true
     }
   ]
 }
