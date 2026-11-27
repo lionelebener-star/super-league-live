@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-26T15:24:29.987125+00:00",
-  "updatedAt": "2026-11-26T15:24:29.987125+00:00",
+  "checkedAt": "2026-11-27T15:11:59.479787+00:00",
+  "updatedAt": "2026-11-27T15:11:59.479787+00:00",
   "status": "ok",
   "sources": [
     {
@@ -15,28 +15,28 @@
       "language": "fr",
       "url": "https://sfl.ch/",
       "ok": true,
-      "count": 8
+      "count": 10
     },
     {
       "name": "Swiss Football League",
       "language": "de",
       "url": "https://sfl.ch/de",
       "ok": true,
-      "count": 8
+      "count": 10
     },
     {
       "name": "Blick",
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 1
+      "count": 3
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 6
+      "count": 11
     },
     {
       "name": "20 minutes",
@@ -50,17 +50,225 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 6
+      "count": 7
     },
     {
       "name": "20 Minuten",
       "language": "de",
       "url": "https://partner-feeds.20min.ch/rss/20minuten/sport/fussball",
       "ok": true,
-      "count": 6
+      "count": 2
     }
   ],
   "articles": [
+    {
+      "id": "bb5a999feae18f417168",
+      "title": "Mammut-Programm für den FC Lugano",
+      "excerpt": "Fünf Auswärtsspiele in Folge muss Lugano hinter sich bringen. Ein echter Härtetest für die Bianconeri. Hier kommt das Lugano-Inside.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/das-lugano-inside-der-15-runde-reise-marathon-fuer-die-tessiner/lbkq4gk",
+      "image": "https://ocdn.eu/pulscms-transforms/1/IfwktkuTURBXy85NWVlMzM3NS1hN2VjLTQzN2ItODliNS0yYzBhYzQxNzU1ZDkuanBlZ5KTBc0CWM0BO5MJpjRkNzE0MQY/h4kk2ovcbwg.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T14:48:39+00:00"
+    },
+    {
+      "id": "f5cfcfb0a7028afd8607",
+      "title": "Bist du bereit für die Super-League-Runde? Beweise es!",
+      "excerpt": "Die 15. Runde der Super League steht vor der Tür. Im Letzigrund steigt der Krisengipfel, am…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/hier-kommt-das-blick-quiz-zur-15-runde-der-super-league/cpyx8jv",
+      "image": "https://ocdn.eu/pulscms-transforms/1/c7FktkuTURBXy83Y2ViYmMwMS1jYjQwLTQ5MWUtYTE0OS03YTgyNjdkYWJhOGEuanBlZ5KTBc0CWM0BO5MJpjkyMmI2YgY/88sz8fd4bou.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T14:37:40+00:00"
+    },
+    {
+      "id": "703f89ab07686078cffc",
+      "title": "Magnin hofft im Derby auf Rückkehr der Lausanne-Ultras",
+      "excerpt": "In Lausanne wird der Kunstrasen immer mehr zum Streitpunkt. Ausserdem hofft Trainer Ludovic Magnin auf die…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/lausanne-inside-magnin-hofft-im-derby-auf-rueckkehr-der-ultras/45s1txf",
+      "image": "https://ocdn.eu/pulscms-transforms/1/nXoktkuTURBXy80MjI5MDZhYi1lNTZhLTRlMjctOGUyYy1iMGMzZDE2YjAyZTYuanBlZ5KTBc0CWM0BO5MJpmIzZjQ4ZAY/qxo0872ggh.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T14:24:02+00:00"
+    },
+    {
+      "id": "c3713f8d31cb4e823712",
+      "title": "Les Romands seront partout lors de la Swiss Football Night",
+      "excerpt": "Manzambi, Ndoye, Athekame, Beney, Sanches, Marchesano, Tritten: la Romandie est présente dans presque toutes…",
+      "url": "https://www.blick.ch/fr/sport/football/challenge-league/les-romands-seront-partout-lors-de-la-swiss-football-night/z0jp18c",
+      "image": "https://ocdn.eu/pulscms-transforms/1/bQVktkuTURBXy8xNjNiMzM5ZC0xMDUzLTRkMTktODgyNy0wNzE5MDkxZGM1Y2IuanBlZ5KTBc0CWM0BO5MJpjMyNzM5NgY/fv0a5mt8jrq.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-27T13:36:42+00:00"
+    },
+    {
+      "id": "46f2f025a6c3bb165d76",
+      "title": "Kurioser Grund zwingt Super League zum Spielabtausch",
+      "excerpt": "In der letzten Super-League-Runde des Jahres kommt es zu einem Spielabtausch. Der Grund dafür ist ungewöhnlich.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/im-dezember-werden-zwei-super-league-spiele-getauscht/7bxzc52",
+      "image": "https://ocdn.eu/pulscms-transforms/1/Pa8ktkuTURBXy8xMzgyNmZkYS1hYjA5LTQ1YTgtOWQ5ZS01ZDM4M2QzM2ViNmUuanBlZ5KTBc0CWM0BO5MJpjVmODBiOQY/amokb6q3vxk.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T12:58:35+00:00"
+    },
+    {
+      "id": "2f9ac6416f66cc410b40",
+      "title": "Didier Tholot et le FC Sion ont rendu visite à Gottéron",
+      "excerpt": "Entraîneur du FC Sion, Didier Tholot est allé suivre le match de hockey…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/didier-tholot-et-le-fc-sion-ont-rendu-visite-a-gotteron/k7r61zg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/7bWktkuTURBXy80MDYwNjQ3ZC04MzQ4LTQ4NTctOWI0Ni0zYmZmNjg5NTBhNDMuanBlZ5KTBc0CWM0BO5MJpjgwMGUwOAY/zzd2lkjdkzo.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-27T12:48:12+00:00"
+    },
+    {
+      "id": "0399ed0b22c60a6e2529",
+      "title": "Swiss Football Night 2026: vote dès maintenant pour tes favoris!",
+      "excerpt": "Le lundi 11 janvier 2027, la Swiss Football League (SFL) et l’Association Suisse de…",
+      "url": "https://sfl.ch/articles/swiss-football-night-2026-vote-des-maintenant-pour-tes-favoris",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Nominees_Web.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-27T12:30:00+00:00"
+    },
+    {
+      "id": "2962d59873eae1586232",
+      "title": "Swiss Football Night 2026: Jetzt für deine Favoriten abstimmen!",
+      "excerpt": "Am Montag, 11. Januar 2027, ehren die Swiss Football League (SFL) und der Schweizerische Fussballverband…",
+      "url": "https://sfl.ch/de/articles/swiss-football-night-2026-jetzt-fur-deine-favoriten-abstimmen",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/Nominees_Web.png",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-27T12:30:00+00:00"
+    },
+    {
+      "id": "455e3b53395e0c9612a4",
+      "title": "FCSG-Cupheld Gaal über Spanner-Skandal, Zukunft und GTA 6",
+      "excerpt": "Tom Gaal hat sich beim FC St. Gallen zum Cuphelden und unbestrittenen Stammspieler hochgearbeitet. Im Interview…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/tom-gaal-ueber-spanner-skandal-fcsg-zukunft-und-gta-6/bn3n5gq",
+      "image": "https://ocdn.eu/pulscms-transforms/1/H-9ktkuTURBXy8zOGQ0ODQ5Zi1lOGVmLTQ4OWUtYTE0Zi1kZDNlNDNmNmZmMmUuanBlZ5KTBc0CWM0BO5MJpjI3MjI4MwY/tcsqyw81br.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T11:16:43+00:00"
+    },
+    {
+      "id": "021432e8c9b000dd4dfa",
+      "title": "Deux matches inversés le 20 décembre",
+      "excerpt": "Le FC Vaduz accueillera le FC Lugano le dimanche 20 décembre à 14h00, tandis que le FC Thoune…",
+      "url": "https://sfl.ch/articles/deux-matches-inverses-le-20-decembre",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1556546.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-27T11:00:00+00:00"
+    },
+    {
+      "id": "2c212047436a9f4c72bf",
+      "title": "Spielabtausch am Sonntag, 20. Dezember 2026",
+      "excerpt": "Der FC Vaduz empfängt den FC Lugano am Sonntag, 20. Dezember 2026, um 14:00 Uhr, während die Partie…",
+      "url": "https://sfl.ch/de/articles/spielabtausch-am-sonntag-20-dezember-2026",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1556546.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-27T11:00:00+00:00"
+    },
+    {
+      "id": "5bd3b678684742417173",
+      "title": "Super-Dribbler der Liga ist der König der Ballverluste",
+      "excerpt": "Wer oft ins Dribbling geht, verliert häufig den Ball. Kein Super-League-Spieler weiss das besser als Lutfi…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/vaduz-inside-laendle-dribbler-dalipi-ist-ballverlust-koenig/zpjtvvy",
+      "image": "https://ocdn.eu/pulscms-transforms/1/MZektkuTURBXy8xMDk2ODlkMS1mNTVkLTRiNTEtYWMyYS0zODYwNTE2N2M4ODEuanBlZ5KTBc0CWM0BO5MJpjA1YzJmYwY/8utyqu8a84e.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T10:43:48+00:00"
+    },
+    {
+      "id": "9eefe0cfcad7f7ad472e",
+      "title": "Thuner nerven «Messi mit Handschuhen» – das steckt dahinter",
+      "excerpt": "Der FC Thun bleibt gegen Ajax Amsterdam chancenlos. Einige Thuner Spieler zeigten zumindest in einzelnen…",
+      "url": "https://www.20min.ch/story/marc-andre-ter-stegen-thuner-nerven-messi-mit-handschuhen-das-steckt-dahinter-103674615",
+      "image": "https://image.20min.ch/2026/11/27/6cd34502-def8-4aea-88aa-1547f9dd2d81.jpg?s=223418564c6399eef113a8eadd05d79b",
+      "source": "20 Minuten",
+      "language": "de",
+      "publishedAt": "2026-11-27T08:58:06+00:00"
+    },
+    {
+      "id": "297a23f4598a71b340b9",
+      "title": "Thun-Verteidiger fällt mehrere Wochen aus",
+      "excerpt": "Thun muss mehrere Wochen lang ohne Lucien Dähler auskommen. Der Thun-Verteidiger hat sich eine muskuläre Verletzung zugezogen.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/lucien-daehler-wird-thun-mehrere-wochen-fehlen/kgpcr8w",
+      "image": "https://ocdn.eu/pulscms-transforms/1/mTMktkuTURBXy9jOGUzZTgyZS01Y2VmLTQxZTAtOTU5Mi05MTQxNWQ1MzE3NjMuanBlZ5KTBc0CWM0BO5MJpjUwMGFmNAY/tm5uhu8jqo.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T06:16:06+00:00"
+    },
+    {
+      "id": "fa87831ced7eb740a17c",
+      "title": "Cup und «YB fiiret Wiehnachte»",
+      "excerpt": "Die letzten zwei Heimspiele",
+      "url": "https://www.bscyb.ch/news?nid=17733",
+      "image": "https://bscyb.ch/cgi-bin/news/17733-news-3-20261127093838.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-26T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "e81510a8c6dc501f729a",
+      "title": "18.98% Rabatt auf alles",
+      "excerpt": "Black Weekend",
+      "url": "https://www.bscyb.ch/news?nid=17732",
+      "image": "https://bscyb.ch/cgi-bin/news/17732-news-3-20261126210336.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-26T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "957622df5c5066938f3d",
+      "title": "Mauvaise soirée pour Thoune et Lugano",
+      "excerpt": "Les Bernois ont lourdement chuté sur le terrain de l'Ajax alors que les Tessinois se sont inclinés sous…",
+      "url": "https://www.20min.ch/fr/story/conference-league-mauvaise-soiree-pour-thoune-et-lugano-103674515",
+      "image": "https://image.20min.ch/2026/11/26/35612346-0cc3-4552-912c-b4f64f48e646.jpg?s=3976deb26cda3f1ae6c6f910df2c425f",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-11-26T20:04:02+00:00"
+    },
+    {
+      "id": "772653d436a29779be54",
+      "title": "Der Super League droht ein Horrorszenario",
+      "excerpt": "Nicht wenige in der Super League hoffen auf eine Rückkehr von Winti und Aarau in die Super League…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/winti-und-aarau-schwaecheln-horrorszenario-fuer-die-super-league/pgcnb1e",
+      "image": "https://ocdn.eu/pulscms-transforms/1/aeRktkuTURBXy83ZWIzNGIzNC03OTFlLTRlYTQtYjE2OS1lYzcyMDE3NTI4OTcuanBlZ5KTBc0CWM0BO5MJpjFhMjE5NgY/rb5p1i8gdea.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-26T16:12:56+00:00"
+    },
+    {
+      "id": "17202169479daa2da059",
+      "title": "Ex-FCB-Verteidiger fällt für Rest des Jahres aus",
+      "excerpt": "Bittere Nachrichten für Dominik Schmid. Weil eine Knieverletzung nicht wunschgemäss verheilte, musste sich der ehemalige FCB-Verteidiger einer…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/ex-fcb-verteidiger-schmid-faellt-fuer-rest-des-jahres-aus/1d1xmch",
+      "image": "https://ocdn.eu/pulscms-transforms/1/T2gktkuTURBXy9jMzJmNGEyNi04YjljLTRlOGQtYWUyNy1lZDdjYzExZmUwYWQuanBlZ5KTBc0CWM0BO5MJpmFiYTg1OQY/fwp7y9zrfo9.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-26T15:05:34+00:00"
+    },
+    {
+      "id": "01d82d710f96177e9570",
+      "title": "Un nouveau blessé de longue durée vient fragiliser l'attaque du Lausanne-Sport",
+      "excerpt": "Victime d'une fracture d'un métatarse, l'attaquant du Lausanne-Sport Nathan Butler-Oyedeji sera absent pendant…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/lausanne-sport-nathan-butler-oyedeji-absent-quatre-mois/ptjxfr3",
+      "image": "https://ocdn.eu/pulscms-transforms/1/gdkktkuTURBXy9mYmEwNGVkMi1lNWU0LTQ4ZDItYmNkNS00MmQ0MjBjODE0ZGEuanBlZ5KTBc0CWM0BO5MJpmYxNGNhYgY/7k86qpv7a72.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-26T15:04:14+00:00"
+    },
     {
       "id": "8b7a0521cc8cee5507ae",
       "title": "FCB reagiert auf Degen-Interview im Blick",
@@ -92,6 +300,28 @@
       "official": true,
       "language": "fr",
       "publishedAt": "2026-11-26T10:00:00+00:00"
+    },
+    {
+      "id": "3db76ad103752548c9e0",
+      "title": "Dähler absent plusieurs semaines - Tickers BSL",
+      "excerpt": "Vous retrouvez ici au fil des jours et des semaines toute l’actualité des transferts (et générale) en…",
+      "url": "https://sfl.ch/articles/dahler-absent-plusieurs-semaines-tickers-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1600991.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "fr",
+      "publishedAt": "2026-11-26T07:00:00+00:00"
+    },
+    {
+      "id": "89cbb923c62833362d69",
+      "title": "Dähler fällt mehrere Wochen aus - Aktuelle News aus der BSL",
+      "excerpt": "Hier findest du eine Übersicht über alle News aus der Super League.…",
+      "url": "https://sfl.ch/de/articles/dahler-fallt-mehrere-wochen-aus-aktuelle-news-aus-der-bsl",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1600991.jpg",
+      "source": "Swiss Football League",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-26T06:30:00+00:00"
     },
     {
       "id": "3e89d6948a75c5e771d8",
@@ -432,7 +662,7 @@
       "title": "Deux matches contre Nwannah et Ishuayed",
       "excerpt": "Sept joueurs seront suspendus pour la prochaine journée de championnat. Deux entraîneurs-assistants sont sanctionnés de 2 matches de…",
       "url": "https://sfl.ch/articles/deux-matches-contre-nwannah-et-ishuayed",
-      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1587674-1.tif",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1587674-1.png",
       "source": "Swiss Football League",
       "official": true,
       "language": "fr",
@@ -443,7 +673,7 @@
       "title": "Zwei Spielsperren für Nwannah und Ishuayed",
       "excerpt": "Sieben Spieler werden am nächsten Meisterschaftsspiel ihres Klubs gesperrt fehlen. Zudem werden zwei Assistenztrainer für jeweils 2 Spiele…",
       "url": "https://sfl.ch/de/articles/zwei-spielsperren-fur-nwannah-und-ishuayed",
-      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1587674-1.tif",
+      "image": "https://origins-sportlab-payload-s3.origins-digital.com/sfl/images/FRESHFOCUS_1587674-1.png",
       "source": "Swiss Football League",
       "official": true,
       "language": "de",
@@ -858,226 +1088,6 @@
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-21T23:10:24+00:00"
-    },
-    {
-      "id": "f9ba0977b8b3ee5729ce",
-      "title": "«Ils font les choses assez justes et ça se sent sur le terrain»",
-      "excerpt": "Après la défaite 0-2 à Sion, Steve Rouiller a tenté d'analyser…",
-      "url": "https://www.20min.ch/fr/story/football-ils-font-les-choses-assez-justes-et-ca-se-sent-sur-le-terrain-103671607",
-      "image": "https://image.20min.ch/2026/11/21/7c905ccf-c2df-4dd7-8c60-b5382c8b5aa5.jpg?s=fb724c5a4bf8e5cc1c2bad39669e5c3c",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-21T23:02:44+00:00"
-    },
-    {
-      "id": "2da3612b5298361ff34c",
-      "title": "«Wir befinden uns in einer gefährlichen Situation»",
-      "excerpt": "Sportlich steckt der FC Basel in der Krise, privat schwebt David Degen (43) im Vater-Glück. Im grossen…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/david-degen-im-interview-fcb-krise-xherdan-shaqiri-fan-frust/nfleyv2",
-      "image": "https://ocdn.eu/pulscms-transforms/1/mXrktkuTURBXy9lOTUxZTM5NC00NjIzLTQ2ZGEtOWMxYy0yZGMwM2YxNjQ3ZDguanBlZ5KTBc0CWM0BO5MJpjAwZjRmOQY/j71cj7vn3bb.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T23:00:28+00:00"
-    },
-    {
-      "id": "37dbfe3ffff55c4c3e43",
-      "title": "Sion überzeugt als Team – einen Ungenügenden gibts aber",
-      "excerpt": "Der FC Sion gewinnt gegen Servette sein erstes Rhone-Derby seit fünf Jahren. Wer hat wie…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/die-sion-noten-zum-20-sieg-im-rhone-derby-gegen-servette/jkzzsh7",
-      "image": "https://ocdn.eu/pulscms-transforms/1/UODktkuTURBXy83NTZkN2YwMi1mOTAyLTQ4YjQtYWJjMy0zY2Q4MTEwMTc1ZTcuanBlZ5KTBc0CWM0BO5MJpmVkNjIyOQY/l3xkxms6638.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T22:44:58+00:00"
-    },
-    {
-      "id": "d091d0876c6fef5c777a",
-      "title": "Abwehr fällt durch – es gibt aber einen Lichtblick",
-      "excerpt": "Servette muss im Rhone-Derby wieder einmal eine Niederlage einstecken. Wer hat wie abgeschnitten? Hier kommen…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/servette-abwehr-faellt-durch-ersatz-keeper-als-lichtblick/5b5qcdx",
-      "image": "https://ocdn.eu/pulscms-transforms/1/Z_7ktkuTURBXy8xMTZjNDZkNy0wODVkLTRmODctODU4ZS01NjY3YTQ0ZjdjZDMuanBlZ5KTBc0CWM0BO5MJpmM1N2IwMQY/b9g9znnj2p.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T22:42:57+00:00"
-    },
-    {
-      "id": "da7e0a778b81be4ca245",
-      "title": "Bei Derby-Pleite überzeugt nur ein Thuner",
-      "excerpt": "In einem umkämpften Kantonsderby muss sich Thun knapp geschlagen geben. Wer hat wie abgeschnitten? Hier kommen die Thun-Noten…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-thun-noten-gegen-yb-runde-14/tzqbh2h",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ewlktkuTURBXy80MTcyNDAwNy0wZTY1LTQyNzQtODVlMi1kNDhiOGU2Y2M0ZjAuanBlZ5KTBc0CWM0BO5MJpjYzNWU5ZAY/ltjifxtcfci.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T22:01:32+00:00"
-    },
-    {
-      "id": "45d3fb0fe0067fac24c7",
-      "title": "Sion bricht den Servette-Fluch",
-      "excerpt": "Sion kann gegen Servette doch noch gewinnen: Mit einem 2:0-Heimsieg feiern die Walliser den ersten Sieg im Rhone-Derby seit fünf…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sion-bricht-den-servette-fluch/mx292gh",
-      "image": "https://ocdn.eu/pulscms-transforms/1/phVktkuTURBXy9iYjMzNGM3Mi04MGJhLTRlZGMtYTNkZC1mOWE3ZWQwOWQzM2YuanBlZ5KTBc0CWM0BO5MJpmQ3YTZjMQY/6zffhupmaby.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T21:37:53+00:00"
-    },
-    {
-      "id": "219af4ec3d84a58be8c2",
-      "title": "Six ans après, le FC Sion domine Servette à Tourbillon",
-      "excerpt": "Le FC Sion a dominé Servette à Tourbillon (2-0), samedi soir. Un succès mérité…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/football-six-ans-apres-le-fc-sion-domine-servette-a-tourbillon/5j2d413",
-      "image": "https://ocdn.eu/pulscms-transforms/1/V33ktkuTURBXy83NDMzODRlYi0wNmE5LTQyMGUtYTU3ZS04NDJkMzJkMjA5NDkuanBlZ5KTBc0CWM0BO5MJpjM3MzdkZAY/tn3c83s5n1.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T21:28:16+00:00"
-    },
-    {
-      "id": "a572d5298a35487bdecd",
-      "title": "Bei Lugano sticht der Torschütze heraus – und die Joker",
-      "excerpt": "Lugano holt sich gegen GC spät die drei Punkte. Wer hat wie abgeschnitten? Hier…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-lugano-noten-gegen-gc-runde-14/zw4v8vf",
-      "image": "https://ocdn.eu/pulscms-transforms/1/9J-ktkuTURBXy9lMjAzZGFmMS1hYmU3LTRhZWEtYTZjMy04Y2RkNjAzNGQ3OGUuanBlZ5KTBc0CWM0BO5MJpjM2MGYyZQY/3rqkb5s4pmf.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T21:07:23+00:00"
-    },
-    {
-      "id": "d5b9b31a0161642b9710",
-      "title": "Rückkehrer führt starkes Berner Quartett an",
-      "excerpt": "YB steigert sich im Kantonsderby nach der Pause und holt sich den Sieg. Wer hat wie abgeschnitten? Hier…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/die-yb-noten-zum-32-im-derby-gegen-thun/rpr01fw",
-      "image": "https://ocdn.eu/pulscms-transforms/1/rrOktkuTURBXy8zNmU2MDAwZi00NmZiLTQyMmMtODk2MS1kYmMwZTk3Yjc5NDQuanBlZ5KTBc0CWM0BO5MJpmNmNTBkYgY/7ht7eze4g3.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T20:57:26+00:00"
-    },
-    {
-      "id": "4d47117bfb60e6fef33c",
-      "title": "Keeper fällt durch – Torschütze überzeugt trotz Pleite",
-      "excerpt": "GC unterliegt Leader Lugano spät. Wer hat wie abgeschnitten? Hier kommen die Noten der Grasshoppers beim…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/die-gc-noten-zum-12-gegen-lugano/n0yl5mc",
-      "image": "https://ocdn.eu/pulscms-transforms/1/whIktkuTURBXy9hNDg3ZDgyYS1hN2ZkLTRmMDctOGI5Yi01YTA0OTE2NzA4NzcuanBlZ5KTBc0CWM0BO5MJpmE5Y2ZkNQY/d9dw8ml3o8j.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T20:50:05+00:00"
-    },
-    {
-      "id": "e653989ff833150746c4",
-      "title": "Cinq ans après, Sion a fini par venir à bout de Servette",
-      "excerpt": "Les Sédunois réussissent leur meilleur début de saison en Super League. Cette…",
-      "url": "https://www.20min.ch/fr/story/football-sion-accueille-servette-dans-le-derby-du-rhone-103671440",
-      "image": "https://image.20min.ch/2026/11/21/3e7ea7f2-9755-4088-8073-62ff45b98533.jpg?s=66953bf51134363d4c5de1d9ef0e3d90",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-21T19:19:41+00:00"
-    },
-    {
-      "id": "effd71e631be75785f17",
-      "title": "Schiri-Wirbel, Thun-Patzer – am Ende jubelt YB",
-      "excerpt": "Das Kantonsderby zwischen YB und Thun ist lange eine zähe Angelegenheit. In der zweiten Halbzeit fallen die…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/yb-gewinnt-das-kantonsderby-gegen-thun-mit-32/38htk4s",
-      "image": "https://ocdn.eu/pulscms-transforms/1/-U3ktkuTURBXy8yZTE3OTgwNi01OGExLTQ4ZjMtODg0Yi0wZTA3YjgxMDcwNjguanBlZ5KTBc0CWM0BO5MJpmViZDJmZQY/63gz9bm92kp.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T19:01:15+00:00"
-    },
-    {
-      "id": "031dcbb3bfea57ba0f72",
-      "title": "Luganos Joker stechen – Hammel verteilt Geschenk",
-      "excerpt": "Lugano tut sich zu Hause gegen GC schwer. Zwar sind die Tessiner besser, erst kurz vor Schluss…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/luganos-joker-stechen-gc-hammel-verteilt-geschenk/m1wvbn7",
-      "image": "https://ocdn.eu/pulscms-transforms/1/wxLktktTURBXy82OWVhNzgyNS0xYWY1LTRlODUtODE2ZS0wYmUxOWZhNGQ0MGYucG5nkpMFzQJYzQE7kwmmMjE0OTc0Bg/2l0mtts7obn.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T19:00:06+00:00"
-    },
-    {
-      "id": "47979900c7699f171dfa",
-      "title": "Cet ancien défenseur de Super League dérape en parlant de son ex-coach",
-      "excerpt": "Nutella interdit, discipline de fer et méthodes autoritaires: le défenseur de l'AC…",
-      "url": "https://www.blick.ch/fr/sport/football/cet-ancien-defenseur-de-super-league-derape-en-parlant-de-son-ex-coach/p5mfpw6",
-      "image": "https://ocdn.eu/pulscms-transforms/1/s2-ktkuTURBXy82MTQwZDI1Zi0yNjIzLTRhZjgtYThkOS01NWFkYzY3Zjg5NDQuanBlZ5KTBc0CWM0BO5MJpmIwMmRlNgY/0okyxw9pfdxi.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T16:00:56+00:00"
-    },
-    {
-      "id": "1594db13d49f7bb6db76",
-      "title": "Fünf Tore im Berner Derby: YB schlägt Meister Thun",
-      "excerpt": "YB empfing den FC Thun zum Berner Derby im Wankdorf und siegte nach einer turbulenten…",
-      "url": "https://www.20min.ch/story/yb-thun-revanchieren-sich-die-thuner-fuer-die-06-ohrfeige-103671299",
-      "image": "https://image.20min.ch/2026/11/21/6d9bd2eb-fa08-4988-ab93-257e50d22e9f.jpg?s=cf86334c40225624261a04d2f9517b1d",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-21T15:47:53+00:00"
-    },
-    {
-      "id": "15aff077f62a4f16f016",
-      "title": "Kevin Fickentscher en est sûr: Sion va mettre fin à sa série noire ce samedi",
-      "excerpt": "C'est l'une des séries les plus improbables du football…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/kevin-fickentscher-en-est-sur-sion-va-mettre-fin-a-serie-noire-ce-samedi/wmzqc3k",
-      "image": "https://ocdn.eu/pulscms-transforms/1/SQlktkuTURBXy9mMGM1YjM3ZS1lOTQ1LTQwZjMtYmIzMC1jMjNiMDJkOTNiZGEuanBlZ5KTBc0CWM0BO5MJpmJlN2MxMgY/jf72hijnqx.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T15:28:21+00:00"
-    },
-    {
-      "id": "c0d6ebeb170b2bc0b6fb",
-      "title": "«Je l'aime bien, mais ses méthodes, c'était presque comme Hitler»",
-      "excerpt": "Le défenseur de Milan, Strahinja Pavlovic, passé par le FC Bâle, a fait une…",
-      "url": "https://www.20min.ch/fr/story/football-je-l-aime-bien-mais-ses-methodes-c-etait-presque-comme-hitler-103671290",
-      "image": "https://image.20min.ch/2026/11/21/a08c3870-1acb-494f-bb48-4293cf0da1dd.jpg?s=2c3c262d50496ca7dc0b4113a01ff952",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-21T14:48:01+00:00"
-    },
-    {
-      "id": "e9756be755b8877ab57a",
-      "title": "«On a plutôt des bonnes statistiques dans les derbys...»",
-      "excerpt": "Le Servette FC est largement l'équipe dominante dans les derbys romands, et reste sur quinze…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/on-a-plutot-des-bonnes-statistiques-dans-les-derbys/l6vzs4z",
-      "image": "https://ocdn.eu/pulscms-transforms/1/WWYktkuTURBXy84MWEwNzBlYS01YmFhLTQ0MWEtODcwZS1jMjlmNjExNzA4NzkuanBlZ5KTBc0CWM0BO5MJpmU1YjYyMwY/ix5jjxr30d9.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T13:09:09+00:00"
-    },
-    {
-      "id": "6a5ccf23182bc57bab60",
-      "title": "Sion-Legende beschwört Ende von brutalem Derby-Fluch",
-      "excerpt": "Es ist eine der erstaunlichsten Serien im Schweizer Fussball: Seit fünf Jahren hat Sion gegen Servette kein Rhone-Derby…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/sion-ein-spitzenteam-das-kein-rhone-derby-mehr-gewinnt/xe57948",
-      "image": "https://ocdn.eu/pulscms-transforms/1/yHcktkuTURBXy9mMGM1YjM3ZS1lOTQ1LTQwZjMtYmIzMC1jMjNiMDJkOTNiZGEuanBlZ5KTBc0CWM0BO5MJpjc5ZGMyZQY/mkehzd39h8.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T12:47:47+00:00"
-    },
-    {
-      "id": "93777fdc16f2dfd583d3",
-      "title": "Wo Alarmstufe Rot herrscht – was dem FCB Hoffnung macht",
-      "excerpt": "Ein Drittel der Saison ist gespielt. Blick zeigt anhand der Daten hinter den Resultaten…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/abstiegskampf-wer-hoffen-darf-und-wo-alarmstufe-rot-herrscht/zklv4vz",
-      "image": "https://ocdn.eu/pulscms-transforms/1/vnjktkuTURBXy9jMmMzMjhmMS1kZGIxLTQwNGUtOTZmNS1iMzFkNmFjYzA1MWQuanBlZ5KTBc0CWM0BO5MJpjUyMGFmNAY/ldqqgkqo8ar.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T11:11:06+00:00"
-    },
-    {
-      "id": "871f6cb0fa12497d5d97",
-      "title": "Nach Thuner Hoch: YB klettert wieder auf Berner Thron",
-      "excerpt": "Dass Thun Ende Saison besser klassiert ist als YB, ist trotz Meistertitels ein historisches Ereignis…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/die-gelbschwarze-macht-hat-den-berner-thron-zurueckerobert/6tly0cr",
-      "image": "https://ocdn.eu/pulscms-transforms/1/UHxktkuTURBXy9hNjg3YjhmMC00MzkwLTRhZjctOTQ2Ny0yMGNmM2EzM2FhM2QuanBlZ5KTBc0CWM0BO5MJpmExMmU5OQY/prpqxdcwva9.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-21T09:57:49+00:00"
-    },
-    {
-      "id": "db5354b40bf2d0528883",
-      "title": "Thomas Lopes, l'apprentissage de l'exigence et de la critique",
-      "excerpt": "Repositionné en numéro 10 du Servette FC depuis la blessure de Miroslav Stevanovic, Thomas Lopes…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/thomas-lopes-lapprentissage-de-lexigence-et-de-la-critique/77hgtfg",
-      "image": "https://ocdn.eu/pulscms-transforms/1/C0MktkuTURBXy82NjcxMzIzOC01YzA3LTRlMjktYmFiMi04MWM5NjUxYTIyZWYuanBlZ5KTBc0CWM0BO5MJpjdmOTc1MgY/wm88ta923t.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T09:20:54+00:00"
     }
   ]
 }
