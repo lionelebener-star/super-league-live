@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-27T15:11:59.479787+00:00",
-  "updatedAt": "2026-11-27T15:11:59.479787+00:00",
+  "checkedAt": "2026-11-28T14:17:36.954384+00:00",
+  "updatedAt": "2026-11-28T14:17:36.954384+00:00",
   "status": "ok",
   "sources": [
     {
@@ -29,14 +29,14 @@
       "language": "fr",
       "url": "https://www.blick.ch/fr/sport/football/rss.xml",
       "ok": true,
-      "count": 3
+      "count": 4
     },
     {
       "name": "Blick",
       "language": "de",
       "url": "https://www.blick.ch/sport/fussball/superleague/rss.xml",
       "ok": true,
-      "count": 11
+      "count": 21
     },
     {
       "name": "20 minutes",
@@ -50,7 +50,7 @@
       "language": "fr",
       "url": "https://partner-feeds.20min.ch/rss/20minutes/sports/football",
       "ok": true,
-      "count": 7
+      "count": 6
     },
     {
       "name": "20 Minuten",
@@ -62,11 +62,173 @@
   ],
   "articles": [
     {
+      "id": "83d95b7be215437b1db4",
+      "title": "Ein Basler Fehleinkauf wird bei YB zum Luxusproblem",
+      "excerpt": "Die Effektivität von YB-Edeljoker Kaly Sène ist beeindruckend. Statistisch steht der einstige Basler Vier-Millionen-Fehleinkauf sogar besser…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/kaly-sene-basler-fehleinkauf-wird-bei-yb-zum-luxusproblem/enxb1pp",
+      "image": "https://ocdn.eu/pulscms-transforms/1/tBfktkuTURBXy8yNDNlZDllOS1iYWUzLTQ0NmYtYjgzNS1iMGRmMzE4ZjFkYTQuanBlZ5KTBc0CWM0BO5MJpmRkY2VhZQY/83oodfxm9f3.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-28T12:55:36+00:00"
+    },
+    {
+      "id": "d663d878d3a890fdafe4",
+      "title": "Tranquille comme Léo Besson",
+      "excerpt": "Léo Besson a une belle occasion d'écrire un nouveau chapitre de son histoire naissante avec le Servette FC, ce soir…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/tranquille-comme-leo-besson/4h977r8",
+      "image": "https://ocdn.eu/pulscms-transforms/1/rHXktkuTURBXy82MTFiODFlNy1lZmU1LTQ3NTgtYTA4Mi04ZGQ5ZTkwMjFjMjcuanBlZ5KTBc0CWM0BO5MJpjI2MGRhNQY/4tzwe6u53im.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-28T11:22:28+00:00"
+    },
+    {
+      "id": "c6bb5dece50bc3dd88e9",
+      "title": "Kriegt YB den Fokus auf den Trip ins Wallis rechtzeitig hin?",
+      "excerpt": "Vor dem Cup-Klassiker gegen den FC Basel muss YB in der Liga bei…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/das-yb-inside-zur-15-runde-yb-zwischen-advent-und-wallis-trip/7r3zg0w",
+      "image": "https://ocdn.eu/pulscms-transforms/1/K0EktkuTURBXy9hZGEwYzU4ZC01MTgxLTQ0OWUtODRhNy0zODgzZDZkYzhiM2EuanBlZ5KTBc0CWM0BO5MJpjU2NDU2OQY/upa5v0j9am.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-28T10:27:57+00:00"
+    },
+    {
+      "id": "c9915c6ff391a116998e",
+      "title": "FCZ-Koller setzt auf die Jugend – mit Erfolg",
+      "excerpt": "Der FCZ ist seit acht Spielen in der Liga ohne Niederlage. Die junge Truppe von Marcel…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/das-fcz-inside-der-15-runde-fcz-setzt-auf-jugend-mit-erfolg/1wdrdgp",
+      "image": "https://ocdn.eu/pulscms-transforms/1/5I-ktkuTURBXy83MTRlYzliZC0xN2IwLTQ1YmEtOGYwYS1hMzQzZGJjODA2NTIuanBlZ5KTBc0CWM0BO5MJpjhhNDBiYwY/61tkyq17eri.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-28T08:39:13+00:00"
+    },
+    {
+      "id": "54cb89b7472eaaa6b677",
+      "title": "Alles Gute, Walter Eichenberger",
+      "excerpt": "Zum 80. Geburtstag",
+      "url": "https://www.bscyb.ch/news?nid=17731",
+      "image": "https://bscyb.ch/cgi-bin/news/17731-news-3-20261126154235.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-27T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "2f2f250cdbe1e7482263",
+      "title": "Un ex-joueur de Grasshopper et Aarau meurt à 27 ans",
+      "excerpt": "L’ancien milieu de terrain de GC et du FC Aarau, Allen Njie, est décédé…",
+      "url": "https://www.20min.ch/fr/story/football-un-ex-joueur-de-grasshopper-et-aarau-meurt-a-27-ans-103674992",
+      "image": "https://image.20min.ch/2026/11/27/19504282-6020-4413-98b8-df0183ec198e.jpg?s=40e1c445e7677bd09bb672fe34ec4c44",
+      "source": "20 minutes",
+      "language": "fr",
+      "publishedAt": "2026-11-27T19:55:01+00:00"
+    },
+    {
+      "id": "79cb48e42106b0d17c8f",
+      "title": "«Für mich ist es kein Krisengipfel»",
+      "excerpt": "GC trifft im Krisengipfel der Runde auf den FC Basel. Dabei ist es auch ein Duell der beiden…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fuer-gc-janssen-ist-das-duell-gegen-den-fcb-kein-krisengipfel/e7e43w9",
+      "image": "https://ocdn.eu/pulscms-transforms/1/pQSktkuTURBXy9iNmNmZWY4Ny02YjRhLTRmMmUtODU5MS0zNTE2ZjI2YjFkYjEuanBlZ5KTBc0CWM0BO5MJpmUxMmRkOQY/byedy1w6iom.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T19:48:31+00:00"
+    },
+    {
+      "id": "d743be6544c959c2a473",
+      "title": "Les joueurs défaillants du Servette FC ont eu droit à une «explication de texte» cette semaine",
+      "excerpt": "Le Servette FC reçoit le Lausanne-Sport ce samedi…",
+      "url": "https://www.blick.ch/fr/sport/football/super_league/les-joueurs-defaillants-du-servette-fc-ont-eu-droit-a-une-explication-de-texte-cette/dw8xfry",
+      "image": "https://ocdn.eu/pulscms-transforms/1/78XktkuTURBXy8zYTAzYjcwMC00NDdlLTQ0ZWItOTQ4Zi05NmExM2FlMjk3OTEuanBlZ5KTBc0CWM0BO5MJpmViNDAwYgY/pspiqq3as4.jpg",
+      "source": "Blick",
+      "language": "fr",
+      "publishedAt": "2026-11-27T19:26:14+00:00"
+    },
+    {
+      "id": "006e242ce58644f5bc67",
+      "title": "FCL-Portmann macht den Weg frei für Di Giustos Jubiläum",
+      "excerpt": "Mit dem Schwung des ersten Auswärtssiegs in Basel empfängt der FC Luzern am Sonntag Leader…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/luzern-inside-der-15-runde-weg-frei-fuer-di-giustos-jubilaeum/2ytvxdr",
+      "image": "https://ocdn.eu/pulscms-transforms/1/zp1ktkuTURBXy9iY2RhYjgwYy00MDBiLTQ2MjgtYTU2Yy1jZDE0YWU5MDcxZmIuanBlZ5KTBc0CWM0BO5MJpjM1MDE1YgY/ij8oqulekzq.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T18:43:37+00:00"
+    },
+    {
+      "id": "642521ed5ed5b45f9aa4",
+      "title": "Thun ergeht es wie dem FCZ 2022",
+      "excerpt": "Gegen den FC St. Gallen muss Trainer Gian-Luca Privitelli seine ohnehin anfällige Abwehr nach den Ausfällen von…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/das-thun-inside-der-15-runde-ajax-niederlage-ist-ein-deja-vu/19d56wr",
+      "image": "https://ocdn.eu/pulscms-transforms/1/OqHktkuTURBXy82MjM5ODg2Yy1kM2M3LTQ5OTItOThkYi03MGVkYTZlYTIxOTQuanBlZ5KTBc0CWM0BO5MJpjIzMGU0YgY/7tm190w98la.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T18:28:17+00:00"
+    },
+    {
+      "id": "7f97d7dfc31eefce8223",
+      "title": "Leader Lugano verlängert mit Leistungsträger",
+      "excerpt": "Der FC Lugano hat mit Anto Grgic die Zukunft geregelt. Der Mittelfeldspieler hat im Tessin langfristig verlängert.",
+      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-anto-grgic-verlaengert-in-lugano-bis-2031/dctv40r",
+      "image": "https://ocdn.eu/pulscms-transforms/1/3D4ktkuTURBXy8xZjYyYzk0YS1hYWNhLTQ0M2UtODdhYy03ZDUxMmIxOGU4NzMuanBlZ5KTBc0CWM0BO5MJpmE0Y2NkOQY/i7l0s5k6k3l.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T17:45:49+00:00"
+    },
+    {
+      "id": "ab0ce88785bc89db3498",
+      "title": "Bleibt Nati-Juwel Boteli beim FC Sion nur zweite Wahl?",
+      "excerpt": "Nach dem 2:0-Triumph im Rhone-Derby empfängt der FC Sion am Sonntag die Young Boys zum…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/sion-inside-eishockey-ausflug-soll-sion-jubeln-lassen/r4kde9t",
+      "image": "https://ocdn.eu/pulscms-transforms/1/BGnktkuTURBXy9mYTU2MTc4MC1jMmZkLTRjMzUtYjBiYy0zYWQ5OTlhNGM5ODkuanBlZ5KTBc0CWM0BO5MJpmIyNDc1ZQY/yf5gqiibjvp.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T17:26:51+00:00"
+    },
+    {
+      "id": "7c1fba19f96c5868f9e1",
+      "title": "Gute Neuigkeiten für die Espen – und ein Offside-König",
+      "excerpt": "Trotz des anstehenden Cup-Krachers gegen Lugano denkt Coach Enrico Maassen nicht ans Schonen in Thun…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/fcsg-inside-ein-st-galler-ist-offside-koenig-der-liga/2nwwjtg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/JuOktkuTURBXy8wODk2ZTA3OS1lMzE1LTQxNjktYmQwMC04NzNmMjkzZDI3YzEuanBlZ5KTBc0CWM0BO5MJpjk2NjAyNgY/27e2h8geole.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T17:16:56+00:00"
+    },
+    {
+      "id": "bf57886d79cefae662f1",
+      "title": "Sorgt Gourvennec auch gegen Lausanne für eine Überraschung?",
+      "excerpt": "Nach der 0:2-Pleite im Rhone-Derby will Servette im Léman-Derby die Wiedergutmachung – hat aber zwei Sorgen…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/servette-inside-der-15-runde-findet-servette-das-tor-endlich/sls3c2n",
+      "image": "https://ocdn.eu/pulscms-transforms/1/chQktkuTURBXy9kMDgwMDdlZS1jZTVhLTQxMmItODQzOC1iOTdhNDhhNzk3OGEuanBlZ5KTBc0CWM0BO5MJpjhmMDFkYgY/rxatc7hu5w.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T16:23:16+00:00"
+    },
+    {
+      "id": "b42b859db4afe246d0fb",
+      "title": "Nicht nur in der Jokanovic-Tabelle steckt Basel im Sumpf",
+      "excerpt": "Erst verlieren die Basler den Ball, dann den Kopf. Kein anderes Team verteidigt in Umschaltsituationen…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/in-der-jokanovic-tabelle-steht-der-fcb-auf-dem-abstiegsplatz/djyjfpm",
+      "image": "https://ocdn.eu/pulscms-transforms/1/4tRktkuTURBXy9iNmJlMWNmMy1kZWM5LTQ4NWUtYTVjMS02NWRlNmZlMDRjYzkuanBlZ5KTBc0CWM0BO5MJpmUxOTVmZAY/ar4hn51d0x.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T16:11:09+00:00"
+    },
+    {
+      "id": "06865c2e4b2ac5581e9f",
+      "title": "Ex-GC- und Aarau-Spieler verstorben – Hoppers trauern",
+      "excerpt": "Allen Njie ist offenbar mit 27 Jahren gestorben. Der frühere Captain Liberias spielte für GC, Vaduz und…",
+      "url": "https://www.blick.ch/sport/fussball/superleague/ex-gc-und-aarau-spieler-im-alter-von-27-jahren-verstorben/yb2gfhf",
+      "image": "https://ocdn.eu/pulscms-transforms/1/JZOktkuTURBXy85NGRiMTE5My1hNzY3LTQ2YmEtOWY3NS04NTMzZjhkOTQwNDYuanBlZ5KTBc0CWM0BO5MJpjRkZGNiYgY/bho69803yrk.jpg",
+      "source": "Blick",
+      "language": "de",
+      "publishedAt": "2026-11-27T15:15:25+00:00"
+    },
+    {
       "id": "bb5a999feae18f417168",
       "title": "Mammut-Programm für den FC Lugano",
       "excerpt": "Fünf Auswärtsspiele in Folge muss Lugano hinter sich bringen. Ein echter Härtetest für die Bianconeri. Hier kommt das Lugano-Inside.",
       "url": "https://www.blick.ch/sport/fussball/superleague/das-lugano-inside-der-15-runde-reise-marathon-fuer-die-tessiner/lbkq4gk",
-      "image": "https://ocdn.eu/pulscms-transforms/1/IfwktkuTURBXy85NWVlMzM3NS1hN2VjLTQzN2ItODliNS0yYzBhYzQxNzU1ZDkuanBlZ5KTBc0CWM0BO5MJpjRkNzE0MQY/h4kk2ovcbwg.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/-dcktkuTURBXy85NWVlMzM3NS1hN2VjLTQzN2ItODliNS0yYzBhYzQxNzU1ZDkuanBlZ5KTBc0CWM0BO5MJpjlkOTBhNgY/ds8aad9pg6.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-27T14:48:39+00:00"
@@ -148,7 +310,7 @@
       "title": "FCSG-Cupheld Gaal über Spanner-Skandal, Zukunft und GTA 6",
       "excerpt": "Tom Gaal hat sich beim FC St. Gallen zum Cuphelden und unbestrittenen Stammspieler hochgearbeitet. Im Interview…",
       "url": "https://www.blick.ch/sport/fussball/superleague/tom-gaal-ueber-spanner-skandal-fcsg-zukunft-und-gta-6/bn3n5gq",
-      "image": "https://ocdn.eu/pulscms-transforms/1/H-9ktkuTURBXy8zOGQ0ODQ5Zi1lOGVmLTQ4OWUtYTE0Zi1kZDNlNDNmNmZmMmUuanBlZ5KTBc0CWM0BO5MJpjI3MjI4MwY/tcsqyw81br.jpg",
+      "image": "https://ocdn.eu/pulscms-transforms/1/4swktkuTURBXy8zOGQ0ODQ5Zi1lOGVmLTQ4OWUtYTE0Zi1kZDNlNDNmNmZmMmUuanBlZ5KTBc0CWM0BO5MJpjE3YWI0YwY/7o5dd6loijv.jpg",
       "source": "Blick",
       "language": "de",
       "publishedAt": "2026-11-27T11:16:43+00:00"
@@ -223,6 +385,18 @@
       "excerpt": "Black Weekend",
       "url": "https://www.bscyb.ch/news?nid=17732",
       "image": "https://bscyb.ch/cgi-bin/news/17732-news-3-20261126210336.jpg",
+      "source": "BSC Young Boys",
+      "official": true,
+      "language": "de",
+      "publishedAt": "2026-11-26T23:00:00+00:00",
+      "dateOnly": true
+    },
+    {
+      "id": "520188658b889cfbdc9f",
+      "title": "FC Sion - BSC Young Boys",
+      "excerpt": "Matchcenter",
+      "url": "https://www.bscyb.ch/news?nid=17730",
+      "image": "https://bscyb.ch/cgi-bin/news/17730-news-3-20261126111859.jpg",
       "source": "BSC Young Boys",
       "official": true,
       "language": "de",
@@ -918,176 +1092,6 @@
       "source": "Blick",
       "language": "fr",
       "publishedAt": "2026-11-22T16:27:17+00:00"
-    },
-    {
-      "id": "f1752cf976e5c222e098",
-      "title": "Lausanne concède le nul sur le gong face à Vaduz",
-      "excerpt": "Les Vaudois tenaient leur os jusqu'à la 90e avant de concéder l'égalisation dans les…",
-      "url": "https://www.20min.ch/fr/story/football-lausanne-recoit-vaduz-pour-se-relancer-103672056",
-      "image": "https://image.20min.ch/2026/11/22/211662ac-7d85-470c-a030-ac440df69c6b.jpg?s=6910e2a45b79a4ba67427177dbd5f0a6",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-22T15:19:34+00:00"
-    },
-    {
-      "id": "0b55ed3bacc850632496",
-      "title": "Saint-Gall et le FC Zurich se neutralisent",
-      "excerpt": "Zurich et Saint-Gall se sont neutralisés (2-2) au Letzigrund. Un résultat qui profite à Sion, désormais solidement…",
-      "url": "https://www.20min.ch/fr/story/super-league-saint-gall-et-le-fc-zurich-se-neutralisent-103672048",
-      "image": "https://image.20min.ch/2026/11/22/84126358-55e6-49ef-8c81-91d40d1eafe2.jpg?s=2f3ec87d8e4ce7eac54ca277ea55d31d",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-22T15:04:44+00:00"
-    },
-    {
-      "id": "73e128fd4b478e2e66a1",
-      "title": "Hack sei Dank – die FCZ-Serie geht weiter",
-      "excerpt": "Lange sieht es nach der ersten FCZ-Niederlage seit anfangs September aus. Doch Alexander Hack rettet den…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/super-league-st-gallen-und-der-fcz-teilen-sich-die-punkte/fh7k3hh",
-      "image": "https://ocdn.eu/pulscms-transforms/1/59YktkuTURBXy85NzlkY2RkMS04OTg4LTRlOGYtYjhlNC0wNjU1N2QwMjlhZWMuanBlZ5KTBc0CWM0BO5MJpmY3MTk5ZgY/6kowjdyhfke.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T14:59:05+00:00"
-    },
-    {
-      "id": "18085ea1d9623f845bfd",
-      "title": "Desolater FCB unterliegt FCL – medizinischer Notfall im Joggeli",
-      "excerpt": "Der FC Basel kassiert die siebte Liga-Niederlage im 14. Spiel der laufenden Saison. Der FC…",
-      "url": "https://www.20min.ch/story/super-league-medizinischer-notfall-im-joggeli-desolater-fcb-unterliegt-fcl-103671929",
-      "image": "https://image.20min.ch/2026/11/22/15517460-a183-43b9-a69f-d46c7409dc04.jpg?s=b501ef81c5c5f6856cce46750a0f57fa",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-22T14:04:21+00:00"
-    },
-    {
-      "id": "8b4631ffa8c8cc50ba9c",
-      "title": "Servette a sombré individuellement et collectivement à Tourbillon",
-      "excerpt": "Le Servette FC a dominé le FC Sion pendant quinze minutes ce samedi à Tourbillon. Ensuite?…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/servette-a-sombre-individuellement-et-collectivement-a-tourbillon/7x7jbk5",
-      "image": "https://ocdn.eu/pulscms-transforms/1/syuktkuTURBXy8zNTJiNzY0ZS1jNTY5LTRlNzUtYjNhMC1mNzYwZDJkMWQ0MjkuanBlZ5OVA8yRAM0Gd80DZZMFzQJYzQE7kwmmMGM4ODA4Bg/y85oh7juty7.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-22T12:48:31+00:00"
-    },
-    {
-      "id": "32528b10ac0bb64ed214",
-      "title": "Hunziker schnürt Doppelpack – FCZ gleicht in letzter Minute aus",
-      "excerpt": "Der FC Zürich empfängt den FC St. Gallen im Letzigrund zum direkten Duell um…",
-      "url": "https://www.20min.ch/story/fcz-fcsg-heisses-duell-im-letzi-kampf-um-den-anschluss-an-die-spitze-103671608",
-      "image": "https://image.20min.ch/2026/11/22/219b891e-74a2-4b79-8087-a6d29639106f.jpg?s=3d338560ccba6b771dca9c791c8b1268",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-22T12:17:39+00:00"
-    },
-    {
-      "id": "0ad40c1f850c4c09a568",
-      "title": "Croci-Torti überrascht mit Reaktion auf Lob von GC-Coach",
-      "excerpt": "Nach dem 1:2 gegen Lugano schwärmt GC-Trainer Olaf Janssen davon, was die Tessiner aufgebaut haben. Die…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-lugano-croci-torti-stellt-nach-gc-sieg-meisterambitionen-klar/cctppnr",
-      "image": "https://ocdn.eu/pulscms-transforms/1/chOktkuTURBXy85ZDk1NDA5Ni05N2RiLTQxN2EtOGZjMi1lMWZiMDk0ZmM5ZGQuanBlZ5KTBc0CWM0BO5MJpmQ3ZjgyMwY/wqsb3edo6iq.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T12:16:40+00:00"
-    },
-    {
-      "id": "7d97415f30e84c6729e9",
-      "title": "Kosten Grusel-Statistiken FCL-Portmann den Job?",
-      "excerpt": "Wer auf die Defensiv-Statistiken der Luzerner schaut, glaubt an einen Fehler in der Grafik. Wie FCL-Coach Udo Portmann mit…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fc-luzern-unter-udo-portmann-historisch-schlecht/h9207tl",
-      "image": "https://ocdn.eu/pulscms-transforms/1/3exktkuTURBXy84NTRhMGY1MC0wOGJlLTQ0YzYtODcxMi04M2I4YTU5NjZkNzkuanBlZ5KTBc0CWM0BO5MJpmNlZDFiMAY/o60uk8oqi5.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T11:21:29+00:00"
-    },
-    {
-      "id": "9f149650b9fc929ae2a1",
-      "title": "Thun-Coach Privitelli zwischen Ajax-Vorfreude und Cup-Ärger",
-      "excerpt": "Von der Leistung seiner Mannschaft bei YB war Thun-Coach Gian-Luca Privitelli durchaus angetan. Auch wenns nicht zu Punkten…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/grosser-spielstress-fuer-thun-nach-23-bei-yb-und-amsterdam-trip/srm29t4",
-      "image": "https://ocdn.eu/pulscms-transforms/1/3DQktkuTURBXy8wZTRkOTY3Yy01YmEyLTQyY2EtYjRkYi1mNDE0NWExZmU2Y2QuanBlZ5KTBc0CWM0BO5MJpjk1ODEyMQY/js5zo11mhr.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T11:10:52+00:00"
-    },
-    {
-      "id": "a9bec38e59bad1c855b8",
-      "title": "Winsley Boteli remplaçant? «Pas un choix fort», selon Didier Tholot",
-      "excerpt": "Didier Tholot a décidé de titulariser Rilind Nivokazi face à Servette, laissant Winsley Boteli…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/football-winsley-boteli-etait-remplacant-face-a-servette/zj2j1v4",
-      "image": "https://ocdn.eu/pulscms-transforms/1/wPHktkuTURBXy80YWUxNjlkMS0zNDM4LTRmNDEtYTM3My0yMTcwZGE0ZGJiZWYuanBlZ5KTBc0CWM0BO5MJpjU4MzU4NgY/e965gzss6vh.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-22T10:35:38+00:00"
-    },
-    {
-      "id": "b92771212b209f22c35e",
-      "title": "Dieses FCZ-Talent hat das Zeug zum Führungsspieler",
-      "excerpt": "Der Schritt zum Stammspieler ist ihm erst relativ spät gelungen. Aber jetzt spielt ein 23-Jähriger in der…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fcz-talent-reichmuth-hat-das-zeug-zum-fuehrungsspieler/gq9hqgq",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ONNktkuTURBXy80M2Y4MzAwNC03YTA4LTQzOWItOTdlNy1jZDkyOGNkNWRkN2QuanBlZ5KTBc0CWM0BO5MJpmUxMGZkMwY/v4bohge9b6k.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T09:51:37+00:00"
-    },
-    {
-      "id": "047107a34f4f51e94ef8",
-      "title": "Le tacle de Jan Kronig valait presque autant qu'un but",
-      "excerpt": "Une intervention défensive du défenseur valaisan a fait tourner le derby du Rhône dans…",
-      "url": "https://www.20min.ch/fr/story/football-le-tacle-ce-jan-kronig-valait-presque-autant-qu-un-but-103671606",
-      "image": "https://image.20min.ch/2026/11/21/f4f804a2-88fc-404d-ba61-fa386ae3054a.jpg?s=82e0bebdc1f20801329bbd4dd38932e6",
-      "source": "20 minutes",
-      "language": "fr",
-      "publishedAt": "2026-11-22T09:17:27+00:00"
-    },
-    {
-      "id": "ebab870ee1e89623d1a1",
-      "title": "«Ich hoffe, Cousin Gelson war zufrieden mit mir»",
-      "excerpt": "Zwei Wochen lang war Edimilson Fernandes auf Tauchstation. Es ist die Zeit, in der er zwei…",
-      "url": "https://www.blick.ch/sport/fussball/superleague/fernandes-hofft-nach-dem-32-gegen-thun-auf-lob-von-cousin-gelson/kj31r8p",
-      "image": "https://ocdn.eu/pulscms-transforms/1/ArOktkuTURBXy8zNmU2MDAwZi00NmZiLTQyMmMtODk2MS1kYmMwZTk3Yjc5NDQuanBlZ5KTBc0CWM0BO5MJpjQyN2RmNwY/wtxpsnl8e9.jpg",
-      "source": "Blick",
-      "language": "de",
-      "publishedAt": "2026-11-22T08:33:45+00:00"
-    },
-    {
-      "id": "e18ed5adbae025cd0ab1",
-      "title": "Le Lausanne-Sport de Ludovic Magnin s'avance sans certitudes face à Vaduz",
-      "excerpt": "Le Lausanne-Sport de Ludovic Magnin a l'occasion de revenir sur Vaduz ce week-end…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/football-le-ls-de-ludovic-magnin-sans-certitudes-face-a-vaduz/z86phxe",
-      "image": "https://ocdn.eu/pulscms-transforms/1/IO-ktkuTURBXy8zMzllMDM4YS0wNmI1LTRiOGUtYjg2MC1lMDcyZTE3MmE0MjguanBlZ5KTBc0CWM0BO5MJpjVmNzRkOAY/d021alnd8zc.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-22T07:01:38+00:00"
-    },
-    {
-      "id": "710b0b3793e5b6dc765e",
-      "title": "«War total ausgepumpt»: Derbysieg verschärft Seoanes Luxusproblem",
-      "excerpt": "Nach dem 3:2-Sieg gegen den FC Thun lobt YB-Trainer Gerry Seoane seinen Edeljoker Kaly Sène und erklärt…",
-      "url": "https://www.20min.ch/story/young-boys-war-total-ausgepumpt-derbysieg-verschaerft-seoanes-luxusproblem-103671480",
-      "image": "https://image.20min.ch/2026/11/21/4b16e604-4361-4acb-ba93-363ac93932b5.jpg?s=0e67ce5c0df6c76fbe36c48f91f7d79b",
-      "source": "20 Minuten",
-      "language": "de",
-      "publishedAt": "2026-11-22T03:53:34+00:00"
-    },
-    {
-      "id": "f7dea8d0f4ea6eba55a2",
-      "title": "Le FC Sion brise sa série noire et s'impose contre Servette",
-      "excerpt": "Retrouvez les meilleurs moments de la victoire du FC Sion dans le derby…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/le-fc-sion-brise-sa-serie-noire-et-simpose-contre-servette/x7expxf",
-      "image": "https://ocdn.eu/pulscms-transforms/1/9TSktkuTURBXy9iYmIwMGViNi1jMTI0LTRkYTgtYjAxYS1jYjhjYjM4Yzg2YTQuanBlZ5KTBc0CWM0BO5MJpjU0YWZlYQY/n2ynd1zqhss.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T23:13:17+00:00"
-    },
-    {
-      "id": "0700d2e1fcd02834a8ac",
-      "title": "Didier Tholot a enfin pu régaler les fans du FC Sion dans un derby du Rhône",
-      "excerpt": "Après sept matches sans victoire face à Servette…",
-      "url": "https://www.blick.ch/fr/sport/football/super_league/football-didier-tholot-a-enfin-vaincu-le-servette-fc/bphh26t",
-      "image": "https://ocdn.eu/pulscms-transforms/1/WHHktkuTURBXy9hZTYyZjcyMi0xZTAwLTQwMjEtOGYwZi02NjdiZTI3ZDA0ZmEuanBlZ5KTBc0CWM0BO5MJpjhmZjM0NQY/13u57ij6qx2m.jpg",
-      "source": "Blick",
-      "language": "fr",
-      "publishedAt": "2026-11-21T23:10:24+00:00"
     }
   ]
 }
